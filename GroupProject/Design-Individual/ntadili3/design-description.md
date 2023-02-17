@@ -34,7 +34,7 @@
 
 ***
 
-1. > When choosing to enter job offers, a user will:
+3. > When choosing to enter job offers, a user will:
     a. Be shown a user interface to enter all the details of the offer, which are the same ones listed above for the current job.
     b. Be able to either save the job offer details or cancel.
     c. Be able to (1) enter another offer, (2) return to the main menu, or (3) compare the offer (if they saved it) with the current job details (if present).
@@ -44,7 +44,7 @@
     **Point "c." will be handled by the GUI.**
 ***
 
-1. > When adjusting the comparison settings, the user can assign integer weights to:
+4. > When adjusting the comparison settings, the user can assign integer weights to:
     a. Yearly salary
     b. Yearly bonus
     c. Restricted Stock Unit Award
