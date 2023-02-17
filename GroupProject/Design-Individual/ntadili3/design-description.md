@@ -42,6 +42,10 @@
     **This requirement is satisfied by the Job class itself. JobComparer is composed of 0..\* Job objects. Entering a new job offer will be done using the addJobOffer()**
     ***
     **Point "c." will be handled by the GUI.**
+    **If canCompare field is true, and currentJob is not null (meaning there is a currentJob + one or more job offers) The GUI will show a "Compare With Current Job" button that is linked to "compareTwoJobs" method.**
+    - j1 parameter will be prefilled with the currentJob from the JobComparer class (prefilled, so no input required from the user)
+    - j2 parameter will be linked to the newly created job offer (prefilled, so no input required from the user)
+
 ***
 
 4. > When adjusting the comparison settings, the user can assign integer weights to:
@@ -73,7 +77,9 @@
     ***
     **"b." + "c." is represented by adding a compareTwoJobs(...) method to the JobComparer class. This method takes two Jobs (Either 2 Job Offers or 1 Job Offer + Current Job) and returns 2 JobScored objects. JobScored is expanded with additional fields like yearlySalaryAdjusted and yearlyBonusAdjusted, which are calculated by the JobComparer.**
     ***
-    **"d." will be managed by the GUI.**
+    **"d." will be managed by the GUI.
+    The GUI can handle this by displaying a "Perform another comparison" button that will trigger another comparison like this one.
+    The GUI will also display a "go back to main menu" to allow the user to go back to main menu.**
 
 ***
 6. > When ranking jobs, a job’s score is computed as the weighted sum of:
@@ -87,14 +93,15 @@
     For example, if the weights are 2 for the yearly salary, 2 for relocation stipend and 1 for all other factors, the score would be computed as:
     2/7*AYS + 1/7*AYB + 1/7*(RSUA / 4) + 2/7*RELO + 1/7*(PCH* AYS / 260)
 
-    **These are implementation details that will be handled by JobComparer methods**
+    **These are implementation details that will be handled by JobComparer methods.**
+    **More specifically the scoreJob() will implement the algorithm and will return a value that can be used by compareTwoJobs() and rankJobs() methods.**
 
 ***
 7. > The user interface must be intuitive and responsive.
 
-    **This requirement is purely linked to the UI, so it doesn't change my UML class diagram**
+    **Interface related requirements are purely linked to the GUI, so it doesn't have any impact on the class diagram.**
 
 ***
 8. > For simplicity, you may assume there is a single system running the app (no communication or saving between devices is necessary).
 
-    **This requirement might mean that we don't have to model a User class. Besides this, this shoudn't impact my UML class diagram, this is because "where" and "how" the system is running / infrastructure has no impact on the classes or their relationships**
+    **This requirement might mean that we don't have to model a User class. Besides this, this shouldn't impact the UML class diagram, this is because "where" and "how" the system is running / infrastructure has no impact on the classes or their relationships**
