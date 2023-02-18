@@ -2,12 +2,12 @@
 
 ![Design 1 not available](design1.png "Design 1")
 
-Following pros where discussed: 
+Following pros were discussed: 
 - Presence of an entrypoint class (MainMenu class in this case)
 - Job class should have calculateYearlySalaryAdjusted() and calculateYearlyBonusAdjusted() method
 - Separate class for CurrentJob so that it is easily distinguished from JobOffer as CurrentJob is related via (0..1 to 1) relationship but JobOffer is related via (0..* to 1) relationship with entrypoint class.
 
-Following cons where discussed:
+Following cons were discussed:
 - No need for the JobOfferList class, instead MainMenu should be directly associated with the JobOffer class using a 1..* relationship
 - ComparisonSettings should probably be a singleton (not * to *)
 - Missing parameters details on the methods
@@ -28,11 +28,11 @@ We did not discuss much on this design as the common decision was that this desi
 
 ![Design 3 not available](design3.png "Design 3")
 
-Following pros where discussed:
+Following pros were discussed:
 - Presence of an entrypoint class (MainMenu class in this case)
 - Separate class for CurrentJob so that it is easily distinguished from JobOffer as CurrentJob is related via (0..1 to 1) relationship but JobOffer is related via (0..* to 1) relationship with entrypoint class.
 
-Following cons where discussed:
+Following cons were discussed:
 - UI transitions modelled here (bad)
 - No need for extra CompareJob class
 - Job Offer class can be removed and Main Menu can directly associate with Job class via 0..1 to * relationship for JobOffers
@@ -51,7 +51,7 @@ Following cons where discussed:
 
 ![Design 4 not available](design4.png "Design 4")
 
-Following pros where discussed:
+Following pros were discussed:
 - Separate Location class
 - Current Job relationship should be 0..1 to 1
 - Separate JobScored class with additional properties for yearly salary and bonus adjusted
@@ -61,7 +61,7 @@ Following pros where discussed:
 - adjustComparisonSettings accepting in parameter the updated comparisonSettings
 - Covers all the requirements with properly defined relationships among classess
 
-Following cons where discussed:
+Following cons were discussed:
 - personalChoiceHolidays in ComparisonSettings should be changed to personalChoiceHolidaysWeight
 
 <br/>
