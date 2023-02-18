@@ -94,7 +94,7 @@
     2/7*AYS + 1/7*AYB + 1/7*(RSUA / 4) + 2/7*RELO + 1/7*(PCH* AYS / 260)
 
     **These are implementation details that will be handled by JobComparer methods.**
-    **More specifically the scoreJob() will implement the algorithm and will return a value that can be used by compareTwoJobs() and rankJobs() methods.**
+    **More specifically, the scoreJob() will implement the algorithm and will return a value that can be used by compareTwoJobs() and rankJobs() methods.**
 
 ***
 7. > The user interface must be intuitive and responsive.
