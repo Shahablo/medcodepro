@@ -22,13 +22,13 @@
 
     **This requirement is satisfied by creating a CurrentJob class, a Job Class, and a Location class.**
     ***
-    **The CurrentJob class is part of the JobComparer so it is represented as composition (1 to 0..1). The saveCurrentJob() function can used to perform enter / save**
+    **The CurrentJob class is part of the JobComparer so it is represented as composition (1 to 0..1). The saveCurrentJob() function can be used to enter and save the current job details.**
     ***
     **The CurrentJob class inherits from the Job class because it's a type of Job. This will help identify later if the Job is of type CurrentJob.**
     ***
-    **The Job class has a couple of fields related to it, like "Title", "Company" etc...**
+    **The Job class has a couple of fields related to it, like "Title", "Company", etc...**
     ***
-    **I decided that Location should be represented as it's own class, including the costOfLivingIndex which seems tied to it. This class is part of the Job so that's why the relationship is of type composition (of 1)**
+    **It was decided that Location should be represented as it's own class, including the costOfLivingIndex which seems tied to it. This class is part of the Job so that's why the relationship is of type composition (of 1)**
     ***
     **The return to main menu doesn't have any impact on the model because it will be handled by the GUI so it is ignored**
 
