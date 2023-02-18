@@ -73,7 +73,7 @@
         viii. Personal Choice Holidays
     d. Be offered to perform another comparison or go back to the main menu.
 
-    **"a." is represented by adding a JobComparer class. This class has a scoreJob(...) method that will score jobs using the ComparisonSettings. Additionally the rankJobs() can take all jobs (including the currentJob) and return an sorted array of jobs by score using the JobScored class. The JobScored class extends the Job class and adds the isCurrentJob boolean to make it easy to handle by the GUI.**
+    **"a." is represented by adding a JobComparer class. This class has a scoreJob(...) method that will score jobs using the ComparisonSettings. Additionally the rankJobs() can take all jobs (including the currentJob) and return a sorted array of jobs by score using the JobScored class. The JobScored class extends the Job class and adds the isCurrentJob boolean to make it easy to handle by the GUI.**
     ***
     **"b." + "c." is represented by adding a compareTwoJobs(...) method to the JobComparer class. This method takes two Jobs (Either 2 Job Offers or 1 Job Offer + Current Job) and returns 2 JobScored objects. JobScored is expanded with additional fields like yearlySalaryAdjusted and yearlyBonusAdjusted, which are calculated by the JobComparer.**
     ***
