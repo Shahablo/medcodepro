@@ -76,4 +76,4 @@ We have chosen the [Design 4](#design-4) as our team design after fixing the min
 
 # Summary
 
-The process turned out to be fruitful. All four members discussed all the designs thoroughly. Everyone got chance to discuss their opinion. We refined our understanding through discussion and explanation and finally came up with the final team design.
+The process turned out to be fruitful. All four members discussed all the designs thoroughly. All members asked for clarifications and questions on each design. Everyone got a chance to discuss their opinion. Through discussion of each design, we learned that there are multiple ways to represent the UML for this assignment. We refined our understanding of each design through discussion and explanation and finally came up with the final team design that we thought is the most appropriate, well-described, and easy to follow.
