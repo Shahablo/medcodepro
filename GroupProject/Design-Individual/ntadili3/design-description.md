@@ -4,7 +4,7 @@
 
     **The Main Menu doesn't relate to a specific class to be modeled in the UML class diagram because it is tied to user interaction within the app. However we will model the class JobComparer to be the main entry point of the application and will tie everything together. This class implements the methods (1) (2) (3) and (4)**
     ***
-    **(4) is modeled by adding a field 'canCompare, it will be set to true if there are jobOffers present, otherwise it's set to false and represented as disabled on the GUI.**
+    **(4) is modeled by adding a field canCompare, it will be set to true if there are jobOffers present, otherwise it's set to false and represented as disabled on the GUI.**
 ***
 
 2. > When choosing to enter current job details, a user will:
