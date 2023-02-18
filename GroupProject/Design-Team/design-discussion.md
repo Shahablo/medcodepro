@@ -3,12 +3,12 @@
 ![Design 1 not available](design1.png "Design 1")
 
 Following pros where discussed: 
-- Presence of entrypoint class (MainMenu class in this case)
+- Presence of an entrypoint class (MainMenu class in this case)
 - Job class should have calculateYearlySalaryAdjusted() and calculateYearlyBonusAdjusted() method
 - Separate class for CurrentJob so that it is easily distinguished from JobOffer as CurrentJob is related via (0..1 to 1) relationship but JobOffer is related via (0..* to 1) relationship with entrypoint class.
 
 Following cons where discussed:
-- No need for the JobOfferList class, instead MainMenu should be directly associated with the JobOffer class using 1..* relationship
+- No need for the JobOfferList class, instead MainMenu should be directly associated with the JobOffer class using a 1..* relationship
 - ComparisonSettings should probably be a singleton (not * to *)
 - Missing parameters details on the methods
 - Relationships between classes needs to be refined. For example, ComparisonSettings should probably be a singleton (not * to *)
@@ -28,8 +28,8 @@ We did not discuss much on this design as the common decision was that this desi
 
 ![Design 3 not available](design3.png "Design 3")
 
-Following pros where discussed: 
-- Presence of entrypoint class (MainMenu class in this case)
+Following pros where discussed:
+- Presence of an entrypoint class (MainMenu class in this case)
 - Separate class for CurrentJob so that it is easily distinguished from JobOffer as CurrentJob is related via (0..1 to 1) relationship but JobOffer is related via (0..* to 1) relationship with entrypoint class.
 
 Following cons where discussed:
@@ -40,7 +40,7 @@ Following cons where discussed:
 - Should be 0..1 to 1 between MainMenu and CurrentJob
 - Should be 0..1 to * between MainMenu and JobOffer
 - personalChoiceHolidays should be Integer (rather than Double)
-- Weight better represented as Integers rather than Double and this is a requirement in the assignment insyructions
+- Weight better represented as Integers rather than Double and this is a requirement in the assignment instructions
 - BonusAdjusted and SalaryAdjusted missing
 - Too many dependencies with ComparisonSettings class (3 classes)
 
@@ -51,7 +51,7 @@ Following cons where discussed:
 
 ![Design 4 not available](design4.png "Design 4")
 
-Following pros where discussed: 
+Following pros where discussed:
 - Separate Location class
 - Current Job relationship should be 0..1 to 1
 - Separate JobScored class with additional properties for yearly salary and bonus adjusted
@@ -76,4 +76,4 @@ We have chosen the [Design 4](#design-4) as our team design after fixing the min
 
 # Summary
 
-The process turned out to be fruitful. We all four members discussed all the designs thoroughly. Every one got chance to discuss her/his opinion. We refined our understanding through discussion and explanation and finally came up with team design. 
+The process turned out to be fruitful. We all four members discussed all the designs thoroughly. Every one got chance to discuss her/his opinion. We refined our understanding through discussion and explanation and finally came up with team design.
