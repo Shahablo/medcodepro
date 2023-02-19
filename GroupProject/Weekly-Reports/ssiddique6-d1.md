@@ -6,4 +6,3 @@ My accomplishments for this week’s deliverable:
 •	Proofread design-description.md
 •	Proofread design-discussion.md
 •	Submitted Weekly-Reports in the weekly reports directory. 
-
