@@ -14,7 +14,7 @@
 
 ### Use Case 1: View Main Menu
 
-**Requirements:** When the app is started, the user is presented with the main menu, which allows the user to 
+**Requirements:** When the app is started, the user is presented with the main menu, which allows the user to
 1. Enter or edit current job details.
 1. Enter job offers.
 1. Adjust the comparison settings.
@@ -25,6 +25,7 @@
 **Post-conditions:** The user is presented with the main menu.
 
 **Scenarios:**
+
 1. User launches the app.
 1. The main menu is displayed, presenting the user with the four available options discussed under the requirements above.
 
@@ -33,6 +34,7 @@
 ### Use Case 2: Enter/Edit Current Job Details
 
 **Requirements:** When choosing to enter current job details, a user will:
+
 1. Be shown a user interface to enter (if it is the first time) or edit all the details of their current job, which consist of:
     - Title
     - Company
@@ -50,6 +52,7 @@
 **Post-conditions:** The user has either saved the current job details or canceled without saving and returned to the main menu.
 
 **Scenarios:**
+
 1. User selects the option to enter or edit current job details from the main menu.
 1. The user interface for entering or editing current job details is displayed, pre-populated with existing details (if any).
 1. User enters or edits the job details.
@@ -60,9 +63,10 @@
 ### Use Case 3: Enter Job Offers
 
 **Requirements:** When choosing to enter job offers, a user will:
+
 1. Be shown a user interface to enter all the details of the offer, which are the same ones listed above for the current job.
 1. Be able to either save the job offer details or cancel.
-1. Be able to 
+1. Be able to
     - Enter another offer
     - Return to the main menu
     - Compare the offer (if they saved it) with the current job details (if present).
@@ -104,13 +108,14 @@
 **Requirements:** Allow the user to compare two job offers (including current Job Detail).
 
 **Pre-conditions:** Following are the pre-conditions:
+
 1. The user has started the app.
 1. At least two jobs (including Current Job) have been entered.
 1. The user has selected the "Compare Job Offers" option from the main menu.
 1. User is presented with the list of ranked Job offers including current Job.
 1. User selects two of the Job offers out of the presented list.
 
-**Post-conditions:** 
+**Post-conditions:**
 1. The app presents a table comparing the job details of the two selected job offers
 1. The user can choose to perform another comparison or return to the main menu.
 
@@ -138,15 +143,18 @@
 **Requirements:** Rank job offers based on the comparison score. This use case is indirectly used by Compare Job Offers use case where the the list of ranked jobs are to be presented.
 
 **Pre-conditions:** Following are the pre-conditions:
+
 1. The user has started the app.
 1. At least two jobs (including Current Job) have been entered.
 1. The user has selected the "Compare Job Offers" option from the main menu.
 
 **Post-conditions:** 
+
 1. The job offers have been ranked based on the comparison score.
 1. Table showing list of ranked job offers including current job appreas in the app.
 
 **Scenarios:**
+
 1. The user has entered two or more job offers.
 1. The app computes a comparison score for each job offer, based on the weights assigned to the comparison factors.
 1. The app ranks the job offers based on their comparison score, from highest to lowest.

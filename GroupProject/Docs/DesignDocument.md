@@ -4,8 +4,8 @@
 
 ## 1 Design Considerations
 
-
 ### 1.1 Assumptions
+
 > - The app will be used on a device with Android Operating System
 > - The device will be used on an application with touch screen capability
 > - The user comprehends instructions and prompts in the English language
@@ -16,25 +16,28 @@
 > - Weights inputted in Adjust Comparison Settings is an integer
 > - Personal choice holidays is an integer
 > - Clicking `Cancel` and `Return to Main Menu` buttons cancels the user's preceding action and returns the user to the Main Menu
-> - Within the `Enter Job Offers` page, once the user makes their selection of canceling their entry or saving their entry, the app will execute their request, and a screen will consequently show up to prompt the user to enter another job offer, return to main menu, or compare another job offer 
-
+> - Within the `Enter Job Offers` page, once the user makes their selection of canceling their entry or saving their entry, the app will execute their request, and a screen will consequently show up to prompt the user to enter another job offer, return to main menu, or compare another job offer
 
 ### 1.2 Constraints
 
 > User limitation:
+>
 > - The app will be designed for a single user
-> 
+>
 > Verification and validation requirements:
+>
 > - The app should be tested to a full suite of test cases
 >
 > Language:
+>
 > - The application will only be written in the English language
 
 ### 1.3 System Environment
+
 > - The app will  be developed using Android 3.X or higher
 > - The application is only compatible to run on devices that run on Android Operating system
 > - The app will be developed using Java 11 or higher; therefore, the hardware should be able to support Java 11
-> - The Android device is running a minimum API level of API 31 or above 
+> - The Android device is running a minimum API level of API 31 or above
 
 ## 2 Architectural Design
 
@@ -56,7 +59,6 @@
 
 **Storage:** The Storage component manages the persistent storage of job data. It provides functionality to save, retrieve, and delete job data from a database or file system.
 
-
 ### 2.2 Deployment Diagram
 
 *This section should describe how the different components will be deployed on actual hardware devices. Similar to the previous subsection, this diagram may be unnecessary for simple systems; in these cases, simply state so and concisely state why.*
@@ -77,7 +79,6 @@
 
 ![Main Menu](UI/1-MainMenu.png "Main Menu")
 
-
 <table>
   <tr>
     <td>Enter/Edit Job Details Page 1 Part 1</td>
@@ -88,8 +89,6 @@
     <td><img src="UI/2-EnterJobDetails_Page2.png"></td>
   </tr>
  </table>
- 
- 
  <table>
   <tr>
     <td>Enter Job Offers Page 1 Part 1</td>
@@ -102,11 +101,9 @@
     <td><img src="UI/3-EnterJobOffers_Page3.png"></td>
   </tr>
  </table>
- 
- 
+
  ![Adjust Comparison Settings](UI/4-AdjustComparisonSettings.png "Adjust Comparison Settings")
- 
- 
+
  <table>
   <tr>
     <td>Enter/Compare Job Offers Inputs</td>
