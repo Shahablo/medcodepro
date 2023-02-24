@@ -14,6 +14,7 @@
 > - All information is available for current job and every job offer, therefore the app will not allow the user to leave any fields blank
 > - Cost of living index is an integer
 > - Weights inputted in Adjust Comparison Settings is an integer
+> - Personal choice holidays is an integer
 > - Clicking `Cancel` and `Return to Main Menu` buttons cancels the user's preceding action and returns the user to the Main Menu
 
 
