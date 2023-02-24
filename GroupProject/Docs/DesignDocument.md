@@ -72,3 +72,16 @@
 
 
 ![Enter Edit Job Details](UI/2-EnterJobDetails.png "Enter Edit Job Details")
+
+
+<table>
+  <tr>
+    <td>Enter/Edit Job Details Page 1</td>
+     <td>Enter/Edit Job Details Page 2</td>
+  </tr>
+  <tr>
+    <td><img src="UI/2-EnterJobDetails.png" width=270 height=480></td>
+    <td><img src="UI/2-EnterJobDetails_Page2.png" width=270 height=480></td>
+
+  </tr>
+ </table>
