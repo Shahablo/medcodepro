@@ -55,3 +55,4 @@
 ## 4 User Interface Design
 *For GUI-based systems, this section should provide the specific format/layout of the user interface of the system (e.g., in the form of graphical mockups).*
 
+![Main Menu]([http://url/to/img.png](https://github.gatech.edu/gt-omscs-se-2023spring/6300Spring23Team038/blob/deliverable-2/GroupProject/Docs/mainmenu.png))
