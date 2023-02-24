@@ -19,6 +19,7 @@
 
 > User specification:
 > - The app will be designed for a single user
+> 
 > Verification and validation requirements:
 > - The app should be tested to a full suite of test cases
 
