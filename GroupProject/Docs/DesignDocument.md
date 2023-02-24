@@ -6,18 +6,14 @@
 
 
 ### 1.1 Assumptions
-
-> - The app will  be developed using Android 3.X or higher
-> - The app will be developed using Java 11 or higher
 > - The app will be used on a device with Android Operating System
-> - The Android device is running a minimum API level of API 31 or above 
 > - The device will be used on an application with touch screen capability
 > - The application will be written in the English language
 
 
 ### 1.2 Constraints
 
-> User specification:
+> User limitation:
 > - The app will be designed for a single user
 > 
 > Verification and validation requirements:
@@ -25,8 +21,10 @@
 
 
 ### 1.3 System Environment
-
-*Describe the hardware and software that the system must operate in and interact with.*
+> - The app will  be developed using Android 3.X or higher
+> - The application is only compatible to run on devices that run on Android Operating system
+> - The app will be developed using Java 11 or higher; therefore, the hardware should be able to support Java 11
+> - The Android device is running a minimum API level of API 31 or above 
 
 ## 2 Architectural Design
 
