@@ -34,7 +34,20 @@
 
 ### 2.1 Component Diagram
 
-*This section should provide and describe a diagram that shows the various components and how they are connected. This diagram shows the logical/functional components of the system, where each component represents a cluster of related functionality. In the case of simple systems, where there is a single component, this diagram may be unnecessary; in these cases, simply state so and concisely state why.*
+![Component Diagram](component-diagram.png "Component Diagram")
+
+**Android App:** The Android App is the user interface through which the user interacts with the system. It provides access to the main menu and the different functions of the system.
+
+**Job Manager:** The Job Manager component manages the job data entered by the user, including the user's current job details and job offers. It also provides functionality to save and retrieve job data from the storage component.
+
+**Comparison Settings Manager:** The Comparison Settings Manager component allows the user to adjust the comparison settings by assigning integer weights to each factor. This component interacts with Storage to save, retrieve and update Comparisions settings for various factors involved.
+
+**Job Comparison Engine:** The Job Comparison Engine component performs the comparison of job offers based on the user's selected criteria. It takes the job data as input, applies the comparison settings, and outputs a ranked list of job offers.
+
+**Job Ranking Engine:** The Job Ranking Engine component calculates the score for each job based on the weights assigned to each criterion. It takes job data as input, applies the weighting formula, and outputs a score for each job.
+
+**Storage:** The Storage component manages the persistent storage of job data. It provides functionality to save, retrieve, and delete job data from a database or file system.
+
 
 ### 2.2 Deployment Diagram
 
@@ -55,7 +68,7 @@
 ## 4 User Interface Design
 *For GUI-based systems, this section should provide the specific format/layout of the user interface of the system (e.g., in the form of graphical mockups).*
 
-![Main Menu](https://github.gatech.edu/gt-omscs-se-2023spring/6300Spring23Team038/blob/deliverable-2/GroupProject/Docs/mainmenu.png)
+![Main Menu](mainmenu.png "Main Menu")
 
 
-![Enter Edit Job Details](https://github.gatech.edu/gt-omscs-se-2023spring/6300Spring23Team038/blob/deliverable-2/GroupProject/Docs/enter-edit.png)
+![Enter Edit Job Details](enter-edit.png "Enter Edit Job Details")
