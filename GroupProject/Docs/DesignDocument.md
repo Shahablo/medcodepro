@@ -4,15 +4,24 @@
 
 ## 1 Design Considerations
 
-*The subsections below describe the issues that need to be addressed or resolved prior to or while completing the design, as well as issues that may influence the design process.*
-
+- 
 ### 1.1 Assumptions
 
-*Describe any assumption, background, or dependencies of the software, its use, the operational environment, or significant project issues.*
+- The app will  be developed using Android 3.X or higher
+- The app will be developed using Java 11 or higher
+- The app will be used on a device with Android Operating System
+- The Android device is running a minimum API level of API 31 or above 
+- The device will be used on an application with touch screen capability
+- The application will be written in the English language
+
 
 ### 1.2 Constraints
 
-*Describe any constraints on the system that have a significant impact on the design of the system.*
+User specification:
+> - The app will be designed for a single user
+> - Verification and validation requirements
+> - The app should be tested to a full suite of test cases![image]
+
 
 ### 1.3 System Environment
 
