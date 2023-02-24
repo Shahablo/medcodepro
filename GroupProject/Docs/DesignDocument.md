@@ -58,4 +58,4 @@
 ![Main Menu](https://github.gatech.edu/gt-omscs-se-2023spring/6300Spring23Team038/blob/deliverable-2/GroupProject/Docs/mainmenu.png)
 
 
-![Enter Edit Job Details](https://github.gatech.edu/gt-omscs-se-2023spring/6300Spring23Team038/blob/deliverable-2/GroupProject/Docs/enter-edit.)
+![Enter Edit Job Details](https://github.gatech.edu/gt-omscs-se-2023spring/6300Spring23Team038/blob/deliverable-2/GroupProject/Docs/enter-edit.png)
