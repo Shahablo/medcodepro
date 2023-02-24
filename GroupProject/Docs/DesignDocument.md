@@ -16,6 +16,7 @@
 > - Weights inputted in Adjust Comparison Settings is an integer
 > - Personal choice holidays is an integer
 > - Clicking `Cancel` and `Return to Main Menu` buttons cancels the user's preceding action and returns the user to the Main Menu
+> - Within the `Enter Job Offers` page, once the user makes their selection of canceling their entry or saving their entry, the app will execute their request, and a screen will consequently show up to prompt the user to enter another job offer, return to main menu, or compare another job offer 
 
 
 ### 1.2 Constraints
