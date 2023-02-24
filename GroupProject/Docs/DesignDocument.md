@@ -8,7 +8,7 @@
 ### 1.1 Assumptions
 > - The app will be used on a device with Android Operating System
 > - The device will be used on an application with touch screen capability
-> - The application will be written in the English language
+> - The user comprehends instructions and prompts in the English language
 
 
 ### 1.2 Constraints
@@ -18,7 +18,9 @@
 > 
 > Verification and validation requirements:
 > - The app should be tested to a full suite of test cases
-
+>
+> Language:
+> - The application will only be written in the English language
 
 ### 1.3 System Environment
 > - The app will  be developed using Android 3.X or higher
