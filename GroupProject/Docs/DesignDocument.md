@@ -85,9 +85,9 @@
  
  <table>
   <tr>
-    <td>Enter/Enter Job Offers Page 1</td>
-    <td>Enter/Enter Job Offers Page 2</td>
-    <td>Enter/Enter Job Offers Page 3</td>
+    <td>Enter Job Offers Page 1</td>
+    <td>Enter Job Offers Page 2</td>
+    <td>Enter Job Offers Page 3</td>
   </tr>
   <tr>
     <td><img src="UI/3-EnterJobOffers.png"></td>
