@@ -4,22 +4,22 @@
 
 ## 1 Design Considerations
 
-- 
+
 ### 1.1 Assumptions
 
-- The app will  be developed using Android 3.X or higher
-- The app will be developed using Java 11 or higher
-- The app will be used on a device with Android Operating System
-- The Android device is running a minimum API level of API 31 or above 
-- The device will be used on an application with touch screen capability
-- The application will be written in the English language
+> - The app will  be developed using Android 3.X or higher
+> - The app will be developed using Java 11 or higher
+> - The app will be used on a device with Android Operating System
+> - The Android device is running a minimum API level of API 31 or above 
+> - The device will be used on an application with touch screen capability
+> - The application will be written in the English language
 
 
 ### 1.2 Constraints
 
-User specification:
+> User specification:
 > - The app will be designed for a single user
-> - Verification and validation requirements
+> Verification and validation requirements
 > - The app should be tested to a full suite of test cases![image]
 
 
