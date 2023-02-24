@@ -9,6 +9,11 @@
 > - The app will be used on a device with Android Operating System
 > - The device will be used on an application with touch screen capability
 > - The user comprehends instructions and prompts in the English language
+> - The currency format is in US Dollar ($)
+> - The location format is in US address format (City, State)
+> - All information is available for current job and every job offer, therefore the app will not allow the user to leave any fields blank
+> - Cost of living index is an integer
+> - Weights inputted in Adjust Comparison Settings is an integer
 
 
 ### 1.2 Constraints
