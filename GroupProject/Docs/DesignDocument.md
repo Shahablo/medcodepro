@@ -79,8 +79,8 @@
 
 <table>
   <tr>
-    <td>Enter/Edit Job Details Page 1</td>
-     <td>Enter/Edit Job Details Page 2</td>
+    <td>Enter/Edit Job Details Page 1 Part 1</td>
+     <td>Enter/Edit Job Details Page 1 Part 2</td>
   </tr>
   <tr>
     <td><img src="UI/2-EnterJobDetails.png"></td>
@@ -91,9 +91,9 @@
  
  <table>
   <tr>
-    <td>Enter Job Offers Page 1</td>
-    <td>Enter Job Offers Page 2</td>
-    <td>Enter Job Offers Page 3</td>
+    <td>Enter Job Offers Page 1 Part 1</td>
+    <td>Enter Job Offers Page 1 Part 2</td>
+    <td>Enter Job Offers Page 2 </td>
   </tr>
   <tr>
     <td><img src="UI/3-EnterJobOffers.png"></td>
