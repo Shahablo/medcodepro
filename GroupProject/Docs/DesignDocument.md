@@ -42,7 +42,7 @@
 
 ### 2.1 Component Diagram
 
-![Component Diagram](component-diagram.png "Component Diagram")
+![Component Diagram](UMLs/component-diagram.png "Component Diagram")
 
 **Android App:** The Android App is the user interface through which the user interacts with the system. It provides access to the main menu and the different functions of the system.
 

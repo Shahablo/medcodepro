@@ -6,7 +6,7 @@
 
 <br/>
 
-![Use Case Diagram](usecase.png "Use Case Diagram")
+![Use Case Diagram](UMLs/usecase-diagram.png "Use Case Diagram")
 
 <br/>
 
