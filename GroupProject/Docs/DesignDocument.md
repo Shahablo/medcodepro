@@ -71,9 +71,6 @@
 ![Main Menu](UI/1-MainMenu.png "Main Menu")
 
 
-![Enter Edit Job Details](UI/2-EnterJobDetails.png "Enter Edit Job Details")
-
-
 <table>
   <tr>
     <td>Enter/Edit Job Details Page 1</td>
@@ -82,5 +79,34 @@
   <tr>
     <td><img src="UI/2-EnterJobDetails.png"></td>
     <td><img src="UI/2-EnterJobDetails_Page2.png"></td>
+  </tr>
+ </table>
+ 
+ 
+ <table>
+  <tr>
+    <td>Enter/Enter Job Offers Page 1</td>
+    <td>Enter/Enter Job Offers Page 2</td>
+    <td>Enter/Enter Job Offers Page 3</td>
+  </tr>
+  <tr>
+    <td><img src="UI/3-EnterJobOffers.png"></td>
+    <td><img src="UI/3-EnterJobOffers_Page2.png"></td>
+    <td><img src="UI/3-EnterJobOffers_Page3.png"></td>
+  </tr>
+ </table>
+ 
+ 
+ ![Adjust Comparison Settings](UI/4-AdjustComparisonSettings.png "Adjust Comparison Settings")
+ 
+ 
+ <table>
+  <tr>
+    <td>Enter/Compare Job Offers Inputs</td>
+     <td>Enter/Compare Job Offers Ouput</td>
+  </tr>
+  <tr>
+    <td><img src="UI/5-CompareJobOffers.png"></td>
+    <td><img src="UI/5-CompareJobOffers_Page2.png"></td>
   </tr>
  </table>
