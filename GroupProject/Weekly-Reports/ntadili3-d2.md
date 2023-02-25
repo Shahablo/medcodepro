@@ -8,5 +8,5 @@ My accomplishments for this deliverable:
 * `Group-Project` \ `Docs` - Reorganized all UML diagrams by placing them in a dedicated folder
 * `Group-Project` \ `Docs` - Fixed a few typos for all documents
 * `Group-Project` \ `Docs` - MD Markdown linting for all documents
-* `Group-Project` \ `Docs`\ `ProjectPlan.md` - MD Markdown linting for all documents
 * Proposing roles for us (the team) regarding next week (Lead Dev, Software Test Designer, UI/UX Developer, Project Manager + UI Tester)
+* `Group-Project` \ `Docs`\ `ProjectPlan.md` - Add section 3.
