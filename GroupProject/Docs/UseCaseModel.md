@@ -6,7 +6,7 @@
 
 <br/>
 
-![Use Case Diagram](UMLs/usecase-diagram.png "Use Case Diagram")
+![Use Case Diagram](UMLs/use-case-diagram.png "Use Case Diagram")
 
 <br/>
 
@@ -15,6 +15,7 @@
 ### Use Case 1: View Main Menu
 
 **Requirements:** When the app is started, the user is presented with the main menu, which allows the user to
+
 1. Enter or edit current job details.
 1. Enter job offers.
 1. Adjust the comparison settings.

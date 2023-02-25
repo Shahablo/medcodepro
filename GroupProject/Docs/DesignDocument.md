@@ -6,42 +6,54 @@
 
 ### 1.1 Assumptions
 
-> - The app will be used on a device with Android Operating System
-> - The device will be used on an application with touch screen capability
-> - The user comprehends instructions and prompts in the English language
-> - The currency format is in US Dollar ($)
-> - The location format is in US address format (City, State)
-> - All information is available for current job and every job offer, therefore the app will not allow the user to leave any fields blank
-> - Cost of living index is an integer
-> - Weights inputted in Adjust Comparison Settings is an integer
-> - Personal choice holidays is an integer
-> - Clicking `Cancel` and `Return to Main Menu` buttons cancels the user's preceding action and returns the user to the Main Menu
-> - Within the `Enter Job Offers` page, once the user makes their selection of canceling their entry or saving their entry, the app will execute their request, and a screen will consequently show up to prompt the user to enter another job offer, return to main menu, or compare another job offer
+- The app will be used on a device with Android Operating System
+- The device will be used on an application with touch screen capability
+- The user comprehends instructions and prompts in the English language
+- The currency format is in US Dollar ($)
+- The location format is in US address format (City, State)
+- All information is available for current job and every job offer, therefore the app will not allow the user to leave any fields blank
+- Cost of living index is an integer
+- Weights inputted in Adjust Comparison Settings will be integers
+- Personal choice holidays is an integer
+- Clicking `Cancel` and `Return to Main Menu` buttons cancels the user's preceding action and returns the user to the Main Menu
+- Within the `Enter Job Offers` page, once the user makes their selection of canceling their entry or saving their entry, the app will execute their request, and a screen will consequently show up to prompt the user to enter another job offer, return to main menu, or compare another job offer
 
 ### 1.2 Constraints
 
-> User limitation:
->
-> - The app will be designed for a single user
->
-> Verification and validation requirements:
->
-> - The app should be tested to a full suite of test cases
->
-> Language:
->
-> - The application will only be written in the English language
+**User limitation:**
+
+- The app will be designed for a single user
+
+**Verification and validation requirements:**
+
+- The app should be tested to a full suite of test cases
+
+**Languages:**
+
+- The application will only be supporting English as a language
 
 ### 1.3 System Environment
 
-> - The app will  be developed using Android 3.X or higher
-> - The application is only compatible to run on devices that run on Android Operating system
-> - The app will be developed using Java 11 or higher; therefore, the hardware should be able to support Java 11
-> - The Android device is running a minimum API level of API 31 or above
+**Hardware Requirements:**
+
+- **Devices**: Android smartphones only
+- **Processor**: Dual-core 1.2GHz or higher (smartphones released after 2012)
+- **Memory**: 2 GB RAM or more
+- **Display**: 1080 x 1920 (Full HD) or better
+- **Sensors**: Touch screen
+
+**Software Requirements:**
+
+- **Operating System**: Android 12 (Snow Cone) or higher (API 31 or higher)
+- **Database**: SQLite (for local storage),
+- **Software**: A File Manager is required (to find and install the APK)
+
+**Other Requirements:**
+
+- **Network**: Internet connectivity for downloading the app (but is not required for using it)
+- **Authorizations**: Allowing unknown apps to be installed on the device (App settings > Special Access > Install unknown apps)
 
 ## 2 Architectural Design
-
-*The architecture provides the high-level design view of a system and provides a basis for more detailed design work. These subsections describe the top-level components of the system you are building and their relationships.*
 
 ### 2.1 Component Diagram
 
@@ -61,15 +73,13 @@
 
 ### 2.2 Deployment Diagram
 
-*This section should describe how the different components will be deployed on actual hardware devices. Similar to the previous subsection, this diagram may be unnecessary for simple systems; in these cases, simply state so and concisely state why.*
+![Deployment Diagram](UMLs/deployment-diagram.png "Deployment Diagram")
 
 ## 3 Low-Level Design
 
-*Describe the low-level design for each of the system components identified in the previous section. For each component, you should provide details in the following UML diagrams to show its internal structure.*
-
 ### 3.1 Class Diagram
 
-*In the case of an OO design, the internal structure of a software component would typically be expressed as a UML class diagram that represents the static class structure for the component and their relationships.*
+![Class Diagram](UMLs/class-diagram.png "Class Diagram")
 
 ### 3.2 Other Diagrams
 
