@@ -1,8 +1,6 @@
 # Project Plan
 
-*This is the template for your project plan. The parts in italics are concise explanations of what should go in the corresponding sections and should not appear in the final document.*
-
-**Author**: \<person or team name\>
+**Author**: ssiddique6 and ntadili3
 
 ## 1 Introduction
 
@@ -19,8 +17,27 @@
 
 ## 3 Team
 
-*Describe the team and their roles (include at least 4 roles, there may be more roles than there are team members)*
+- **Team members' names:**
+  - Ana Santos
+  - Rishabh Jain
+  - Nabil TADILI
+  - Shahab Siddique
+<br>
+- **Roles:**
+  - **Developer**: Will typically work on the data layer, implementing logic in the app and linking the different pieces together to produce the APK
+  - **Lead Developer**: On top of the **developer responsibilities**, the **Lead Developer** will lead the development team, overseeing the technical aspects and delivery on time.
+  - **UI/UX Designer**: Responsible for creating visually appealing and user-friendly interfaces for tje app, focusing on enhancing the user experience.
+  - **UI/UX Developer**: Responsible for the development of the screens, buttons, fields, layout, and overall design of the application defined by the UI/UX Designer.
+  - **Software Test Designer**: Responsible for defining test cases (both manual and automated). He will implement automated testing inside the application (with Unit Tests, Integration Tests, System Tests). Note that this role is purely for defining and coding the actual tests. Test execution will be performed by **white-box testers** and **black-box testers**
+  - **White-box Tester**: Responsible running the white-box tests and tracking the issues
+  - **Black-box Tester**: Responsible running the black-box tests and tracking the issues.
+  - **Project Manager**: Responsible for making sure the application satisfies all requirements and specifications. He will track issues and manage communication in the team.
+<br>
+- **Team Role Assignment Table:**:
 
-- *Team members' names*
-- *Roles, with a short description of each role*
-- *Table showing which team member(s) has which role(s)*
+|Team Member|Primary Roles|Backup Roles|
+|:----|:----|:----|:----|
+|Ana Santos|- UI/UX Designer </br> - UI/UX Developer|- Developer </br> - Black-box Tester </br>- Project Manager|
+|Rishabh Jain|- Lead Developer </br>| - UI/UX Developer </br>- White-box Tester </br>- Project Manager|
+|Nabil TADILI|- Software Test Designer </br>- White-box Tester|- Developer </br> - Black-box Tester </br>- Project Manager|
+|Shahab Siddique|- Project Manager </br>- Black-box Tester|- Software Test Designer|
