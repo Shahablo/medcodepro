@@ -33,11 +33,11 @@
   - **Black-box Tester**: Responsible running the black-box tests and tracking the issues.
   - **Project Manager**: Responsible for making sure the application satisfies all requirements and specifications. He will track issues and manage communication in the team.
 <br>
-- **Team Role Assignment Table:**:
+- **Team Role Assignment:**
 
-|Team Member|Primary Roles|Backup Roles|
-|:----|:----|:----|:----|
-|Ana Santos|- UI/UX Designer </br> - UI/UX Developer|- Developer </br> - Black-box Tester </br>- Project Manager|
-|Rishabh Jain|- Lead Developer </br>| - UI/UX Developer </br>- White-box Tester </br>- Project Manager|
-|Nabil TADILI|- Software Test Designer </br>- White-box Tester|- Developer </br> - Black-box Tester </br>- Project Manager|
-|Shahab Siddique|- Project Manager </br>- Black-box Tester|- Software Test Designer|
+    |Team Member|Primary Roles|Backup Roles|
+    |:----|:----|:----|:----|
+    |Ana Santos|- UI/UX Designer </br> - UI/UX Developer|- Developer </br> - Black-box Tester </br>- Project Manager|
+    |Rishabh Jain|- Lead Developer </br>| - UI/UX Developer </br>- White-box Tester </br>- Project Manager|
+    |Nabil TADILI|- Software Test Designer </br>- White-box Tester|- Developer </br> - Black-box Tester </br>- Project Manager|
+    |Shahab Siddique|- Project Manager </br>- Black-box Tester|- Software Test Designer|
