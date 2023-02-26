@@ -32,7 +32,7 @@ We will be using the USP model for our project planning.
 
   - What are the resource requirements for the project
 
-  - Create the project plan, showing different parts of the life cycle and entry/exit criteria/dates for the .
+  - Create the project plan, showing different parts of the life cycle and entry/exit criteria/due dates for each part of the process.
 
 - **Exit Criteria:** 
 
