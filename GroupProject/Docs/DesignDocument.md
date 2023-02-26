@@ -30,7 +30,7 @@
 
 **Languages:**
 
-- The application will only be supporting English as a language
+- The application will only be supporting English as language. No translations will be provided.
 
 ### 1.3 System Environment
 
