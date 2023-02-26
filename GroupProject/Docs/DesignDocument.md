@@ -118,3 +118,5 @@
     <td><img src="UI/5-CompareJobOffers_Page2.png"></td>
   </tr>
  </table>
+
+*Note: The lgos presented in the UI mock-up are for demonstration purposes only. The deployed application will have the initials of the company names instead.* 
