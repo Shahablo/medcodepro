@@ -16,23 +16,23 @@ USP: Unified Software Process
 
 **Deliverable 1 - Inception (due 2/26/2023)**
 
-Here we take the product from an idea, and utilizing various steps detailed below in the entry criteria, take it to a vision for the end project. We determine the scope of the project, and make the business case for the criteria. 
+> Here we take the product from an idea, and utilizing various steps detailed below in the entry criteria, take it to a vision for the end project. We determine the scope of the project, and make the business case for the criteria. 
 
-**Entry Criteria:** 
+- **Entry Criteria:** 
 
-Vision Document: will contain general vision of the core project requirements, features, and main constraints
+  - Vision Document: will contain general vision of the core project requirements, features, and main constraints
 
-Create a business case (is the project worth doing/what are the main risks that would make the project a failure/what are the criteria for success)
+  - Create a business case (is the project worth doing/what are the main risks that would make the project a failure/what are the criteria for success)
 
-Create an initial use case model
+  - Create an initial use case model
 
-Cretae a project glossary
+  - Create a project glossary
 
-Initial version of the software architecture
+  - Initial version of the software architecture
 
-What are the resource requirements for the project
+  - What are the resource requirements for the project
 
-Create the project plan, showing different parts of the life cycle and entry/exit criteria/dates for the .
+  - Create the project plan, showing different parts of the life cycle and entry/exit criteria/dates for the .
 
 **Exit Criteria:** 
 
