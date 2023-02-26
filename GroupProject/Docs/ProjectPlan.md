@@ -45,7 +45,7 @@ We will be using the USP model for our project planning.
 
 **Deliverable 2 - Elaboration (due 3/05/2023)**
 
-> Here we will determine the initial vision of the application, who are the main users of the application, and what the application will be doing for them. Our product aims to allow a user to compare multiple job offers utilizing specific criteria, to determine which one will be the best for them from a monetary perspective. Create a rough draft of the architecture for the application, identify the main risks, and start project planning. 
+> Here we will determine the initial vision of the application, who are the main users of the application, and what the application will be doing for them. Our product aims to allow a user to compare multiple job offers utilizing specific criteria, to determine which one will be the best for them from a monetary perspective. In this phase, we will create a rough draft of the architecture for the application, identify the main risks, and start project planning. 
 
 - **Entry Criteria:** 
 
