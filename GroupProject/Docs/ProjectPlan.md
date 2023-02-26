@@ -69,7 +69,7 @@ We will be using the USP model for our project planning.
 
 - **Exit Criteria**
 
-  - Is the vision/architecture stable
+  - Is the vision/architecture stable?
 
   - Have the major risks been addressed/resolved in the prototype?
 
@@ -79,7 +79,7 @@ We will be using the USP model for our project planning.
 
   - Current resource expenditure is acceptable 
 
-  - If exit criteria is not met, we will need to cancel the project or revise the scope of the project. 
+  - If exit criteria is not met, we will need to cancel the project or revise the scope of the project 
 
 
 **Deliverable 3 (due 3/12/2023)**
