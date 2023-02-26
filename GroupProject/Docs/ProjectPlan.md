@@ -12,7 +12,7 @@ We want to create an application for the end user to compare compensation for mu
 We will be using the USP model for our project planning. 
 
 **Glossary**
-USP: Unified Software Process
+- USP: Unified Software Process
 
 **Deliverable 1 - Inception (due 2/26/2023)**
 
