@@ -151,9 +151,9 @@ USP: Unified Software Process
 
 - **Team Role Assignment:**
 
-|Team Member|Primary Roles|Backup Roles|
-|:----|:----|:----|:----|
-|Ana Santos|- UI/UX Designer </br> - UI/UX Developer|- Developer </br> - Black-box Tester </br>- Project Manager|
-|Rishabh Jain|- Lead Developer </br>| - UI/UX Developer </br>- White-box Tester </br>- Project Manager|
-|Nabil TADILI|- Software Test Designer </br>- White-box Tester|- Developer </br> - Black-box Tester </br>- Project Manager|
-|Shahab Siddique|- Project Manager </br>- Black-box Tester|- Software Test Designer|
+  |Team Member|Primary Roles|Backup Roles|
+  |:----|:----|:----|
+  |Ana Santos|- UI/UX Designer </br> - UI/UX Developer|- Developer </br> - Black-box Tester </br>- Project Manager|
+  |Rishabh Jain|- Lead Developer </br>| - UI/UX Developer </br>- White-box Tester </br>- Project Manager|
+  |Nabil TADILI|- Software Test Designer </br>- White-box Tester|- Developer </br> - Black-box Tester </br>- Project Manager|
+  |Shahab Siddique|- Project Manager </br>- Black-box Tester|- Software Test Designer|
