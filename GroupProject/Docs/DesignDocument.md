@@ -63,7 +63,7 @@
 
 **Job Manager:** The Job Manager component manages the job data entered by the user, including the user's current job details and job offers. It also provides functionality to save and retrieve job data from the storage component.
 
-**Comparison Settings Manager:** The Comparison Settings Manager component allows the user to adjust the comparison settings by assigning integer weights to each factor. This component interacts with Storage to save, retrieve and update Comparisions settings for various factors involved.
+**Comparison Settings Manager:** The Comparison Settings Manager component allows the user to adjust the comparison settings by assigning integer weights to each factor. This component interacts with Storage to save, retrieve and update Comparison Settings for various factors involved.
 
 **Job Comparison Engine:** The Job Comparison Engine component performs the comparison of job offers based on the user's selected criteria. It takes the job data as input, applies the comparison settings, and outputs a ranked list of job offers. It also calculates the rank for each job based on the weights assigned to each criterion. It takes job data as input, applies the weighting formula, and outputs a score for each job. Based on these scores the comparison is performed.
 
@@ -78,10 +78,6 @@
 ### 3.1 Class Diagram
 
 ![Class Diagram](UMLs/class-diagram.png "Class Diagram")
-
-### 3.2 Other Diagrams
-
-*<u>Optionally</u>, you can decide to describe some dynamic aspects of your system using one or more behavioral diagrams, such as sequence and state diagrams.*
 
 ## 4 User Interface Design
 
