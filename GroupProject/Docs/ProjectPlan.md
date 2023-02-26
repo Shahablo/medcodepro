@@ -34,108 +34,100 @@ USP: Unified Software Process
 
   - Create the project plan, showing different parts of the life cycle and entry/exit criteria/dates for the .
 
-**Exit Criteria:** 
+- **Exit Criteria:** 
 
-Stakeholders agree on scope/definition/schedule estimates
+  - Stakeholders agree on scope/definition/schedule estimates
 
-Understanding of requirements by validating the user cases with the stakeholders
+  - Understanding of requirements by validating the user cases with the stakeholders
 
-Credibility of prioritization/risks/proposed schedule/development process
+  - Credibility of prioritization/risks/proposed schedule/development process
 
 
 **Deliverable 2 - Elaboration (due 3/05/2023)**
 
-Here we will determine the initial vision of the application, who are the main users of the application, and what the application will be doing for them. Our product aims to allow a user to compare multiple job offers utilizing specific criteria, 
+> Here we will determine the initial vision of the application, who are the main users of the application, and what the application will be doing for them. Our product aims to allow a user to compare multiple job offers utilizing specific criteria, to determine which one will be the best for them from a monetary perspective. Create a rough draft of the architecture for the application, identify the main risks, and start project planning. 
 
-to detemrine which one will be the best for them from a monetary perspective. Create a rough draft of the architecture for the application, identify the main risks, and start project planning. 
+- **Entry Criteria:** 
 
+  - Nearly complete use case model 
 
-**Entry Criteria:** 
+  - Supplementary requirements
 
-Nearly complete use case model 
+  - Refine software architecture
 
-Supplementary requirements
+  - Design model
 
-Refine software architecture
+  - Test cases
 
-Design model
+  - Executable prototype
 
-Test cases
+  - Revised project plan
 
-Executable prototype
+  - Updated risk assessment
 
-Revised project plan
+  - Develop a user manual
 
-Updated risk assessment
+- **Exit Criteria**
 
-Develop a user manual
+  - Is the vision/architecture stable
 
-**Exit Criteria**
+  - Have the major risks been addressed/resolved in the prototype?
 
-Is the vision/architecture stable
+  - Project plan is sufficiently detailed/accurate
 
-Have the major risks been addressed/resolved in the prototype?
+  - Stakeholder alignment on current acheivability of vision 
 
-Project plan is sufficiently detailed/accurate
+  - Current resource expenditure is acceptable 
 
-Stakeholder alignment on current acheivability of vision 
-
-Current resource expenditure is acceptable 
-
-If exit criteria is not met, we will need to cancel the project or revise the scope of the project. 
+  - If exit criteria is not met, we will need to cancel the project or revise the scope of the project. 
 
 
 **Deliverable 3 (due 3/12/2023)**
 
-Construction Phase- Here this is where most of the development of the prototype will occur. Here we will shift from intellectual property development to project development.  
+> Construction Phase- Here this is where most of the development of the prototype will occur. Here we will shift from intellectual property development to project development.  
 
-Entry Criteria:
+- **Entry Criteria:**
 
-All features are developed for the product
+  - All features are developed for the product
+  
+  - Use cases have been realized, along with traceability
 
-Use cases have been realized, along with traceability
+  - All features have been successfully tested
 
-All features have been successfully tested
+  - Software product has been integrated on adequate platforms
 
-Software product has been integrated on adequate platforms
+  - Complete system test results 
 
-Complete system test results 
+  - User Manual 
 
-User Manual 
+- **Exit Criteria:**
 
-Exit Criteria:
+  - Product is stable and ready to be deployed to users 
 
-Product is stable and ready to be deployed to users 
+  - Stakeholders are ready to be active users of the product
 
-Stakeholders are ready to be active users of the product
+  - Resources/expenditure on the project is acceptable 
 
-Resources/expenditure on the project is acceptable 
+  - Failure to meet exit criteria may postpone release
 
+**Deliverable 4 - Transition Phase (due 3/19/2023)** 
 
-Failure to meet exit criteria may postpone release
+> Oftentimes there are issues after deployment where users experience failures, either based on insufficient build, or external factors, such as new environments, or neew functionality that users would like 
 
-**Deliverable 4** 
+- **Entry Criteria:** 
 
-Transition Phase ((due 3/19/2023)
+  - Project Completed
 
-Oftentimes there are issues after deployment
-where users experience failures, either based on insufficient build, or 
-external factors, such as new environments, or neew functionality that users would like 
+  - Lessons learned
 
-**Entry Criteria:** 
-
-Project Completed
-
-Lessons learned
-
-Issues after deployment reported by end users
+  - Issues after deployment reported by end users
 
 
-**Exit Criteria**
+- **Exit Criteria**
 
-Are users satisfied? 
+  - Are users satisfied? 
 
-Are maintenance expenditures acceptable.
+  - Are maintenance expenditures acceptable?
 
 
 ## 3 Team
@@ -156,6 +148,7 @@ Are maintenance expenditures acceptable.
   - **Black-box Tester**: Responsible running the black-box tests and tracking the issues.
   - **Project Manager**: Responsible for making sure the application satisfies all requirements and specifications. He will track issues and manage communication in the team.
 <br>
+
 - **Team Role Assignment:**
 
     |Team Member|Primary Roles|Backup Roles|
