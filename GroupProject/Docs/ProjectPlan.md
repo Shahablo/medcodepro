@@ -82,9 +82,9 @@ We will be using the USP model for our project planning.
   - If exit criteria is not met, we will need to cancel the project or revise the scope of the project 
 
 
-**Deliverable 3 (due 3/12/2023)**
+**Deliverable 3 - Construction Phase (due 3/12/2023)**
 
-> Construction Phase- Here this is where most of the development of the prototype will occur. Here we will shift from intellectual property development to project development.  
+> This is where most of the development of the prototype will occur. Here we will shift from intellectual property development to project development.  
 
 - **Entry Criteria:**
 
