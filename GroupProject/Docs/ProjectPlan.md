@@ -136,7 +136,7 @@ USP: Unified Software Process
 - Ana Santos
 - Rishabh Jain
 - Nabil TADILI
-- Shahab Siddique\
+- Shahab Siddique
 
 - **Roles:**
 - **Developer**: Will typically work on the data layer, implementing logic in the app and linking the different pieces together to produce the APK
@@ -146,7 +146,7 @@ USP: Unified Software Process
 - **Software Test Designer**: Responsible for defining test cases (both manual and automated). He will implement automated testing inside the application (with Unit Tests, Integration Tests, System Tests). Note that this role is purely for defining and coding the actual tests. Test execution will be performed by **white-box testers** and **black-box testers**
 - **White-box Tester**: Responsible running the white-box tests and tracking the issues
 - **Black-box Tester**: Responsible running the black-box tests and tracking the issues.
-- **Project Manager**: Responsible for making sure the application satisfies all requirements and specifications. He will track issues and manage communication in the team.\
+- **Project Manager**: Responsible for making sure the application satisfies all requirements and specifications. He will track issues and manage communication in the team.
 
 
 - **Team Role Assignment:**
