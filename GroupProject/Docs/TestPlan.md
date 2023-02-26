@@ -10,7 +10,7 @@
 
 Test case selection will be done using both black-box and white-box techniques.
 
-- **Back-box** techniques will be used to perform tests about the functionality of the software based from the user's perspective. So this will ensure that the system meets the functional requirements (aka **UI/Functional Testing**).
+- **Black-box** techniques will be used to perform tests about the functionality of the software based from the user's perspective. So this will ensure that the system meets the functional requirements (aka **UI/Functional Testing**).
   1. **Equivalence partitioning:** This technique will be used to reduce the number of test cases required by classifying input data into groups that should return similar results
   2. **Exploratory testing:** The goal with this is to explore the software without any predefined plan, using my intuition to uncover defects that might slip through the other techniques
   3. **Boundary value analysis:** The goal is to identify defects that might occur when the user enters unusual data that might be exceed the boundaries of what the system is capable of handling.
