@@ -1,0 +1,2836 @@
+
+Test Case 1  		<single>
+   Size :  Empty
+
+
+Test Case 2  		<single>
+   Number of lines covering all the fields :  None
+
+
+Test Case 3  		<single>
+   Number of occurrences of from string in one line :  One
+
+
+Test Case 4  		<single>
+   Position of the line covering all the fields :  First line
+
+
+Test Case 5  		<single>
+   Position of the line covering all the fields :  Last line
+
+
+Test Case 6  		<single>
+   Coverage of the fields in one line :  Not covered at all
+
+
+Test Case 7  		<single>
+   Coverage of the fields in one line :  Partially covered
+
+
+Test Case 8  		<single>
+   Presence of the delimiter in the file :  Not present
+
+
+Test Case 9  		<single>
+   Presence of the delimiter in one line :  Not present
+
+
+Test Case 10 		<single>
+   Position of the delimiter in the file :  First line
+
+
+Test Case 11 		<single>
+   Position of the delimiter in the file :  Last line
+
+
+Test Case 12 		<error>
+   number of file provided :  None
+
+
+Test Case 13 		<single>
+   number of file provided :  One
+
+
+Test Case 14 		<error>
+   number of file provided :  exist
+
+
+Test Case 15 		<single>
+   number of file provided :  does not exist
+
+
+Test Case 16 		<single>
+   length of the to string :  Zero
+
+
+Test Case 17 		<single>
+   length of the to string :  One
+
+
+Test Case 18 		<error>
+   Presence of a file corresponding to the name :  Not present
+
+
+Test Case 19 		<error>
+   Number of ranges :  Empty
+
+
+Test Case 20 		<error>
+   Presence of commas in a multi-range field list :  Not present
+
+
+Test Case 21 		<error>
+   Presence of commas in a multi-range field list :  Present but incorrectly positioned
+
+
+Test Case 22 		<error>
+   Presence of commas in a single-range field list :  Present
+
+
+Test Case 23 		<single>  (follows [if])
+   Arrangement of ranges in a multi-range fields :  Descending
+
+
+Test Case 24 		<single>  (follows [if])
+   Arrangement of ranges in a multi-range fields :  Unsorted
+
+
+Test Case 25 		<single>  (follows [if])
+   Presence of overlapping ranges in a multi-range fields :  Present
+
+
+Test Case 26 		<error>
+   Number of indices used to present a range :  Zero
+
+
+Test Case 27 		<error>
+   Number of indices used to present a range :  More than Two
+
+
+Test Case 28 		<error>  (follows [if])
+   Presence of a dash in a non-unary range :  Not present
+
+
+Test Case 29 		<error>  (follows [if])
+   Presence of a dash in a unary range :  Present
+
+
+Test Case 30 		<error>  (follows [if])
+   Arrangement of indices in a non-unary range :  Non-ascending
+
+
+Test Case 31 		<error>
+   Value of a field index :  Zero
+
+
+Test Case 32 		<error>
+   Value of a field index :  <0
+
+
+Test Case 33 		<single>
+   Value of a field index :  maxInt
+
+
+Test Case 34 		<error>
+   Length of the specified delimiter :  Empty
+
+
+Test Case 35 		<error>
+   Length of the specified delimiter :  More than one
+
+
+Test Case 36 		<error>
+   Presence of enclosing quotes :  Not enclosed
+
+
+Test Case 37 		<error>
+   Presence of enclosing quotes :  Incorrect
+
+
+Test Case 38 		(Key = 2.2.2.3.3.2.2.3.3.3.1.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 39 		(Key = 2.2.2.3.3.2.2.3.3.3.1.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 40 		(Key = 2.2.2.3.3.2.2.3.3.3.1.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 41 		(Key = 2.2.2.3.3.2.2.3.3.3.1.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 42 		(Key = 2.2.2.3.3.2.2.3.3.3.1.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 43 		(Key = 2.2.2.3.3.2.2.3.3.3.1.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 44 		(Key = 2.2.2.3.3.2.2.3.3.3.1.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 45 		(Key = 2.2.2.3.3.2.2.3.3.3.1.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 46 		(Key = 2.2.2.3.3.2.2.3.3.3.2.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 47 		(Key = 2.2.2.3.3.2.2.3.3.3.2.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 48 		(Key = 2.2.2.3.3.2.2.3.3.3.2.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 49 		(Key = 2.2.2.3.3.2.2.3.3.3.2.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 50 		(Key = 2.2.2.3.3.2.2.3.3.3.2.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 51 		(Key = 2.2.2.3.3.2.2.3.3.3.2.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 52 		(Key = 2.2.2.3.3.2.2.3.3.3.2.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 53 		(Key = 2.2.2.3.3.2.2.3.3.3.2.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 54 		(Key = 2.2.2.3.3.2.2.3.3.3.3.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 55 		(Key = 2.2.2.3.3.2.2.3.3.3.3.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 56 		(Key = 2.2.2.3.3.2.2.3.3.3.3.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 57 		(Key = 2.2.2.3.3.2.2.3.3.3.3.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 58 		(Key = 2.2.2.3.3.2.2.3.3.3.3.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 59 		(Key = 2.2.2.3.3.2.2.3.3.3.3.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 60 		(Key = 2.2.2.3.3.2.2.3.3.3.3.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 61 		(Key = 2.2.2.3.3.2.2.3.3.3.3.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 62 		(Key = 2.2.2.3.3.3.2.3.3.3.1.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 63 		(Key = 2.2.2.3.3.3.2.3.3.3.1.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 64 		(Key = 2.2.2.3.3.3.2.3.3.3.1.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 65 		(Key = 2.2.2.3.3.3.2.3.3.3.1.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 66 		(Key = 2.2.2.3.3.3.2.3.3.3.1.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 67 		(Key = 2.2.2.3.3.3.2.3.3.3.1.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 68 		(Key = 2.2.2.3.3.3.2.3.3.3.1.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 69 		(Key = 2.2.2.3.3.3.2.3.3.3.1.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 70 		(Key = 2.2.2.3.3.3.2.3.3.3.2.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 71 		(Key = 2.2.2.3.3.3.2.3.3.3.2.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 72 		(Key = 2.2.2.3.3.3.2.3.3.3.2.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 73 		(Key = 2.2.2.3.3.3.2.3.3.3.2.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 74 		(Key = 2.2.2.3.3.3.2.3.3.3.2.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 75 		(Key = 2.2.2.3.3.3.2.3.3.3.2.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 76 		(Key = 2.2.2.3.3.3.2.3.3.3.2.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 77 		(Key = 2.2.2.3.3.3.2.3.3.3.2.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 78 		(Key = 2.2.2.3.3.3.2.3.3.3.3.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 79 		(Key = 2.2.2.3.3.3.2.3.3.3.3.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 80 		(Key = 2.2.2.3.3.3.2.3.3.3.3.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 81 		(Key = 2.2.2.3.3.3.2.3.3.3.3.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 82 		(Key = 2.2.2.3.3.3.2.3.3.3.3.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 83 		(Key = 2.2.2.3.3.3.2.3.3.3.3.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 84 		(Key = 2.2.2.3.3.3.2.3.3.3.3.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 85 		(Key = 2.2.2.3.3.3.2.3.3.3.3.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  One
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 86 		(Key = 2.3.2.3.3.2.2.3.3.3.1.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 87 		(Key = 2.3.2.3.3.2.2.3.3.3.1.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 88 		(Key = 2.3.2.3.3.2.2.3.3.3.1.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 89 		(Key = 2.3.2.3.3.2.2.3.3.3.1.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 90 		(Key = 2.3.2.3.3.2.2.3.3.3.1.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 91 		(Key = 2.3.2.3.3.2.2.3.3.3.1.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 92 		(Key = 2.3.2.3.3.2.2.3.3.3.1.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 93 		(Key = 2.3.2.3.3.2.2.3.3.3.1.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 94 		(Key = 2.3.2.3.3.2.2.3.3.3.2.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 95 		(Key = 2.3.2.3.3.2.2.3.3.3.2.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 96 		(Key = 2.3.2.3.3.2.2.3.3.3.2.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 97 		(Key = 2.3.2.3.3.2.2.3.3.3.2.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 98 		(Key = 2.3.2.3.3.2.2.3.3.3.2.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 99 		(Key = 2.3.2.3.3.2.2.3.3.3.2.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 100		(Key = 2.3.2.3.3.2.2.3.3.3.2.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 101		(Key = 2.3.2.3.3.2.2.3.3.3.2.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 102		(Key = 2.3.2.3.3.2.2.3.3.3.3.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 103		(Key = 2.3.2.3.3.2.2.3.3.3.3.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 104		(Key = 2.3.2.3.3.2.2.3.3.3.3.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 105		(Key = 2.3.2.3.3.2.2.3.3.3.3.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 106		(Key = 2.3.2.3.3.2.2.3.3.3.3.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 107		(Key = 2.3.2.3.3.2.2.3.3.3.3.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 108		(Key = 2.3.2.3.3.2.2.3.3.3.3.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 109		(Key = 2.3.2.3.3.2.2.3.3.3.3.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  One
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 110		(Key = 2.3.2.3.3.3.2.3.3.3.1.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 111		(Key = 2.3.2.3.3.3.2.3.3.3.1.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 112		(Key = 2.3.2.3.3.3.2.3.3.3.1.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 113		(Key = 2.3.2.3.3.3.2.3.3.3.1.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 114		(Key = 2.3.2.3.3.3.2.3.3.3.1.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 115		(Key = 2.3.2.3.3.3.2.3.3.3.1.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 116		(Key = 2.3.2.3.3.3.2.3.3.3.1.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 117		(Key = 2.3.2.3.3.3.2.3.3.3.1.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  alphanumeric characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 118		(Key = 2.3.2.3.3.3.2.3.3.3.2.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 119		(Key = 2.3.2.3.3.3.2.3.3.3.2.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 120		(Key = 2.3.2.3.3.3.2.3.3.3.2.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 121		(Key = 2.3.2.3.3.3.2.3.3.3.2.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 122		(Key = 2.3.2.3.3.3.2.3.3.3.2.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 123		(Key = 2.3.2.3.3.3.2.3.3.3.2.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 124		(Key = 2.3.2.3.3.3.2.3.3.3.2.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 125		(Key = 2.3.2.3.3.3.2.3.3.3.2.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  special characters
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 126		(Key = 2.3.2.3.3.3.2.3.3.3.3.2.2.0.1.0.0.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 127		(Key = 2.3.2.3.3.3.2.3.3.3.3.2.2.0.1.0.0.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 128		(Key = 2.3.2.3.3.3.2.3.3.3.3.2.2.0.1.0.0.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 129		(Key = 2.3.2.3.3.3.2.3.3.3.3.2.2.0.1.0.0.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  One
+   Presence of commas in a multi-range field list         :  <n/a>
+   Presence of commas in a single-range field list        :  Not present
+   Arrangement of ranges in a multi-range fields          :  <n/a>
+   Presence of overlapping ranges in a multi-range fields :  <n/a>
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 130		(Key = 2.3.2.3.3.3.2.3.3.3.3.2.3.2.0.1.1.2.0.1.0.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 131		(Key = 2.3.2.3.3.3.2.3.3.3.3.2.3.2.0.1.1.2.0.1.0.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  One
+   Presence of a dash in a non-unary range                :  <n/a>
+   Presence of a dash in a unary range                    :  Not present
+   Arrangement of indices in a non-unary range            :  <n/a>
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
+
+Test Case 132		(Key = 2.3.2.3.3.3.2.3.3.3.3.2.3.2.0.1.1.3.2.0.1.3.1.0.0.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Not present
+   Length of the specified delimiter                      :  <n/a>
+   Presence of enclosing quotes                           :  <n/a>
+
+
+Test Case 133		(Key = 2.3.2.3.3.3.2.3.3.3.3.2.3.2.0.1.1.3.2.0.1.3.2.2.2.)
+   Size                                                   :  Not empty
+   Number of lines covering all the fields                :  Many
+   Number of occurrences of from string in one line       :  Many
+   Position of the line covering all the fields           :  Any
+   Coverage of the fields in one line                     :  Covered
+   Presence of the delimiter in the file                  :  Many
+   Presence of the delimiter in one line                  :  Present
+   Position of the delimiter in the file                  :  Any
+   number of file provided                                :  More than One
+   length of the to string                                :  More then One
+   content of the to string                               :  spaces
+   Presence of a file corresponding to the name           :  Present
+   Number of ranges                                       :  More than one
+   Presence of commas in a multi-range field list         :  Present and correctly positioned
+   Presence of commas in a single-range field list        :  <n/a>
+   Arrangement of ranges in a multi-range fields          :  Ascending
+   Presence of overlapping ranges in a multi-range fields :  Not present
+   Number of indices used to present a range              :  Two
+   Presence of a dash in a non-unary range                :  Present
+   Presence of a dash in a unary range                    :  <n/a>
+   Arrangement of indices in a non-unary range            :  Ascending
+   Value of a field index                                 :  >0
+   Presence of a specified delimiter                      :  Present
+   Length of the specified delimiter                      :  One
+   Presence of enclosing quotes                           :  Enclosed
+
