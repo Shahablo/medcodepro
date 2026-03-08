@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Demo | MedCode Pro</title>
+  <meta name="description" content="Request a MedCode Pro demo and we’ll walk through the workflow, coding guidance, and where value is commonly missed." />
+  <meta name="theme-color" content="#08111c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="demo">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-primary.svg" alt="" class="brand-logo" />
+        <span>MedCode Pro</span>
+      </a>
+      <button class="mobile-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="roi.html">ROI</a>
+        <a href="faq.html">FAQ</a>
+        <a href="demo.html" class="cta-btn nav-cta active-cta">Request a Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="inner-page">
+    <section class="page-hero compact-page-hero">
+      <div class="container narrow page-hero-copy">
+        <p class="eyebrow">Request a Demo</p>
+        <h1>See how MedCode Pro fits your surgical workflow.</h1>
+        <p>We’ll walk through the product, common coding misses, and how the workflow could fit your practice.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container demo-layout">
+        <div class="demo-info">
+          <h2>What we’ll cover</h2>
+          <ul class="check-list">
+            <li>How procedure review works</li>
+            <li>Where modifiers and additional levels get missed</li>
+            <li>How documentation prompts support cleaner coding</li>
+            <li>Questions about specialty fit and workflow</li>
+          </ul>
+          <div class="mini-note">
+            To make the form send email, set Cloudflare Pages environment variables for <code>RESEND_API_KEY</code>, <code>CONTACT_TO_EMAIL</code>, and optionally <code>CONTACT_FROM_EMAIL</code>.
+          </div>
+        </div>
+
+        <form class="demo-form" action="/api/contact" method="POST" id="demoForm">
+          <label>
+            Full name
+            <input type="text" name="name" required>
+          </label>
+
+          <label>
+            Work email
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            Practice or organization
+            <input type="text" name="company" required>
+          </label>
+
+          <label>
+            Specialty
+            <input type="text" name="specialty" placeholder="Orthopedics, spine, neurosurgery, etc.">
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell us a little about your workflow or what you’d like to see."></textarea>
+          </label>
+
+          <button type="submit" class="cta-btn hero-cta full-width">Request a Demo</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <a href="index.html" class="brand footer-brand">
+          <img src="assets/logo-primary.svg" alt="" class="brand-logo" />
+          <span>MedCode Pro</span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="product.html">Product</a>
+        <a href="roi.html">ROI</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
