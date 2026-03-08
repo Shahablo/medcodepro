@@ -1,46 +1,93 @@
-# MedCode Pro Website v3
+# MedCode Pro Website
 
-This version redesigns the site into a tighter multi-page experience with a single primary CTA, a dedicated demo page, and custom SVG brand visuals.
+This package contains an upgraded production-ready marketing site for Cloudflare Pages, plus a Pages Function that sends contact form submissions securely without exposing the destination email in the front-end.
 
-## Pages
-- `index.html` home
-- `problem.html`
-- `product.html`
-- `roi.html`
-- `faq.html`
-- `investors.html`
-- `demo.html`
-- `privacy.html`
-- `terms.html`
+## What changed in this version
 
-## Contact form setup on Cloudflare Pages
-The `Request a Demo` page posts to `/api/contact` which is implemented in `functions/api/contact.js`.
+- Sharper investor-facing copy
+- A dedicated `investors.html` page for VC follow-up
+- More aggressive physician and pilot conversion messaging
+- Screenshot-ready product sections with polished mock screens
+- Expanded form fields for demo, pilot, partnership, and investor routing
 
-Add these **Pages project environment variables**:
-- `RESEND_API_KEY`
-- `CONTACT_TO_EMAIL`
-- `CONTACT_FROM_EMAIL` optional
+## Files
 
-Recommended values:
-- `CONTACT_TO_EMAIL = shahabasiddique@gmail.com`
-- `CONTACT_FROM_EMAIL = MedCode Pro <noreply@medcodepro.ai>`
+- `index.html` — main landing page
+- `investors.html` — VC / investor overview page
+- `styles.css` — global styles
+- `script.js` — mobile nav + contact form submission
+- `privacy.html` — placeholder privacy page
+- `terms.html` — placeholder terms page
+- `functions/api/contact.js` — Cloudflare Pages Function for secure form submission
+- `assets/` — brand and generated visual assets
+- `robots.txt` — search engine rules
+- `sitemap.xml` — sitemap placeholder
 
-You will need a Resend account and a verified sender domain.
+## Contact Form Setup
 
-## Deploy on Cloudflare Pages
-1. Push this folder to GitHub.
-2. In Cloudflare: Workers & Pages → Create application → **Pages** → Connect to Git.
-3. Select the repo.
-4. Build command: leave blank.
+This form uses a Cloudflare Pages Function and the Resend email API.
+
+### 1. Create a Resend account
+- Go to https://resend.com
+- Create an API key
+- Verify a sending domain if you want branded email sending
+
+### 2. In Cloudflare Pages, add environment variables
+For your Pages project, set these environment variables:
+
+- `RESEND_API_KEY` = your Resend API key
+- `CONTACT_TO_EMAIL` = your receiving email address
+- `CONTACT_FROM_EMAIL` = optional sender address, for example `MedCode Pro <hello@medcodepro.ai>`
+
+If you do not set `CONTACT_FROM_EMAIL`, the function falls back to `MedCode Pro <onboarding@resend.dev>`.
+
+## Real screenshot swap instructions
+
+Right now the product gallery uses SVG mock screens:
+
+- `assets/screenshot-procedure.svg`
+- `assets/screenshot-note-support.svg`
+- `assets/screenshot-analytics.svg`
+
+When you have real product screenshots:
+
+1. Export them at similar aspect ratios
+2. Replace those files with PNG or JPG versions
+3. Update the `<img src>` paths in `index.html` if you change the file extension
+
+The layout is already designed to handle real screenshots without changing the surrounding section structure.
+
+## Cloudflare Pages Deployment
+
+### Option A: Direct upload
+1. Log in to Cloudflare
+2. Go to Workers & Pages
+3. Create a new Pages project
+4. Choose Direct Upload
+5. Upload the contents of this folder
+6. Add your custom domain in the project settings
+7. Add the environment variables above
+8. Redeploy after adding variables if needed
+
+### Option B: GitHub
+1. Push this folder to a GitHub repository
+2. In Cloudflare Pages, create a new Pages project from Git
+3. Connect the repo
+4. Build command: leave blank for static deployment
 5. Build output directory: `/`
-6. Root directory: leave blank.
-7. Deploy.
-8. Add the environment variables above.
-9. Redeploy.
-10. Connect custom domains `medcodepro.ai` and `www.medcodepro.ai`.
+6. Add the environment variables above
+7. Deploy
+
+## Recommended next replacements
+
+- Replace placeholder VOC quotes with real physician or billing quotes
+- Replace illustrative ROI figures with validated pilot data
+- Replace mock screenshots with real product screenshots
+- Add a Calendly link or scheduler if you want a stronger demo funnel
 
 ## Notes
-- The site intentionally uses a shorter home page and pushes detail into deeper pages.
-- The investor material is separated from the buyer-facing home page.
-- The old broken form state was removed. Any backend setup issue now appears only as a generic submit error.
-- Logo concepts are included in `assets/logo-concept-1.svg`, `logo-concept-2.svg`, and `logo-concept-3.svg`.
+
+- Update canonical URLs if your production domain differs
+- Replace placeholder legal copy with reviewed final language
+- The homepage is optimized for physician trust and demo requests
+- The investor page is optimized for VC follow-up after an intro or pitch meeting

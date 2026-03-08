@@ -1,48 +1,59 @@
-(function () {
-  const navToggle = document.querySelector('[data-nav-toggle]');
-  const navLinks = document.querySelector('[data-nav-links]');
-  if (navToggle && navLinks) {
-    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-  }
+const menuToggle = document.getElementById('menuToggle');
+const siteNav = document.getElementById('siteNav');
 
-  document.querySelectorAll('.faq-item').forEach((item) => {
-    const button = item.querySelector('.faq-question');
-    if (!button) return;
-    button.addEventListener('click', () => {
-      item.classList.toggle('open');
-    });
+if (menuToggle && siteNav) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = siteNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
+}
 
-  const form = document.querySelector('[data-demo-form]');
-  const status = document.querySelector('[data-form-status]');
-  if (form && status) {
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      status.textContent = 'Sending...';
-      status.className = 'form-status';
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+const submitButton = document.getElementById('submitButton');
 
-      const payload = Object.fromEntries(new FormData(form).entries());
+if (contactForm) {
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-      try {
-        const response = await fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
+    const formData = new FormData(contactForm);
+    const payload = Object.fromEntries(formData.entries());
 
-        const data = await response.json().catch(() => ({}));
+    if (!payload.name || !payload.email || !payload.message) {
+      formStatus.textContent = 'Please complete the required fields.';
+      formStatus.className = 'form-status error';
+      return;
+    }
 
-        if (!response.ok) {
-          throw new Error(data.error || 'We could not send your request.');
-        }
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+    formStatus.textContent = '';
+    formStatus.className = 'form-status';
 
-        status.textContent = data.message || 'Thanks. Your demo request has been sent.';
-        status.className = 'form-status success';
-        form.reset();
-      } catch (error) {
-        status.textContent = error.message || 'Something went wrong. Please try again.';
-        status.className = 'form-status error';
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Something went wrong.');
       }
-    });
-  }
-})();
+
+      formStatus.textContent = 'Thanks. Your message has been sent.';
+      formStatus.className = 'form-status success';
+      contactForm.reset();
+    } catch (error) {
+      formStatus.textContent = error.message || 'Unable to send your message right now.';
+      formStatus.className = 'form-status error';
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = 'Send message';
+    }
+  });
+}

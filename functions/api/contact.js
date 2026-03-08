@@ -1,81 +1,85 @@
 export async function onRequestPost(context) {
   try {
-    const body = await context.request.json();
-    const { name, email, role, organization, inquiry_type, message, source_page } = body || {};
+    const { request, env } = context;
+
+    const body = await request.json();
+    const name = String(body.name || '').trim();
+    const email = String(body.email || '').trim();
+    const role = String(body.role || '').trim();
+    const organization = String(body.organization || '').trim();
+    const inquiryType = String(body.inquiryType || 'General question').trim();
+    const sourcePage = String(body.sourcePage || 'unknown').trim();
+    const message = String(body.message || '').trim();
+    const honeypot = String(body.company || '').trim();
+
+    if (honeypot) {
+      return json({ ok: true }, 200);
+    }
 
     if (!name || !email || !message) {
-      return json({ error: 'Please complete the required fields.' }, 400);
+      return json({ error: 'Missing required fields.' }, 400);
     }
 
-    const RESEND_API_KEY = context.env.RESEND_API_KEY;
-    const CONTACT_TO_EMAIL = context.env.CONTACT_TO_EMAIL;
-    const CONTACT_FROM_EMAIL = context.env.CONTACT_FROM_EMAIL || 'MedCode Pro <noreply@medcodepro.ai>';
+    const resendApiKey = env.RESEND_API_KEY;
+    const toEmail = env.CONTACT_TO_EMAIL;
+    const fromEmail = env.CONTACT_FROM_EMAIL || 'MedCode Pro <onboarding@resend.dev>';
 
-    if (!RESEND_API_KEY || !CONTACT_TO_EMAIL) {
-      return json({ error: 'The demo request service is not configured.' }, 500);
+    if (!resendApiKey || !toEmail) {
+      return json({ error: 'Form is not configured yet.' }, 500);
     }
 
-    const text = [
-      `New MedCode Pro request`,
-      `Name: ${name}`,
-      `Email: ${email}`,
-      `Role: ${role || 'Not provided'}`,
-      `Organization: ${organization || 'Not provided'}`,
-      `Inquiry type: ${inquiry_type || 'Not provided'}`,
-      `Source page: ${source_page || 'unknown'}`,
-      '',
-      message
-    ].join('\n');
-
+    const subject = `[MedCode Pro] ${inquiryType} from ${name}`;
     const html = `
-      <div style="font-family: Inter, Arial, sans-serif; line-height:1.6; color:#0f223f;">
-        <h2>New MedCode Pro request</h2>
+      <div style="font-family:Arial,sans-serif;line-height:1.6;color:#10203a;max-width:720px;">
+        <h2>New MedCode Pro website inquiry</h2>
         <p><strong>Name:</strong> ${escapeHtml(name)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
         <p><strong>Role:</strong> ${escapeHtml(role || 'Not provided')}</p>
         <p><strong>Organization:</strong> ${escapeHtml(organization || 'Not provided')}</p>
-        <p><strong>Inquiry type:</strong> ${escapeHtml(inquiry_type || 'Not provided')}</p>
-        <p><strong>Source page:</strong> ${escapeHtml(source_page || 'unknown')}</p>
-        <hr />
-        <p>${escapeHtml(message).replace(/\n/g, '<br />')}</p>
-      </div>`;
+        <p><strong>Inquiry type:</strong> ${escapeHtml(inquiryType)}</p>
+        <p><strong>Source page:</strong> ${escapeHtml(sourcePage)}</p>
+        <p><strong>Message:</strong></p>
+        <div style="padding:12px 14px;background:#f5f8fc;border-radius:12px;border:1px solid #dbe5f1;white-space:pre-wrap;">${escapeHtml(message)}</div>
+      </div>
+    `;
 
     const resendResponse = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${RESEND_API_KEY}`,
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${resendApiKey}`
       },
       body: JSON.stringify({
-        from: CONTACT_FROM_EMAIL,
-        to: [CONTACT_TO_EMAIL],
+        from: fromEmail,
+        to: [toEmail],
         reply_to: email,
-        subject: `MedCode Pro demo request from ${name}`,
-        text,
+        subject,
         html
       })
     });
 
     if (!resendResponse.ok) {
-      const errorPayload = await resendResponse.text();
-      return json({ error: `Email delivery failed: ${errorPayload}` }, 500);
+      const errorText = await resendResponse.text();
+      return json({ error: `Email delivery failed: ${errorText}` }, 502);
     }
 
-    return json({ message: 'Thanks. Your demo request has been sent.' }, 200);
+    return json({ ok: true }, 200);
   } catch (error) {
-    return json({ error: error.message || 'Unexpected server error.' }, 500);
+    return json({ error: error.message || 'Server error.' }, 500);
   }
 }
 
 function json(payload, status = 200) {
   return new Response(JSON.stringify(payload), {
     status,
-    headers: { 'Content-Type': 'application/json' }
+    headers: {
+      'Content-Type': 'application/json'
+    }
   });
 }
 
-function escapeHtml(str) {
-  return String(str)
+function escapeHtml(value) {
+  return value
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
