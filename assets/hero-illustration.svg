@@ -1,0 +1,52 @@
+<svg width="900" height="760" viewBox="0 0 900 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="115" y1="70" x2="780" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12274A"/>
+      <stop offset="1" stop-color="#0A1224"/>
+    </linearGradient>
+    <linearGradient id="card" x1="196" y1="178" x2="696" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="180" y1="140" x2="620" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39D2C0"/>
+      <stop offset="1" stop-color="#87F2E8"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="495" y1="140" x2="720" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#246BFF"/>
+      <stop offset="1" stop-color="#5E92FF"/>
+    </linearGradient>
+    <filter id="shadow" x="130" y="104" width="632" height="554" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#03101E" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <circle cx="162" cy="126" r="84" fill="#39D2C0" fill-opacity="0.12"/>
+  <circle cx="708" cy="122" r="102" fill="#246BFF" fill-opacity="0.14"/>
+  <circle cx="742" cy="626" r="90" fill="#39D2C0" fill-opacity="0.12"/>
+  <g filter="url(#shadow)">
+    <rect x="160" y="134" width="572" height="494" rx="36" fill="url(#bg)"/>
+    <rect x="160.75" y="134.75" width="570.5" height="492.5" rx="35.25" stroke="white" stroke-opacity="0.08" stroke-width="1.5"/>
+  </g>
+  <rect x="200" y="172" width="492" height="138" rx="26" fill="url(#card)" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+  <rect x="228" y="204" width="138" height="18" rx="9" fill="#D9E6FA" fill-opacity="0.88"/>
+  <rect x="228" y="236" width="308" height="16" rx="8" fill="#B5C9E5" fill-opacity="0.58"/>
+  <rect x="228" y="266" width="252" height="16" rx="8" fill="#B5C9E5" fill-opacity="0.4"/>
+  <rect x="566" y="204" width="90" height="90" rx="24" fill="url(#teal)"/>
+  <path d="M604 226c18 0 32 14 32 32s-14 32-32 32-32-14-32-32 14-32 32-32Zm0 12c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20Z" fill="#092131"/>
+  <rect x="200" y="334" width="230" height="244" rx="26" fill="url(#card)" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+  <rect x="230" y="366" width="106" height="16" rx="8" fill="#D9E6FA" fill-opacity="0.88"/>
+  <rect x="230" y="399" width="170" height="14" rx="7" fill="#B5C9E5" fill-opacity="0.55"/>
+  <rect x="230" y="439" width="170" height="22" rx="11" fill="#39D2C0" fill-opacity="0.22" stroke="#77F0E3" stroke-opacity="0.4"/>
+  <rect x="230" y="478" width="138" height="22" rx="11" fill="#39D2C0" fill-opacity="0.16" stroke="#77F0E3" stroke-opacity="0.32"/>
+  <rect x="230" y="517" width="120" height="22" rx="11" fill="#39D2C0" fill-opacity="0.12" stroke="#77F0E3" stroke-opacity="0.25"/>
+  <rect x="452" y="334" width="240" height="154" rx="26" fill="url(#card)" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+  <rect x="482" y="366" width="112" height="16" rx="8" fill="#D9E6FA" fill-opacity="0.88"/>
+  <rect x="482" y="401" width="180" height="12" rx="6" fill="#B5C9E5" fill-opacity="0.48"/>
+  <path d="M484 451h180" stroke="#A9C1E4" stroke-opacity="0.35" stroke-width="10" stroke-linecap="round"/>
+  <path d="M484 451c18-8 29-34 51-34 18 0 24 21 42 21 22 0 25-26 49-26 19 0 24 16 38 16" stroke="url(#teal)" stroke-width="12" stroke-linecap="round"/>
+  <rect x="452" y="508" width="240" height="70" rx="22" fill="url(#blue)"/>
+  <rect x="482" y="532" width="100" height="12" rx="6" fill="#EAF1FF" fill-opacity="0.9"/>
+  <rect x="482" y="553" width="140" height="10" rx="5" fill="#D4E1FF" fill-opacity="0.66"/>
+  <path d="M735 302c34 0 62 28 62 62s-28 62-62 62c-12 0-22-3-32-9l-28 8 8-26c-6-10-10-23-10-35 0-34 28-62 62-62Z" fill="#39D2C0" fill-opacity="0.14"/>
+  <path d="M103 498c22 0 40 18 40 40s-18 40-40 40-40-18-40-40 18-40 40-40Z" fill="#246BFF" fill-opacity="0.14"/>
+</svg>

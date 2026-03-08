@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="obg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="1" stop-color="#10244A"/>
+    </linearGradient>
+    <linearGradient id="oacc" x1="706" y1="184" x2="1010" y2="478" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#246BFF"/>
+      <stop offset="1" stop-color="#39D2C0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#obg)"/>
+  <circle cx="140" cy="122" r="90" fill="#39D2C0" fill-opacity="0.1"/>
+  <circle cx="1032" cy="102" r="110" fill="#246BFF" fill-opacity="0.14"/>
+  <circle cx="1110" cy="538" r="100" fill="#39D2C0" fill-opacity="0.1"/>
+  <g>
+    <rect x="68" y="86" width="72" height="72" rx="22" fill="url(#oacc)"/>
+    <path d="M90 136V108h8l10 13 10-13h8v28h-8v-16l-10 13-10-13v16h-8Z" fill="#07101D"/>
+  </g>
+  <text x="68" y="236" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="72" font-weight="700">MedCode Pro</text>
+  <text x="68" y="310" fill="#D7E6FB" font-family="Arial, sans-serif" font-size="34">The coding copilot for surgeons</text>
+  <text x="68" y="372" fill="#AFC4E4" font-family="Arial, sans-serif" font-size="28">Revenue intelligence for procedural medicine.</text>
+  <rect x="690" y="126" width="384" height="292" rx="30" fill="#FFFFFF" fill-opacity="0.08"/>
+  <rect x="722" y="164" width="146" height="18" rx="9" fill="#E0ECFC"/>
+  <rect x="722" y="198" width="238" height="14" rx="7" fill="#B5C8E5" fill-opacity="0.5"/>
+  <rect x="722" y="242" width="176" height="22" rx="11" fill="#246BFF" fill-opacity="0.24"/>
+  <rect x="912" y="242" width="132" height="22" rx="11" fill="#39D2C0" fill-opacity="0.18"/>
+  <path d="M724 318H1038" stroke="#A9C1E4" stroke-opacity="0.22" stroke-width="12" stroke-linecap="round"/>
+  <path d="M724 318c20-10 36-38 60-38 20 0 26 20 46 20 22 0 28-26 56-26 24 0 32 20 44 20 14 0 28-8 44-18" stroke="url(#oacc)" stroke-width="14" stroke-linecap="round"/>
+</svg>
