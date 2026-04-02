@@ -1,9 +1,5 @@
-const header = document.querySelector('.site-header');
-
-const updateHeader = () => {
-  if (!header) return;
-  header.classList.toggle('is-scrolled', window.scrollY > 10);
-};
-
-updateHeader();
-window.addEventListener('scroll', updateHeader, { passive: true });
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.site-header');
+  if (window.scrollY > 8) header.classList.add('is-scrolled');
+  else header.classList.remove('is-scrolled');
+});
