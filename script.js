@@ -1,48 +1,72 @@
-const mobileToggle = document.querySelector('.mobile-toggle');
-const siteNav = document.querySelector('.site-nav');
+const contactForm = document.getElementById('audit-form');
+const formStatus = document.getElementById('formStatus');
+const submitButton = document.getElementById('submitButton');
 
-if (mobileToggle && siteNav) {
-  mobileToggle.addEventListener('click', () => {
-    const isOpen = siteNav.classList.toggle('open');
-    mobileToggle.setAttribute('aria-expanded', String(isOpen));
-  });
+function decodeEmail() {
+  return atob('ZnJlZXNoYWhhYkBnbWFpbC5jb20=');
 }
 
-const demoForm = document.getElementById('demoForm');
-const formStatus = document.getElementById('formStatus');
-
-if (demoForm) {
-  demoForm.addEventListener('submit', async (event) => {
+if (contactForm) {
+  contactForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    if (formStatus) {
-      formStatus.textContent = 'Sending...';
-    }
-
-    const formData = new FormData(demoForm);
+    const formData = new FormData(contactForm);
     const payload = Object.fromEntries(formData.entries());
 
+    if (!payload.name || !payload.email || !payload.organization || !payload.specialty) {
+      formStatus.textContent = 'Please complete the required fields.';
+      formStatus.className = 'form-status error';
+      return;
+    }
+
+    if (payload.company) {
+      formStatus.textContent = 'Submission blocked.';
+      formStatus.className = 'form-status error';
+      return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+    formStatus.textContent = '';
+    formStatus.className = 'form-status';
+
     try {
-      const response = await fetch('/api/contact', {
+      const submission = new FormData();
+      submission.append('_subject', 'New MedCode Pro audit request');
+      submission.append('_captcha', 'false');
+      submission.append('_template', 'table');
+      submission.append('name', payload.name);
+      submission.append('email', payload.email);
+      submission.append('organization', payload.organization);
+      submission.append('specialty', payload.specialty);
+      submission.append('caseVolume', payload.caseVolume || '');
+      submission.append('message', payload.message || '');
+      submission.append('sourcePage', payload.sourcePage || '');
+      submission.append('interest', payload.interest || '');
+
+      const response = await fetch(`https://formsubmit.co/ajax/${decodeEmail()}`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
+        headers: {
+          Accept: 'application/json'
+        },
+        body: submission
       });
 
-      const data = await response.json();
+      const result = await response.json();
 
-      if (!response.ok) {
-        throw new Error(data.error || 'Something went wrong.');
+      if (!response.ok || result.success === 'false') {
+        throw new Error('Unable to send your request right now.');
       }
 
-      demoForm.reset();
-      if (formStatus) {
-        formStatus.textContent = 'Thanks. Your demo request was sent successfully.';
-      }
+      formStatus.textContent = 'Thanks. Your audit request has been sent.';
+      formStatus.className = 'form-status success';
+      contactForm.reset();
     } catch (error) {
-      if (formStatus) {
-        formStatus.textContent = error.message || 'Unable to send right now. Please try again.';
-      }
+      formStatus.textContent = error.message || 'Unable to send your request right now.';
+      formStatus.className = 'form-status error';
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = 'Schedule my audit';
     }
   });
 }

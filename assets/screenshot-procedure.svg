@@ -1,0 +1,37 @@
+<svg width="1400" height="920" viewBox="0 0 1400 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1400" height="920" rx="36" fill="#EAF2FB"/>
+<rect x="34" y="34" width="1332" height="852" rx="30" fill="#0C1528"/>
+<rect x="66" y="66" width="1268" height="788" rx="26" fill="#F8FBFF"/>
+<rect x="98" y="104" width="260" height="690" rx="22" fill="#0F1B32"/>
+<rect x="130" y="140" width="196" height="20" rx="10" fill="#4FD1C5" fill-opacity="0.7"/>
+<rect x="130" y="188" width="150" height="12" rx="6" fill="#A9BEDF"/>
+<rect x="130" y="224" width="162" height="12" rx="6" fill="#A9BEDF"/>
+<rect x="130" y="260" width="140" height="12" rx="6" fill="#A9BEDF"/>
+<rect x="130" y="340" width="196" height="140" rx="18" fill="#182641"/>
+<rect x="154" y="370" width="120" height="14" rx="7" fill="#D9E6F8"/>
+<rect x="154" y="402" width="142" height="12" rx="6" fill="#6982A9"/>
+<rect x="154" y="432" width="118" height="12" rx="6" fill="#6982A9"/>
+<rect x="390" y="104" width="912" height="88" rx="22" fill="#F0F6FD"/>
+<rect x="424" y="132" width="250" height="16" rx="8" fill="#0F1B32"/>
+<rect x="424" y="160" width="520" height="12" rx="6" fill="#91A8C8"/>
+<rect x="390" y="222" width="560" height="260" rx="24" fill="#FFFFFF" stroke="#D6E2F1"/>
+<rect x="426" y="258" width="170" height="16" rx="8" fill="#0F1B32"/>
+<rect x="426" y="292" width="452" height="12" rx="6" fill="#9AB0CD"/>
+<rect x="426" y="322" width="412" height="12" rx="6" fill="#9AB0CD"/>
+<rect x="426" y="368" width="150" height="40" rx="20" fill="#EAF4FF"/>
+<rect x="586" y="368" width="162" height="40" rx="20" fill="#EAFBF6"/>
+<rect x="758" y="368" width="140" height="40" rx="20" fill="#FFF3E8"/>
+<rect x="986" y="222" width="316" height="260" rx="24" fill="#0F1B32"/>
+<rect x="1020" y="258" width="162" height="16" rx="8" fill="#FFFFFF"/>
+<rect x="1020" y="300" width="120" height="74" rx="18" fill="#1A2A47"/>
+<rect x="1154" y="300" width="114" height="74" rx="18" fill="#1A2A47"/>
+<rect x="1020" y="390" width="248" height="14" rx="7" fill="#91A8C8"/>
+<rect x="1020" y="420" width="220" height="14" rx="7" fill="#91A8C8"/>
+<rect x="390" y="514" width="912" height="280" rx="24" fill="#FFFFFF" stroke="#D6E2F1"/>
+<rect x="424" y="548" width="202" height="16" rx="8" fill="#0F1B32"/>
+<rect x="424" y="586" width="820" height="12" rx="6" fill="#9AB0CD"/>
+<rect x="424" y="616" width="774" height="12" rx="6" fill="#9AB0CD"/>
+<rect x="424" y="646" width="792" height="12" rx="6" fill="#9AB0CD"/>
+<rect x="424" y="694" width="192" height="54" rx="18" fill="#246BFF"/>
+<text x="470" y="728" fill="white" font-size="22" font-family="Arial, sans-serif">Review Case</text>
+</svg>

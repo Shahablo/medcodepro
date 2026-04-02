@@ -1,51 +1,88 @@
 export async function onRequestPost(context) {
   try {
     const { request, env } = context;
+
     const body = await request.json();
+    const name = String(body.name || '').trim();
+    const email = String(body.email || '').trim();
+    const role = String(body.role || '').trim();
+    const organization = String(body.organization || '').trim();
+    const inquiryType = String(body.inquiryType || 'General question').trim();
+    const sourcePage = String(body.sourcePage || 'unknown').trim();
+    const message = String(body.message || '').trim();
+    const honeypot = String(body.company || '').trim();
 
-    const { name, email, company, specialty, message } = body;
-
-    if (!name || !email || !company) {
-      return Response.json({ error: 'Missing required fields.' }, { status: 400 });
+    if (honeypot) {
+      return json({ ok: true }, 200);
     }
 
-    if (!env.RESEND_API_KEY || !env.CONTACT_TO_EMAIL) {
-      return Response.json(
-        { error: 'Form is not configured yet. Add Cloudflare environment variables.' },
-        { status: 500 }
-      );
+    if (!name || !email || !message) {
+      return json({ error: 'Missing required fields.' }, 400);
     }
 
-    const fromEmail = env.CONTACT_FROM_EMAIL || 'onboarding@resend.dev';
+    const resendApiKey = env.RESEND_API_KEY;
+    const toEmail = env.CONTACT_TO_EMAIL;
+    const fromEmail = env.CONTACT_FROM_EMAIL || 'MedCode Pro <onboarding@resend.dev>';
 
-    const emailResponse = await fetch('https://api.resend.com/emails', {
+    if (!resendApiKey || !toEmail) {
+      return json({ error: 'Form is not configured yet.' }, 500);
+    }
+
+    const subject = `[MedCode Pro] ${inquiryType} from ${name}`;
+    const html = `
+      <div style="font-family:Arial,sans-serif;line-height:1.6;color:#10203a;max-width:720px;">
+        <h2>New MedCode Pro website inquiry</h2>
+        <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+        <p><strong>Role:</strong> ${escapeHtml(role || 'Not provided')}</p>
+        <p><strong>Organization:</strong> ${escapeHtml(organization || 'Not provided')}</p>
+        <p><strong>Inquiry type:</strong> ${escapeHtml(inquiryType)}</p>
+        <p><strong>Source page:</strong> ${escapeHtml(sourcePage)}</p>
+        <p><strong>Message:</strong></p>
+        <div style="padding:12px 14px;background:#f5f8fc;border-radius:12px;border:1px solid #dbe5f1;white-space:pre-wrap;">${escapeHtml(message)}</div>
+      </div>
+    `;
+
+    const resendResponse = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${env.RESEND_API_KEY}`,
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${resendApiKey}`
       },
       body: JSON.stringify({
         from: fromEmail,
-        to: [env.CONTACT_TO_EMAIL],
-        subject: `New MedCode Pro demo request from ${name}`,
+        to: [toEmail],
         reply_to: email,
-        text: [
-          `Name: ${name}`,
-          `Email: ${email}`,
-          `Company: ${company}`,
-          `Specialty: ${specialty || 'Not provided'}`,
-          `Message: ${message || 'No message provided'}`
-        ].join('\n')
+        subject,
+        html
       })
     });
 
-    if (!emailResponse.ok) {
-      const errorText = await emailResponse.text();
-      return Response.json({ error: `Email send failed: ${errorText}` }, { status: 500 });
+    if (!resendResponse.ok) {
+      const errorText = await resendResponse.text();
+      return json({ error: `Email delivery failed: ${errorText}` }, 502);
     }
 
-    return Response.json({ success: true });
+    return json({ ok: true }, 200);
   } catch (error) {
-    return Response.json({ error: error.message || 'Unexpected server error.' }, { status: 500 });
+    return json({ error: error.message || 'Server error.' }, 500);
   }
+}
+
+function json(payload, status = 200) {
+  return new Response(JSON.stringify(payload), {
+    status,
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+}
+
+function escapeHtml(value) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
