@@ -1,14 +1,15 @@
-MedCode Pro landing page redesign
+MedCode Pro clean minimal landing page
 
-Files included:
+Files
 - index.html
 - styles.css
 - script.js
 - assets/step1.png
 - assets/step2.png
 
-CTA behavior:
-- Buttons open a mailto link to shahabasiddique@gmail.com
+To preview locally
+- Open index.html in a browser
 
-Suggested local replace command from C:\Users\shaha\medcodepro-clean:
-Copy-Item -Recurse -Force "D:\Downloads\medcodepro_redesign_v5\med_redo\*" .
+To deploy
+- Copy all files into the root of your landing page repo
+- Commit and push
