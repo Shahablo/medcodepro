@@ -3,7 +3,7 @@
   const recipient = ['shahabasiddique', 'gmail.com'].join('@');
   const subject = encodeURIComponent('MedCode Pro Demo Request');
   const body = encodeURIComponent(
-    'Hi Shahab,%0D%0A%0D%0AI would like to learn more about MedCode Pro.%0D%0A%0D%0APractice:%0D%0ASpecialty:%0D%0ABest callback number:%0D%0A%0D%0AThanks.'
+    'Hi Shahab,\n\nI would like to learn more about MedCode Pro.\n\nPractice:\nSpecialty:\nBest callback number:\n\nThanks.'
   );
 
   emailButtons.forEach((button) => {

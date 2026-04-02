@@ -1,36 +1,18 @@
-# MedCode Pro landing page redesign
+MedCode Pro landing page redesign v2
 
-This is a static landing page redesign inspired by a cleaner, more premium healthcare SaaS layout.
+Files included:
+- index.html
+- styles.css
+- script.js
+- assets/step1.png
+- assets/step2.png
 
-## Files
-- `index.html` – page structure
-- `styles.css` – full responsive styling
-- `script.js` – email CTA behavior
-- `assets/step1.png` – product screenshot
-- `assets/step2.png` – product screenshot
+How to use:
+1. Copy the contents of this folder into the root of your landing page project.
+2. Keep the assets folder at the same level as index.html.
+3. Open index.html locally to verify the page.
+4. Commit and push to your repo.
 
-## How to use
-### Option 1: Deploy as a static site
-Upload the folder contents to any static host:
-- Cloudflare Pages
-- Netlify
-- Vercel static deployment
-- GitHub Pages
-
-### Option 2: Drop into your current repo
-If your website is already static HTML/CSS/JS:
-1. Replace the existing landing page `index.html`
-2. Replace or merge `styles.css`
-3. Replace or merge `script.js`
-4. Copy the `assets` folder into the public root
-
-## Email CTA
-The CTA opens an email draft addressed to Shahab at Gmail without displaying the email address in the visible page copy.
-
-## Notes
-- The page is fully responsive and optimized for mobile.
-- The hero uses your attached product screenshot as the primary visual.
-- The layout is intentionally less boxy, with softer sections and stronger narrative flow.
-
-
-Updated: embedded YouTube hero video using the privacy-enhanced youtube-nocookie embed.
+Notes:
+- The CTA opens a mailto link to shahabasiddique@gmail.com without showing the email address in visible copy.
+- The embedded video uses YouTube nocookie with branding minimized as much as standard embed settings allow.
