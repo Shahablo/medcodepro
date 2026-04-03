@@ -1,197 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MedCode Pro | Revenue clarity before billing handoff</title>
-  <meta name="description" content="MedCode Pro helps procedural specialists identify billable codes, modifiers, and documentation before revenue is lost downstream." />
-  <meta property="og:title" content="MedCode Pro" />
-  <meta property="og:description" content="Revenue clarity before billing handoff." />
-  <meta property="og:image" content="/assets/og-image.svg" />
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <title>MedCode Pro | Capture what every procedure should earn</title>
+  <meta name="description" content="Revenue clarity before billing handoff for surgeons and procedural practices." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container nav-row">
-      <a class="brand brand-logo-link" href="/index.html" aria-label="MedCode Pro home">
-        <img src="/assets/logo-mark.svg" alt="" class="brand-mark-image" />
-        <span class="brand-wordmark">MedCode Pro</span>
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="MedCode Pro home">
+        <span class="brand-kicker">MedCode</span>
+        <span class="brand-main">Pro</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#platform">Platform</a>
-        <a href="#proof">Proof</a>
-        <a href="#resources">Resources</a>
-        <a class="button button-primary nav-button" href="mailto:shahabasiddique@gmail.com?subject=Request%20an%20audit%20from%20MedCode%20Pro">Request an audit</a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="#workflow">Workflow</a>
+        <a href="#product">Product</a>
+        <a href="#roi">ROI</a>
+        <a href="#faq">FAQ</a>
       </nav>
+
+      <a href="#contact" class="button button-small">Request an audit</a>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container hero-shell">
+  <main id="top">
+    <section class="hero section-soft">
+      <div class="container hero-grid">
         <div class="hero-copy">
+          <p class="eyebrow">Revenue clarity before billing handoff</p>
           <h1>Capture what every procedure should earn.</h1>
-          <div class="video-card card">
+          <p class="hero-text">
+            MedCode Pro helps surgeons and procedural teams identify billable codes, modifiers,
+            and documentation before revenue is lost downstream.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="button">Request an audit</a>
+            <a href="#workflow" class="button button-ghost">See the workflow</a>
+          </div>
+
+          <div class="hero-points">
+            <span>Spine and orthopedic first</span>
+            <span>Built for physician trust</span>
+            <span>Compliance-aware guidance</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="video-card">
             <div class="video-frame">
               <iframe
-                src="https://www.youtube.com/embed/5oIQDpZoZsE?controls=1&rel=0&modestbranding=1&playsinline=1"
-                title="MedCode Pro platform video"
-                allow="autoplay; encrypted-media; picture-in-picture"
+                class="video-embed"
+                src="https://www.youtube.com/embed/-9tpGzrSGlw?rel=0"
+                title="MedCode Pro product walkthrough"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
               </iframe>
             </div>
           </div>
 
-          <div class="ticker-wrap" aria-label="Provider quotes">
+          <div class="ticker-shell" aria-label="Early reviewer quotes">
             <div class="ticker-track">
-              <span>“I didn’t realize I could bill for that.”</span>
-              <span>“This gives surgeons confidence before the chart leaves their hands.”</span>
-              <span>“We found missed revenue without adding more admin work.”</span>
-              <span>“This fits the actual workflow better than another downstream billing tool.”</span>
-              <span>“I didn’t realize I could bill for that.”</span>
-              <span>“This gives surgeons confidence before the chart leaves their hands.”</span>
-              <span>“We found missed revenue without adding more admin work.”</span>
-              <span>“This fits the actual workflow better than another downstream billing tool.”</span>
+              <div class="ticker-item">“This helps at the exact moment the coding decision matters.”</div>
+              <div class="ticker-item">“Cleaner modifier capture could reduce a lot of billing back and forth.”</div>
+              <div class="ticker-item">“Physicians want confidence, not just more codes.”</div>
+              <div class="ticker-item">“This feels more useful than another downstream billing cleanup step.”</div>
+              <div class="ticker-item">“This helps at the exact moment the coding decision matters.”</div>
+              <div class="ticker-item">“Cleaner modifier capture could reduce a lot of billing back and forth.”</div>
+              <div class="ticker-item">“Physicians want confidence, not just more codes.”</div>
+              <div class="ticker-item">“This feels more useful than another downstream billing cleanup step.”</div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <p class="hero-kicker">Revenue clarity before billing handoff.</p>
-          <p class="hero-subcopy">MedCode Pro helps surgeons and procedural teams identify billable codes, modifiers, and documentation before revenue is lost downstream.</p>
-          <div class="hero-actions">
-            <a class="button button-secondary hero-button" href="#platform">See the platform</a>
+    <section id="workflow" class="section">
+      <div class="container narrow intro-block">
+        <p class="eyebrow">See the workflow</p>
+        <h2>A faster handoff from surgeon to billing.</h2>
+        <p>
+          The screenshots sit underneath each step now, so the message lands before the visual.
+          Both step blocks are sized up for easier scanning on desktop and mobile.
+        </p>
+      </div>
+
+      <div class="container steps-grid">
+        <article class="step-card large-step">
+          <span class="step-number">Step 1</span>
+          <h3>Identify the right CPT path before the chart leaves the surgeon.</h3>
+          <p>
+            Guide the provider through the key procedure details, surface likely code combinations,
+            and flag documentation elements that support a clean claim.
+          </p>
+          <div class="screen screen-tall">
+            <div class="screen-bar"></div>
+            <div class="screen-content">
+              <div class="screen-line w-80"></div>
+              <div class="screen-line w-55"></div>
+              <div class="screen-pill-row">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="screen-box large"></div>
+            </div>
           </div>
-        </div></div>
-    </section>
-
-    <section class="proof-strip-section" id="proof">
-      <div class="container proof-grid">
-        <article class="proof-card card">
-          <h3>Upstream coding guidance</h3>
-          <p>Surface coding decisions while the case details are still fresh, not after billing handoff.</p>
         </article>
-        <article class="proof-card card">
-          <h3>Case-specific reimbursement logic</h3>
-          <p>Guide complex procedural scenarios without forcing physicians to hunt through disconnected references.</p>
-        </article>
-        <article class="proof-card card">
-          <h3>Audit powered by the platform</h3>
-          <p>The audit uses the same MedCode Pro workflow your team can use prospectively, so it shows both what was missed and how to prevent it.</p>
-        </article>
-      </div>
-    </section>
 
-    <section class="section" id="platform">
-      <div class="container section-head wide-head">
-        <div>
-          <h2>Built to make revenue decisions clearer before they become rework.</h2>
-        </div>
-        <div>
-          <p>MedCode Pro is designed for procedural specialists who want more confidence around coding, cleaner documentation support, and a better handoff into billing.</p>
-        </div>
-      </div>
-
-      <div class="container solution-grid">
-        <article class="solution-card card">
-          <span class="icon-dot"></span>
-          <h3>Procedure guidance</h3>
-          <p>Walk through the case with structured logic that helps clarify what should be billable before the op note is finalized.</p>
-        </article>
-        <article class="solution-card card">
-          <span class="icon-dot"></span>
-          <h3>Modifier and code support</h3>
-          <p>Bring likely CPT combinations, add-ons, and modifier opportunities into one focused workflow.</p>
-        </article>
-        <article class="solution-card card">
-          <span class="icon-dot"></span>
-          <h3>Documentation prompts</h3>
-          <p>Highlight the note details that support cleaner billing handoff and reduce downstream ambiguity.</p>
-        </article>
-        <article class="solution-card card">
-          <span class="icon-dot"></span>
-          <h3>Audit entry point</h3>
-          <p>Start with recent cases, find missed revenue, then use the same workflow going forward to tighten future capture.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="container section-head wide-head preview-head">
-        <div>
-          <h2>How it works</h2>
-        </div>
-
-      </div>
-
-      <div class="container preview-grid">
-        <figure class="preview-card card">
-          <figcaption class="preview-copy">
-            <strong>Step 1</strong>
-            <span>Answer focused procedural questions that guide the case through a structured reimbursement workflow.</span>
-          </figcaption>
-          <img src="/assets/step1.png" alt="MedCode Pro step 1 screen" />
-        </figure>
-        <figure class="preview-card card">
-          <figcaption class="preview-copy">
-            <strong>Step 2</strong>
-            <span>Review codes, documentation support, and billing guidance in one cleaner handoff surface.</span>
-          </figcaption>
-          <img src="/assets/step2-cropped.png" alt="MedCode Pro step 2 screen" />
-        </figure>
-      </div>
-    </section>
-
-    <section class="section testimonial-section">
-      <div class="container testimonial-shell card">
-        <div class="testimonial-copy">
-          <h2>What early feedback keeps pointing to.</h2>
-          <blockquote>“The value is not just catching missed revenue. It is knowing what to document and what to bill before it gets reconstructed later.”</blockquote>
-          <p>This is why the audit matters. It creates immediate proof, and it ties directly into the product teams can keep using after the review.</p>
-        </div>
-        <div class="testimonial-stats">
-          <div class="mini-stat">
-            <span>Why this wedge works</span>
-            <strong>Closer to the point where revenue decisions are made</strong>
+        <article class="step-card large-step">
+          <span class="step-number">Step 2</span>
+          <h3>Hand billing a clearer recommendation with modifiers and note support.</h3>
+          <p>
+            Make downstream review faster by packaging the billable logic, modifier opportunities,
+            and documentation cues together in one structured output.
+          </p>
+          <div class="screen screen-short">
+            <div class="screen-bar"></div>
+            <div class="screen-content">
+              <div class="screen-line w-70"></div>
+              <div class="screen-line w-50"></div>
+              <div class="screen-box medium"></div>
+              <div class="screen-box small"></div>
+            </div>
           </div>
-          <div class="mini-stat">
-            <span>What the audit proves</span>
-            <strong>Missed opportunities in recent cases</strong>
-          </div>
-          <div class="mini-stat">
-            <span>What the platform does next</span>
-            <strong>Helps prevent the same leakage going forward</strong>
-          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="product" class="section section-soft">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">Why it works</p>
+          <h2>Built for physician credibility and billing usefulness.</h2>
+        </div>
+        <div class="feature-list">
+          <div class="feature-item"><strong>CPT intelligence</strong><span>Support accurate code selection in high-complexity procedural cases.</span></div>
+          <div class="feature-item"><strong>Modifier guidance</strong><span>Surface reimbursement opportunities often missed in manual review.</span></div>
+          <div class="feature-item"><strong>Documentation support</strong><span>Show the note detail that supports defensible coding decisions.</span></div>
+          <div class="feature-item"><strong>Compliance-aware framing</strong><span>Balance revenue capture with cleaner documentation and lower audit anxiety.</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section footer-cta-section" id="resources">
-      <div class="container footer-cta card">
+    <section id="roi" class="section">
+      <div class="container roi-card">
         <div>
-          <h2>Start with the audit. Keep the workflow.</h2>
-          <p>Review recent cases, surface missed revenue, then use MedCode Pro prospectively to bring more clarity into future billing handoff.</p>
+          <p class="eyebrow">ROI story</p>
+          <h2>One missed modifier can matter.</h2>
+          <p>
+            Position MedCode Pro as a cleaner path to stronger coding decisions, better handoff quality,
+            and more consistent reimbursement integrity.
+          </p>
         </div>
-        <div class="footer-cta-actions">
-          <a class="button button-primary hero-button" href="mailto:shahabasiddique@gmail.com?subject=Request%20an%20audit%20from%20MedCode%20Pro">Request an audit</a>
+        <div class="roi-metrics">
+          <div class="metric"><span>Without optimization</span><strong>$8,500</strong></div>
+          <div class="metric"><span>With stronger coding support</span><strong>$10,200</strong></div>
+          <div class="metric accent"><span>Illustrative difference</span><strong>$1,700</strong></div>
         </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section-soft">
+      <div class="container narrow">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions buyers are likely to ask.</h2>
+        <div class="faq-list">
+          <details open>
+            <summary>Who is MedCode Pro built for?</summary>
+            <p>Orthopedic surgeons, spine surgeons, procedural specialists, physician groups, practice admins, and revenue cycle teams that want stronger coding quality upstream.</p>
+          </details>
+          <details>
+            <summary>Does MedCode Pro replace coders or billers?</summary>
+            <p>No. It improves the quality of the upstream handoff so coding teams spend less time reconstructing what happened later.</p>
+          </details>
+          <details>
+            <summary>Is this only about revenue capture?</summary>
+            <p>No. The positioning is revenue optimization with compliance-aware guidance, not aggressive unsupported coding.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Request a demo, audit, or pilot conversation</p>
+          <h2>Let practices see the value quickly.</h2>
+          <p>
+            Use this block for the serverless form or your existing CTA embed. The layout is intentionally cleaner,
+            with the oversized header logo removed so the content can breathe on mobile.
+          </p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Work email" />
+          <input type="text" placeholder="Organization" />
+          <textarea placeholder="How can we help?"></textarea>
+          <button type="button" class="button">Request an audit</button>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-row">
-      <span>MedCode Pro</span>
+    <div class="container footer-wrap">
+      <div>
+        <strong>MedCode Pro</strong>
+        <p>The coding copilot for surgeons.</p>
+      </div>
       <div class="footer-links">
-        <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#product">Product</a>
+        <a href="#roi">ROI</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </footer>
-
-  <script src="/script.js"></script>
 </body>
 </html>
