@@ -700,6 +700,21 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .quote-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .quote-card {
+    padding: 16px 18px;
+    border-radius: 18px;
+  }
+
+  .quote-card p {
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
 }
 
 
