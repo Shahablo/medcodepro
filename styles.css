@@ -534,9 +534,9 @@ a { color: inherit; text-decoration: none; }
 .ticker-wrap{
   margin-top: 12px;
 }
-.hero-actions .button-primary{
+/*.hero-actions .button-primary{
   display:none;
-}
+}*/
 @media (max-width: 780px){
   .site-header{
     background: rgba(246,248,252,0.98);
