@@ -394,7 +394,7 @@ a { color: inherit; text-decoration: none; }
   .footer-cta-actions { margin-top: 4px; }
 }
 
-@media (max-width: 780px) {
+/*@media (max-width: 780px) {
   .nav-row {
     min-height: auto;
     padding: 10px 0 8px;
@@ -503,7 +503,7 @@ a { color: inherit; text-decoration: none; }
   .footer-row {
     flex-direction: column;
   }
-}
+}*/
 
 .brand-mark-image{
   width: 38px;
