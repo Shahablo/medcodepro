@@ -177,26 +177,26 @@ body {
   font-size: 1.18rem;
 }
 .quote-grid {
-  width: min(100%, 1280px);
-  margin: 14px auto 0;
+.quote-grid {
+  width: min(100%, 900px);
+  margin: 18px auto 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  gap: 12px;
 }
 
 .quote-card {
-  padding: 18px 20px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(18, 40, 76, 0.08);
-  box-shadow: var(--shadow-soft);
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--line);
 }
 
 .quote-card p {
   margin: 0;
-  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.4;
   color: var(--text);
-  line-height: 1.45;
+  font-weight: 500;
 }
 .video-card {
   width: min(100%, 1280px);
