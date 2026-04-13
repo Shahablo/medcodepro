@@ -180,7 +180,7 @@ body {
 }
 .quote-grid {
   width: min(100%, 900px);
-  margin: 18px auto 40px;
+  margin: 18px auto 50px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
