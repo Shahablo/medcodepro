@@ -15,11 +15,13 @@
 
 ## Activate the demo form
 
-The form posts to FormSubmit.co (free, no signup). On the first real submission:
-- FormSubmit emails you a confirmation link → click it → done.
-- After that, every submission lands in your inbox formatted as a table.
+The form tries to post to FormSubmit.co first. On the first real submission:
+- FormSubmit emails you a confirmation link; click it to activate delivery.
+- After activation, submissions should land in your inbox formatted as a table.
 
-To switch to a hashed FormSubmit URL (hides the email completely), edit the `getEndpoint` function near the bottom of `index.html` and `From the Founder.html`.
+If FormSubmit is unavailable or rejects the request, the page opens a prefilled email draft so prospects can still send the same request details directly.
+
+To switch to another form provider, edit `getEndpoint`, `submitToFormEndpoint`, and the fallback recipient near the bottom of `index.html` and `From the Founder.html`.
 
 ## Files
 - `index.html` — main homepage

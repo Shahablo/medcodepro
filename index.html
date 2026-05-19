@@ -1566,6 +1566,7 @@
     var getEndpoint = function () {
       return 'https://formsubmit.co/ajax/' + atob(R);
     };
+    var getRecipient = function () { return atob(R); };
 
     var modal   = document.getElementById('demoModal');
     var form    = document.getElementById('demoForm');
@@ -1574,6 +1575,66 @@
     var status  = document.getElementById('demoStatus');
     var submit  = document.getElementById('demoSubmit');
     var titleEl = document.getElementById('demoTitle');
+
+    function buildEmailHref(payload) {
+      var body = [
+        'New MedCode Pro website request',
+        '',
+        'Name: ' + payload.name,
+        'Organization: ' + payload.organization,
+        'Email: ' + payload.email,
+        'Phone: ' + (payload.phone || 'Not provided'),
+        'Role: ' + (payload.role || 'Not provided'),
+        'Specialty: ' + (payload.specialty || 'Not provided'),
+        '',
+        'Message:',
+        payload.message || 'Not provided'
+      ].join('\n');
+
+      return 'mailto:' + getRecipient() +
+        '?subject=' + encodeURIComponent(payload._subject) +
+        '&body=' + encodeURIComponent(body);
+    }
+
+    function showEmailFallback(payload, shouldOpenEmail) {
+      var href = buildEmailHref(payload);
+      submit.disabled = false;
+      submit.textContent = 'Send Request';
+      status.className = 'demo-status err';
+      status.innerHTML = 'We could not send this automatically. Please ' +
+        '<a href="#" id="demoFallbackLink" style="color:inherit;text-decoration:underline;">email the request directly</a>.';
+      var link = document.getElementById('demoFallbackLink');
+      if (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.location.href = href;
+        });
+      }
+      if (shouldOpenEmail) {
+        setTimeout(function () { window.location.href = href; }, 120);
+      }
+    }
+
+    function submitToFormEndpoint(payload) {
+      var controller = window.AbortController ? new AbortController() : null;
+      var timeout = setTimeout(function () {
+        if (controller) controller.abort();
+      }, 8000);
+
+      return fetch(getEndpoint(), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload),
+        signal: controller ? controller.signal : undefined
+      }).then(function (r) {
+        clearTimeout(timeout);
+        if (!r.ok) throw new Error('Network response was not ok');
+        return r.json();
+      }).catch(function (err) {
+        clearTimeout(timeout);
+        throw err;
+      });
+    }
 
     function openModal(kind) {
       // Customize headline for the audit CTA
@@ -1663,32 +1724,13 @@
         _captcha: 'false'
       };
 
-      fetch(getEndpoint(), {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(payload)
-      })
-      .then(function (r) {
-        if (!r.ok) throw new Error('Network response was not ok');
-        return r.json();
-      })
+      submitToFormEndpoint(payload)
       .then(function () {
         formWrap.style.display = 'none';
         success.classList.add('is-on');
       })
       .catch(function () {
-        submit.disabled = false;
-        submit.textContent = 'Send Request';
-        status.className = 'demo-status err';
-        status.innerHTML = 'Something went wrong. Please email us directly at ' +
-          '<a href="#" id="demoFallbackLink" style="color:inherit;text-decoration:underline;">our team</a>.';
-        var link = document.getElementById('demoFallbackLink');
-        if (link) {
-          link.addEventListener('click', function (e) {
-            e.preventDefault();
-            window.location.href = 'mailto:' + atob(R);
-          });
-        }
+        showEmailFallback(payload, true);
       });
     });
   })();
