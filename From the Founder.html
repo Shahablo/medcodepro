@@ -556,7 +556,7 @@
 <script>
   (function () {
     var R = 'c2hhaGFiQG1lZGNvZGVwcm8uYWk=';
-    var getEndpoint = function () { return 'https://formsubmit.co/ajax/' + atob(R); };
+    var getEndpoint = function () { return 'https://formspree.io/f/xdajkpwp'; };
     var getRecipient = function () { return atob(R); };
     var modal = document.getElementById('demoModal');
     var form = document.getElementById('demoForm');
@@ -670,8 +670,7 @@
         role: form.elements['role'].value,
         specialty: form.elements['specialty'].value,
         message: form.elements['message'].value.trim(),
-        _subject: 'MedCode Pro — new demo request from ' + name + ' (' + org + ')',
-        _template: 'table', _captcha: 'false'
+        _subject: 'MedCode Pro - new demo request from ' + name + ' (' + org + ')'
       };
       submitToFormEndpoint(payload)
       .then(function () {

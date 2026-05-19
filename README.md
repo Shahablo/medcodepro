@@ -13,13 +13,17 @@
 - In Pages settings, add the domain.
 - At your DNS provider, add a CNAME record pointing `www` to `<your-user>.github.io`, and A records for the apex domain pointing to GitHub's IPs (185.199.108.153, .109.153, .110.153, .111.153).
 
-## Activate the demo form
+## Demo form
 
-The form tries to post to FormSubmit.co first. On the first real submission:
-- FormSubmit emails you a confirmation link; click it to activate delivery.
-- After activation, submissions should land in your inbox formatted as a table.
+The form posts to Formspree at:
 
-If FormSubmit is unavailable or rejects the request, the page opens a prefilled email draft so prospects can still send the same request details directly.
+```text
+https://formspree.io/f/xdajkpwp
+```
+
+Submissions send named fields including name, organization, email, phone, role, specialty, and message. The page handles success in-place, so Formspree redirect/template settings are not required for the website modal flow.
+
+If Formspree is unavailable or rejects the request, the page opens a prefilled email draft so prospects can still send the same request details directly.
 
 To switch to another form provider, edit `getEndpoint`, `submitToFormEndpoint`, and the fallback recipient near the bottom of `index.html` and `From the Founder.html`.
 

@@ -1560,11 +1560,11 @@
 
 <script>
   (function () {
-    // Email recipient is base64-encoded so it is not visible in page source.
-    // Decoded at submit time and sent to FormSubmit (free, no signup).
+    // Email recipient is base64-encoded for the mailto fallback.
+    // Primary submissions go to Formspree; the fallback opens a prefilled email.
     var R = 'c2hhaGFiQG1lZGNvZGVwcm8uYWk=';
     var getEndpoint = function () {
-      return 'https://formsubmit.co/ajax/' + atob(R);
+      return 'https://formspree.io/f/xdajkpwp';
     };
     var getRecipient = function () { return atob(R); };
 
@@ -1719,9 +1719,7 @@
         role: form.elements['role'].value,
         specialty: form.elements['specialty'].value,
         message: form.elements['message'].value.trim(),
-        _subject: 'MedCode Pro — new demo request from ' + name + ' (' + org + ')',
-        _template: 'table',
-        _captcha: 'false'
+        _subject: 'MedCode Pro - new demo request from ' + name + ' (' + org + ')'
       };
 
       submitToFormEndpoint(payload)
