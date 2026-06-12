@@ -82,13 +82,22 @@
     background: var(--blue); color: #fff;
     box-shadow: var(--shadow-btn);
   }
-  .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); }
+  .btn-primary:hover {
+    background: var(--blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(37,99,235,0.32);
+  }
   .btn-outline {
     background: #fff; color: var(--blue); border-color: var(--blue);
   }
   .btn-outline:hover { background: var(--blue-tint); }
   .btn-sm { padding: 11px 18px; font-size: 14px; }
-  .btn-lg { padding: 16px 26px; font-size: 16px; }
+  .btn-lg { padding: 18px 32px; font-size: 17px; }
+  .btn-arrow::after {
+    content: '→'; margin-left: 9px; display: inline-block;
+    transition: transform 0.18s ease;
+  }
+  .btn-arrow:hover::after { transform: translateX(4px); }
 
   /* ---------- Header ---------- */
   header.site-header {
@@ -125,7 +134,7 @@
   /* ---------- Hero (full image visible, text overlay on left) ---------- */
   .hero {
     position: relative;
-    padding-top: 32px; /* clearance from sticky nav so head sits below it */
+    padding-top: 0; /* image meets the sticky nav — no dead strip */
     background: #fff;
     overflow: hidden;
   }
@@ -133,34 +142,38 @@
     width: 100%;
     height: auto;
     display: block;
+    margin-top: -2.5%; /* crop the photo's empty top band */
   }
   .hero-overlay {
     position: absolute;
-    inset: 32px 0 0 0;
+    inset: 0;
     display: flex;
     align-items: flex-start;
     pointer-events: none;
-    padding-top: 44px; /* sits high so the provider's gaze lands on the headline */
+    padding-top: 52px; /* sits high so the provider's gaze lands on the headline */
   }
   .hero-overlay > .container {
     width: 100%;
   }
   .hero-copy {
-    max-width: 540px;
+    max-width: 610px;
     pointer-events: auto;
   }
   .hero-eyebrow { margin-bottom: 28px; }
   .hero h1 {
-    font-size: clamp(44px, 5.4vw, 64px);
+    font-size: clamp(46px, 5.8vw, 70px);
     font-weight: 800;
     line-height: 1.05;
     letter-spacing: -0.035em;
     margin-bottom: 24px;
   }
+  /* masked line reveal: each headline line rises out of its own clip */
+  .hero h1 .hl { display: block; overflow: hidden; }
+  .hero h1 .hl-inner { display: block; }
   .hero-sub {
-    font-size: 20px; line-height: 1.5;
+    font-size: 21px; line-height: 1.5;
     color: var(--body); font-weight: 500;
-    margin-bottom: 16px; max-width: 480px;
+    margin-bottom: 16px; max-width: 520px;
   }
   .hero-body {
     font-size: 17px; line-height: 1.6;
@@ -170,7 +183,7 @@
   .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
   .hero-stats { display: flex; gap: 28px; margin-top: 36px; }
   .hero-stat { padding-left: 14px; border-left: 2px solid var(--line); }
-  .hero-stat b { display: block; font-size: 20px; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; }
+  .hero-stat b { display: block; font-size: 23px; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; }
   .hero-stat span { font-size: 13px; color: var(--body-light); }
 
   /* Floating revenue card */
@@ -289,41 +302,69 @@
   .feature-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
+    gap: 18px;
   }
   .fcard {
+    position: relative; overflow: hidden;
     background: rgba(255,255,255,0.08);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 16px;
-    padding: 22px 24px;
-    transition: background 0.2s, transform 0.2s, border-color 0.2s;
+    border-radius: 18px;
+    padding: 28px 26px;
+    transition: background 0.25s, transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+  }
+  /* one-shot light sweep across each card after the panel lands */
+  .fcard::before {
+    content: '';
+    position: absolute; top: -60%; left: -70%;
+    width: 55%; height: 220%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.16), transparent);
+    transform: translateX(0) rotate(14deg);
+    pointer-events: none;
+  }
+  .collab-panel.lit .fcard::before { animation: cardSheen 1.1s ease-in-out forwards; }
+  .collab-panel.lit .fcard:nth-child(2)::before { animation-delay: 0.13s; }
+  .collab-panel.lit .fcard:nth-child(3)::before { animation-delay: 0.26s; }
+  .collab-panel.lit .fcard:nth-child(4)::before { animation-delay: 0.39s; }
+  @keyframes cardSheen {
+    from { transform: translateX(0) rotate(14deg); }
+    to { transform: translateX(420%) rotate(14deg); }
   }
   .fcard:hover {
-    background: rgba(255,255,255,0.14);
-    border-color: rgba(255,255,255,0.32);
-    transform: translateY(-2px);
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.38);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(8,42,26,0.28);
   }
   .fcard-icon {
-    width: 40px; height: 40px; border-radius: 11px;
+    width: 48px; height: 48px; border-radius: 13px;
     background: rgba(255,255,255,0.18);
     display: flex; align-items: center; justify-content: center;
     color: #fff;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
+    animation: fcardBob 4.5s ease-in-out infinite;
   }
-  .fcard-icon svg { width: 20px; height: 20px; }
+  .fcard:nth-child(2) .fcard-icon { animation-delay: -1.1s; }
+  .fcard:nth-child(3) .fcard-icon { animation-delay: -2.2s; }
+  .fcard:nth-child(4) .fcard-icon { animation-delay: -3.3s; }
+  @keyframes fcardBob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+  @media (prefers-reduced-motion: reduce) { .fcard-icon { animation: none; } }
+  .fcard-icon svg { width: 24px; height: 24px; }
   .fcard h4 {
-    font-size: 20px; font-weight: 700;
+    font-size: 21px; font-weight: 700;
     color: #fff;
     letter-spacing: -0.012em;
-    margin: 0 0 6px;
+    margin: 0 0 7px;
     line-height: 1.25;
   }
   .fcard p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: rgba(255,255,255,0.85);
+    font-size: 16.5px;
+    line-height: 1.55;
+    color: rgba(255,255,255,0.88);
     margin: 0;
     max-width: none;
   }
@@ -394,6 +435,14 @@
     background: #259152;
   }
   .fv-play svg { margin-left: 6px; }
+  /* soft attention ring on the play button; pauses on hover */
+  @keyframes playPulse {
+    0%, 100% { box-shadow: 0 18px 40px rgba(45,156,95,0.40), 0 0 0 0 rgba(45,156,95,0.32); }
+    50% { box-shadow: 0 18px 40px rgba(45,156,95,0.40), 0 0 0 18px rgba(45,156,95,0); }
+  }
+  .fv-play { animation: playPulse 2.8s ease-out infinite; }
+  .fv-play:hover { animation-play-state: paused; }
+  @media (prefers-reduced-motion: reduce) { .fv-play { animation: none; } }
   .fv-meta {
     position: absolute;
     bottom: 24px; left: 28px;
@@ -1123,17 +1172,17 @@
     <div class="container">
       <div class="hero-copy">
         <div class="eyebrow hero-eyebrow">Clinical Revenue Intelligence</div>
-        <h1>Find missed revenue<br>before claims go out.</h1>
+        <h1><span class="hl"><span class="hl-inner">Find missed revenue</span></span><span class="hl"><span class="hl-inner">before claims go out.</span></span></h1>
         <p class="hero-sub">AI-assisted coding and revenue intelligence for specialty practices.</p>
         <p class="hero-body">MedCode Pro helps providers, billers, and auditors identify coding opportunities, documentation gaps, and billing risk before claims are submitted.</p>
         <div class="hero-ctas">
-          <button class="btn btn-primary btn-lg" type="button" data-demo-open>Request a Demo</button>
+          <button class="btn btn-primary btn-lg btn-arrow" type="button" data-demo-open>Request a Demo</button>
           <a class="btn btn-outline btn-lg" href="#audit">Risk-Free Audit</a>
         </div>
         <div class="hero-stats">
           <div class="hero-stat"><b>8–12%</b><span>avg. revenue recovered</span></div>
-          <div class="hero-stat"><b>99.2%</b><span>coding accuracy</span></div>
-          <div class="hero-stat"><b>48h</b><span>audit turnaround</span></div>
+          <div class="hero-stat"><b data-count="99.2" data-decimals="1" data-suffix="%">99.2%</b><span>coding accuracy</span></div>
+          <div class="hero-stat"><b data-count="48" data-suffix="h">48h</b><span>audit turnaround</span></div>
         </div>
       </div>
     </div>
@@ -1294,7 +1343,6 @@
             <div class="audit-mock-head-title">Audit Report · 60 days</div>
             <div class="audit-mock-head-meta">Orthopedic Spine · Pacific Spine Group</div>
           </div>
-          <div class="audit-mock-head-meta">48-hour turnaround</div>
         </div>
 
         <div class="audit-row">
@@ -1852,19 +1900,64 @@
   if (reduced || typeof gsap === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger);
 
-  // Hero entrance — once, fast, done.
-  gsap.from('.hero-copy > *', { y: 18, opacity: 0, duration: 0.55, stagger: 0.08, ease: 'power2.out' });
-  gsap.from('.float-card', { y: 26, opacity: 0, duration: 0.6, delay: 0.4, ease: 'power2.out' });
+  // Above the fold: one choreographed wake-up. Photo settles, headline
+  // lines rise out of their clips, copy follows, the card finds the money.
+  var heroTl = gsap.timeline({ defaults: { ease: 'power2.out' } });
+  heroTl
+    .from('.hero-image', { scale: 1.05, duration: 1.4, transformOrigin: '50% 30%' }, 0)
+    .from('.hero h1 .hl-inner', { yPercent: 110, duration: 0.7, stagger: 0.13, ease: 'power3.out' }, 0.1)
+    .from('.hero-sub, .hero-body, .hero-ctas, .hero-stats', { y: 16, opacity: 0, duration: 0.5, stagger: 0.09 }, 0.45)
+    .from('.float-card', { y: 28, opacity: 0, duration: 0.6 }, 0.55);
 
-  // Hero card dollar figure counts itself in on load.
-  document.querySelectorAll('.float-card [data-money]').forEach(function (el) {
-    var target = parseFloat(el.getAttribute('data-money'));
+  var floatAmount = document.querySelector('.float-card [data-money]');
+  if (floatAmount) {
+    var fa = { v: 0 };
+    heroTl.to(fa, {
+      v: parseFloat(floatAmount.getAttribute('data-money')), duration: 1.1, ease: 'expo.out',
+      onUpdate: function () { floatAmount.textContent = '$' + Math.round(fa.v).toLocaleString('en-US'); }
+    }, 0.95);
+  }
+  heroTl.from('.float-card-badge', { scale: 0.4, opacity: 0, duration: 0.35, ease: 'back.out(2)' }, 1.75);
+
+  // Hero proof stats count in sequence with the entrance.
+  document.querySelectorAll('.hero-stats [data-count]').forEach(function (el, i) {
+    var t = parseFloat(el.getAttribute('data-count'));
+    var dec = parseInt(el.getAttribute('data-decimals') || '0', 10);
+    var suf = el.getAttribute('data-suffix') || '';
     var o = { v: 0 };
-    gsap.to(o, {
-      v: target, duration: 1.2, delay: 0.7, ease: 'power3.out',
-      onUpdate: function () { el.textContent = '$' + Math.round(o.v).toLocaleString('en-US'); }
-    });
+    heroTl.to(o, {
+      v: t, duration: 0.9, ease: 'power3.out',
+      onUpdate: function () { el.textContent = o.v.toFixed(dec) + suf; }
+    }, 0.9 + i * 0.12);
   });
+
+  // The hero photo drifts slower than the page — depth, not decoration.
+  gsap.to('.hero-image', {
+    yPercent: 5, ease: 'none',
+    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+  });
+
+  // Below the fold: the green panel sweeps in over the clinic photo,
+  // copy rises, the four cards cascade. The photo gets a slow counter-drift.
+  var collab = document.querySelector('.collab-band');
+  if (collab) {
+    gsap.set('.collab-image', { scale: 1.08 });
+    gsap.to('.collab-image', {
+      yPercent: -4, ease: 'none',
+      scrollTrigger: { trigger: collab, start: 'top bottom', end: 'bottom top', scrub: true }
+    });
+    var ctl = gsap.timeline({
+      scrollTrigger: { trigger: collab, start: 'top 68%', once: true },
+      defaults: { ease: 'power3.out' }
+    });
+    ctl.from('.collab-panel', { x: 90, opacity: 0, duration: 0.75 }, 0)
+       .from('.collab-copy h2, .collab-copy > p', { y: 18, opacity: 0, duration: 0.5, stagger: 0.1, ease: 'power2.out' }, 0.3)
+       .from('.fcard', { y: 30, opacity: 0, scale: 0.95, duration: 0.55, stagger: 0.11, ease: 'power3.out' }, 0.45)
+       .call(function () {
+         var p = collab.querySelector('.collab-panel');
+         if (p) p.classList.add('lit');
+       }, null, 1.15);
+  }
 
   // The audit report performs when it scrolls into view: findings land
   // one by one with a green scan-flash, RVU deltas roll up, severity pills
@@ -1972,8 +2065,9 @@
     });
   }
 
-  // Stat count-ups (data moat band).
+  // Stat count-ups (data moat band). Hero stats are sequenced above.
   document.querySelectorAll('[data-count]').forEach(function (el) {
+    if (el.closest('.hero')) return;
     var t = parseFloat(el.getAttribute('data-count'));
     var dec = parseInt(el.getAttribute('data-decimals') || '0', 10);
     var suf = el.getAttribute('data-suffix') || '';
@@ -1986,7 +2080,7 @@
   });
 
   // Uniform section reveals — small, fast, play once.
-  var reveals = ['.section-head', '.fcard', '.audit-copy',
+  var reveals = ['.section-head', '.audit-copy',
                  '.tech-card', '.moat-band', '.team-card', '.fv-head', '.fv-card',
                  '.cta-strip .container'];
   gsap.utils.toArray(reveals.join(',')).forEach(function (el) {
