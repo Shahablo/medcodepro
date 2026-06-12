@@ -32,7 +32,7 @@
     --shadow-btn: 0 6px 16px rgba(37,99,235,0.22);
     --r-card: 14px;
     --r-btn: 8px;
-    --max: 1640px;
+    --max: 1200px;
   }
 
   /* ---------- Base ---------- */
@@ -52,8 +52,8 @@
   p { margin: 0; color: var(--body); }
   button { font-family: inherit; cursor: pointer; }
 
-  .container { max-width: var(--max); margin: 0 auto; padding: 0 80px; }
-  .container-wide { max-width: 1720px; margin: 0 auto; padding: 0 56px; }
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 36px; }
+  .container-wide { max-width: 1280px; margin: 0 auto; padding: 0 36px; }
 
   .eyebrow {
     display: inline-flex; align-items: center; gap: 10px;
@@ -65,18 +65,7 @@
     content: ''; width: 7px; height: 7px; border-radius: 50%;
     background: var(--green);
   }
-  /* outdent the eyebrow's bullet slightly left of the headline column */
-  .eyebrow.hero-eyebrow,
-  .eyebrow.section-eyebrow {
-    margin-left: -17px;
-  }
-  .team-head .eyebrow,
-  .moat-band .eyebrow,
-  .audit-copy .eyebrow {
-    margin-left: -17px;
-  }
-
-  /* Hide all green section eyebrows ("Team", "Data Moat", etc.) */
+  /* Section eyebrows stay hidden — headings carry the sections on their own. */
   .eyebrow { display: none; }
 
   /* ---------- Buttons ---------- */
@@ -151,7 +140,7 @@
     display: flex;
     align-items: flex-start;
     pointer-events: none;
-    padding-top: 64px; /* sits high so the provider's gaze lands on the headline */
+    padding-top: 44px; /* sits high so the provider's gaze lands on the headline */
   }
   .hero-overlay > .container {
     width: 100%;
@@ -179,6 +168,10 @@
     margin-bottom: 32px; max-width: 480px;
   }
   .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-stats { display: flex; gap: 28px; margin-top: 36px; }
+  .hero-stat { padding-left: 14px; border-left: 2px solid var(--line); }
+  .hero-stat b { display: block; font-size: 20px; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; }
+  .hero-stat span { font-size: 13px; color: var(--body-light); }
 
   /* Floating revenue card */
   .float-card {
@@ -432,7 +425,7 @@
   /* ---------- Scroll cue band (draws eye into the next section) ---------- */
   .scroll-cue {
     position: relative;
-    padding: 96px 0 120px;
+    padding: 72px 0 96px;
     background: linear-gradient(180deg, #d4ecdc 0%, #e6f3ec 45%, #ffffff 100%);
     text-align: center;
     overflow: hidden;
@@ -476,14 +469,14 @@
   }
 
   /* ---------- Section helpers ---------- */
-  section { padding: 88px 0; }
+  section { padding: 80px 0; }
   .section-head {
     display: grid; grid-template-columns: 1.1fr 1fr;
-    gap: 96px; align-items: end;
-    margin-bottom: 48px;
+    gap: 48px; align-items: end;
+    margin-bottom: 36px;
   }
   .section-head h2 {
-    font-size: clamp(34px, 4vw, 50px);
+    font-size: clamp(32px, 3.6vw, 44px);
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -0.028em;
@@ -497,35 +490,88 @@
   .section-eyebrow { margin-bottom: 16px; }
 
   /* ---------- Workflow cards ---------- */
-  .workflows {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 64px;
-    padding: 0 16px;
+  /* ---------- Workflow pipeline: one chart, three hands, one cycle ----------
+     A single panel instead of three identical cards. An encounter chart
+     travels the rail as you scroll; each role station wakes as it arrives. */
+  .wf-panel {
+    position: relative;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    overflow: hidden;
   }
-  .wf-card {
-    background: transparent;
-    border: none;
-    padding: 0;
-    box-shadow: none;
-    display: flex; flex-direction: column; gap: 16px;
-    transition: transform 0.2s;
+  .wf-rail {
+    position: relative;
+    height: 64px;
+    background: #fafbfd;
+    border-bottom: 1px solid var(--line-soft);
   }
-  .wf-card:hover { transform: translateY(-2px); }
-  .wf-card:hover .arrow { transform: translateX(6px); }
+  .wf-track {
+    position: absolute; left: 36px; right: 36px; top: 50%;
+    height: 2px; margin-top: -1px;
+    background: var(--line);
+    border-radius: 2px;
+  }
+  .wf-track-fill {
+    position: absolute; inset: 0;
+    background: linear-gradient(90deg, var(--blue), var(--green));
+    transform-origin: left center; transform: scaleX(0);
+    border-radius: 2px;
+  }
+  .wf-chart-chip {
+    position: absolute; top: 50%; left: 36px;
+    transform: translateY(-50%);
+    display: inline-flex; align-items: center; gap: 7px;
+    background: #fff;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-card);
+    border-radius: 999px;
+    padding: 7px 14px;
+    font-size: 12.5px; font-weight: 600; color: var(--ink-soft);
+    white-space: nowrap;
+    z-index: 2;
+    transition: opacity 0.25s;
+  }
+  .wf-chart-chip svg { width: 13px; height: 13px; color: var(--blue); flex-shrink: 0; }
+  .wf-done {
+    position: absolute; top: 50%; right: 36px;
+    transform: translateY(-50%) scale(0.6);
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--green-light); color: var(--green);
+    border-radius: 999px; padding: 7px 13px;
+    font-size: 12px; font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .wf-done.is-on { opacity: 1; transform: translateY(-50%) scale(1); }
+  .wf-done svg { width: 11px; height: 11px; flex-shrink: 0; }
+  .wf-cols { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .wf-col {
+    padding: 32px 32px 36px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .wf-col + .wf-col { border-left: 1px solid var(--line-soft); }
   .wf-icon {
-    width: 64px; height: 64px; border-radius: 18px;
+    width: 52px; height: 52px; border-radius: 14px;
     display: flex; align-items: center; justify-content: center;
-    margin-bottom: 12px;
+    margin-bottom: 2px;
+    transition: opacity 0.35s, filter 0.35s, transform 0.35s;
   }
-  .wf-icon svg { width: 30px; height: 30px; }
+  .wf-icon svg { width: 24px; height: 24px; }
   .wf-icon.blue { background: var(--blue-tint); color: var(--blue); }
   .wf-icon.purple { background: var(--purple-light); color: var(--purple); }
   .wf-icon.green { background: var(--green-light); color: var(--green); }
-  .wf-card h3 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
-  .wf-card p { font-size: 17px; line-height: 1.6; color: var(--body); max-width: 36ch; }
-  .wf-card .arrow {
-    color: var(--blue); font-weight: 700; font-size: 18px; margin-top: 8px;
-    display: inline-flex; transition: transform 0.2s;
+  .js-anim .wf-col .wf-icon { opacity: 0.45; filter: saturate(0.3); }
+  .js-anim .wf-col.is-active .wf-icon { opacity: 1; filter: none; transform: scale(1.05); }
+  .wf-stage {
+    font-size: 11.5px; font-weight: 700;
+    letter-spacing: 0.07em; text-transform: uppercase;
   }
+  .wf-stage.stage-blue { color: var(--blue); }
+  .wf-stage.stage-purple { color: var(--purple); }
+  .wf-stage.stage-green { color: var(--green); }
+  .wf-col h3 { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
+  .wf-col p { font-size: 15.5px; line-height: 1.6; color: var(--body); }
 
   /* ---------- Free Audit ---------- */
   .audit-section {
@@ -533,7 +579,7 @@
   }
   .audit-grid {
     display: grid; grid-template-columns: 1fr 1.05fr;
-    gap: 80px; align-items: center;
+    gap: 56px; align-items: center;
   }
   .audit-copy h2 {
     font-size: clamp(34px, 3.8vw, 46px);
@@ -593,69 +639,105 @@
     font-size: 13px; font-weight: 700; text-align: right;
   }
   .audit-row .delta {
-    font-size: 11px; font-weight: 700; color: #fff;
-    padding: 4px 8px; border-radius: 999px; text-align: center;
+    font-size: 11px; font-weight: 700;
+    padding: 4px 9px; border-radius: 999px; text-align: center;
   }
-  .audit-row .delta.high { background: #dc2626; }
-  .audit-row .delta.med { background: #f59e0b; }
-  .audit-row .delta.low { background: var(--green); }
+  .audit-row .delta.high { background: #fdeaea; color: #b91c1c; }
+  .audit-row .delta.med { background: #fdf3e3; color: #b45309; }
+  .audit-row .delta.low { background: var(--green-light); color: var(--green); }
   .audit-mock-foot {
     padding: 16px 22px; background: #fafbfd;
     display: flex; justify-content: space-between; align-items: center;
     border-top: 1px solid var(--line-soft);
   }
-  .audit-mock-foot strong { font-size: 18px; color: var(--ink); letter-spacing: -0.02em; }
+  .audit-mock-foot strong { font-size: 25px; color: var(--ink); letter-spacing: -0.02em; }
   .audit-mock-foot span { font-size: 12px; color: var(--body-light); }
+  /* hand-drawn green circle around the recovered total */
+  .total-wrap { position: relative; display: inline-block; padding: 4px 8px; margin: -4px -8px; }
+  .total-circle {
+    position: absolute; left: -14px; top: -10px;
+    width: calc(100% + 28px); height: calc(100% + 20px);
+    overflow: visible; pointer-events: none;
+  }
+  .total-circle path {
+    fill: none; stroke: var(--green); stroke-width: 2.4;
+    stroke-linecap: round; opacity: 0.9;
+  }
 
   /* ---------- Why Now ---------- */
-  .why-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    gap: 56px 48px;
+  /* Zigzag timeline: the revenue leak is a sequence, so it reads as one.
+     A line draws down the spine as you scroll; each step lights up as it passes. */
+  .why-flow { position: relative; max-width: 1020px; margin: 16px auto 0; }
+  .why-line {
+    position: absolute; top: 12px; bottom: 12px; left: 50%;
+    width: 2px; margin-left: -1px;
+    background: var(--line);
+    border-radius: 2px;
   }
-  .why-card {
-    background: transparent;
-    border: none;
-    padding: 0;
-    display: flex; flex-direction: column; gap: 14px;
+  .why-line-fill {
+    display: block; width: 100%; height: 100%;
+    background: linear-gradient(180deg, var(--blue), var(--green));
+    transform-origin: top center; transform: scaleY(0);
+    border-radius: 2px;
   }
-  .why-num {
+  .why-steps { position: relative; }
+  .why-step {
+    display: grid; grid-template-columns: 1fr 96px 1fr;
+    align-items: center;
+    padding: 26px 0;
+  }
+  .why-node {
+    grid-column: 2; grid-row: 1;
+    width: 54px; height: 54px; margin: 0 auto;
+    border-radius: 50%;
+    background: #fff; border: 2px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
     font-family: 'D-DIN', 'DIN', 'Barlow', sans-serif;
-    font-size: 56px; font-weight: 800;
-    letter-spacing: -0.05em; line-height: 1;
-    background: linear-gradient(140deg, var(--blue), #34b06d);
-    -webkit-background-clip: text; background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 4px;
+    font-weight: 800; font-size: 18px; color: var(--blue);
+    position: relative; z-index: 1;
+    box-shadow: 0 0 0 6px var(--bg);
+    transition: border-color 0.4s, color 0.4s;
   }
-  .why-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.015em; line-height: 1.25; }
-  .why-card p { font-size: 16px; line-height: 1.6; color: var(--body); max-width: 32ch; }
+  .why-step.is-lit .why-node { border-color: var(--green); color: var(--green); }
+  .why-body { max-width: 400px; }
+  .why-step:nth-child(odd) .why-body { grid-column: 1; grid-row: 1; justify-self: end; text-align: right; }
+  .why-step:nth-child(even) .why-body { grid-column: 3; grid-row: 1; justify-self: start; text-align: left; }
+  .why-body h3 { font-size: 21px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.015em; line-height: 1.25; }
+  .why-body p { font-size: 15.5px; line-height: 1.6; color: var(--body); }
 
   /* ---------- Technology ---------- */
   .tech-section { background: #f7fafc; }
   .tech-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 64px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
     margin-top: 12px;
   }
   .tech-card {
-    background: transparent; border: none; padding: 0;
-    display: flex; flex-direction: column; gap: 12px;
+    background: #fff; border: 1px solid var(--line); border-radius: var(--r-card);
+    padding: 26px 24px;
+    display: flex; flex-direction: column; gap: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
+  .tech-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card); }
+  /* stepped offsets + icon tint variety so the row doesn't read A-B-C-D flat */
+  .tech-grid .tech-card:nth-child(even) { margin-top: 28px; }
+  .tech-card:nth-child(2) .tech-icon { background: var(--green-light); color: var(--green); }
+  .tech-card:nth-child(3) .tech-icon { background: var(--purple-light); color: var(--purple); }
   .tech-card .tech-icon {
-    width: 52px; height: 52px; border-radius: 14px;
+    width: 46px; height: 46px; border-radius: 12px;
     background: var(--blue-tint); color: var(--blue);
     display: flex; align-items: center; justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
   }
   .tech-card .tech-icon svg { width: 24px; height: 24px; }
-  .tech-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.015em; }
-  .tech-card p { font-size: 16px; line-height: 1.6; color: var(--body); max-width: 32ch; }
+  .tech-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 2px; letter-spacing: -0.015em; }
+  .tech-card p { font-size: 15px; line-height: 1.6; color: var(--body); }
 
   /* ---------- Data Moat ---------- */
   .moat-band {
     background: linear-gradient(140deg, #0b1e3f 0%, #1a3a7a 100%);
     color: #fff;
     border-radius: 24px;
-    padding: 72px 64px;
+    padding: 60px 56px;
     display: grid; grid-template-columns: 1.2fr 1fr;
     gap: 56px; align-items: center;
     position: relative; overflow: hidden;
@@ -694,15 +776,14 @@
   .team-section {
     background: var(--bg-cream);
   }
-  .team-head { text-align: center; margin-bottom: 60px; }
+  .team-head { text-align: center; margin-bottom: 44px; }
   .team-head .eyebrow { justify-content: center; }
   .team-head h2 { margin: 16px auto 18px; max-width: 22ch; font-size: clamp(34px, 3.8vw, 46px); line-height: 1.1; letter-spacing: -0.028em; }
   .team-head p { font-size: 17px; max-width: 56ch; margin: 0 auto; line-height: 1.6; }
 
   .team-grid {
     display: grid; grid-template-columns: repeat(4, 1fr);
-    gap: 64px 48px;
-    max-width: 1480px; margin: 0 auto;
+    gap: 44px 32px;
   }
   .team-card {
     display: flex; flex-direction: column;
@@ -710,7 +791,7 @@
     text-align: left;
   }
   .team-photo {
-    width: 280px; height: 280px;
+    width: 200px; height: 200px;
     border-radius: 50%; overflow: hidden;
     background: #3a3a3a;
   }
@@ -734,7 +815,7 @@
   .cta-strip {
     position: relative;
     text-align: center;
-    padding: 120px 0;
+    padding: 96px 0;
     overflow: hidden;
     background: linear-gradient(135deg, #0b1e3f 0%, #163a78 60%, #1a4895 100%);
     color: #fff;
@@ -804,7 +885,17 @@
   /* ---------- Responsive ---------- */
   @media (max-width: 1080px) {
     .audit-grid, .section-head, .moat-band, .footer-grid { grid-template-columns: 1fr; gap: 36px; }
-    .workflows, .tech-grid, .why-grid, .team-grid { grid-template-columns: 1fr; gap: 32px; }
+    .wf-cols, .tech-grid, .why-grid, .team-grid { grid-template-columns: 1fr; gap: 32px; }
+    .wf-rail { display: none; }
+    .wf-cols { gap: 0; }
+    .wf-col + .wf-col { border-left: none; border-top: 1px solid var(--line-soft); }
+    .js-anim .wf-col .wf-icon { opacity: 1; filter: none; }
+    .tech-grid .tech-card:nth-child(even) { margin-top: 0; }
+    .why-line { left: 27px; margin-left: 0; }
+    .why-step { grid-template-columns: 54px 1fr; padding: 18px 0; }
+    .why-step .why-node { width: 44px; height: 44px; font-size: 15px; }
+    .why-step:nth-child(odd) .why-body,
+    .why-step:nth-child(even) .why-body { grid-column: 2; grid-row: 1; justify-self: start; text-align: left; padding-left: 20px; }
     .hero { padding-top: 0; }
     .hero-overlay { position: relative; inset: 0; padding: 48px 0 32px; }
     .hero-copy { background: rgba(255,255,255,0.92); padding: 32px 28px; border-radius: 16px; max-width: 100%; }
@@ -1039,6 +1130,11 @@
           <button class="btn btn-primary btn-lg" type="button" data-demo-open>Request a Demo</button>
           <a class="btn btn-outline btn-lg" href="#audit">Risk-Free Audit</a>
         </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>8–12%</b><span>avg. revenue recovered</span></div>
+          <div class="hero-stat"><b>99.2%</b><span>coding accuracy</span></div>
+          <div class="hero-stat"><b>48h</b><span>audit turnaround</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -1053,8 +1149,8 @@
       <div class="float-card-title">Missed Revenue<br>Identified</div>
       <span class="float-card-badge">High</span>
     </div>
-    <div class="float-card-amount">$28,650</div>
-    <div class="float-card-detail">Across 34 encounters</div>
+    <div class="float-card-amount" data-money="112400">$112,400</div>
+    <div class="float-card-detail">Across 132 encounters · 60 days</div>
     <a class="float-card-link" href="#audit">Review opportunities</a>
   </div>
 </section>
@@ -1101,66 +1197,67 @@
   </div>
 </section>
 
-<!-- ============ SCROLL CUE BAND ============ -->
-<section class="scroll-cue">
-  <div class="container">
-    <div class="eyebrow">How it works</div>
-    <h2>Three workflows. One coordinated cycle.</h2>
-    <p>Provider, biller, and auditor, each with their own view, all working from the same chart, the same codes, and the same audit trail.</p>
-    <span class="chevron">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-    </span>
-  </div>
-</section>
-
-<!-- ============ WORKFLOWS ============ -->
+<!-- ============ WORKFLOWS (handoff pipeline) ============ -->
 <section id="product">
   <div class="container">
     <div class="section-head">
       <div>
-        <div class="eyebrow section-eyebrow">Workflows that perform</div>
-        <h2>Purpose-built workflows. Proven financial impact.</h2>
+        <h2>Three workflows. One coordinated cycle.</h2>
       </div>
-      <p class="right-copy">MedCode Pro adapts to your role, surfaces what matters, and drives measurable results across the revenue cycle.</p>
+      <p class="right-copy">Provider, biller, and auditor, each with their own view, all working from the same chart, the same codes, and the same audit trail.</p>
     </div>
 
-    <div class="workflows">
-      <div class="wf-card">
-        <span class="wf-icon blue">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="8" r="4"/>
-            <path d="M5 21a7 7 0 0 1 14 0"/>
-            <path d="M19 4v4M17 6h4"/>
-          </svg>
+    <div class="wf-panel">
+      <div class="wf-rail" aria-hidden="true">
+        <span class="wf-track"><span class="wf-track-fill"></span></span>
+        <span class="wf-chart-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Encounter chart
         </span>
-        <h3>Provider Workflow</h3>
-        <p>Capture complete documentation and get real-time coding insights at the point of care.</p>
-        <span class="arrow">→</span>
+        <span class="wf-done">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Clean claim · released
+        </span>
       </div>
 
-      <div class="wf-card">
-        <span class="wf-icon purple">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="14" rx="2"/>
-            <path d="M7 9h10M7 13h6"/>
-            <path d="M8 18l-3 3v-3"/>
-          </svg>
-        </span>
-        <h3>Biller Workflow</h3>
-        <p>Identify coding opportunities and reduce denials with AI-assisted pre-bill reviews.</p>
-        <span class="arrow">→</span>
-      </div>
+      <div class="wf-cols">
+        <div class="wf-col">
+          <span class="wf-icon blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M5 21a7 7 0 0 1 14 0"/>
+              <path d="M19 4v4M17 6h4"/>
+            </svg>
+          </span>
+          <span class="wf-stage stage-blue">During the visit</span>
+          <h3>Provider Workflow</h3>
+          <p>Capture complete documentation and get real-time coding insights at the point of care.</p>
+        </div>
 
-      <div class="wf-card">
-        <span class="wf-icon green">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3z"/>
-            <path d="m9 12 2 2 4-4"/>
-          </svg>
-        </span>
-        <h3>Auditor Workflow</h3>
-        <p>Spot risk, ensure compliance, and support clean claims with confidence.</p>
-        <span class="arrow">→</span>
+        <div class="wf-col">
+          <span class="wf-icon purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="14" rx="2"/>
+              <path d="M7 9h10M7 13h6"/>
+              <path d="M8 18l-3 3v-3"/>
+            </svg>
+          </span>
+          <span class="wf-stage stage-purple">Before the claim</span>
+          <h3>Biller Workflow</h3>
+          <p>Identify coding opportunities and reduce denials with AI-assisted pre-bill reviews.</p>
+        </div>
+
+        <div class="wf-col">
+          <span class="wf-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </span>
+          <span class="wf-stage stage-green">Before release</span>
+          <h3>Auditor Workflow</h3>
+          <p>Spot risk, ensure compliance, and support clean claims with confidence.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -1172,7 +1269,7 @@
     <div class="audit-grid">
       <div class="audit-copy">
         <div class="eyebrow section-eyebrow">Free Audit</div>
-        <h2>Send 25 charts. We'll send the missed revenue.</h2>
+        <h2>Send your last 60 days of charts. We'll send the missed revenue.</h2>
         <p>You'll see exactly which CPT combinations, modifiers, and documentation gaps cost revenue, case by case, with the language that recovers it.</p>
         <ul class="audit-list">
           <li><span class="check">
@@ -1194,7 +1291,7 @@
       <div class="audit-mock">
         <div class="audit-mock-head">
           <div>
-            <div class="audit-mock-head-title">Audit Report · 25 charts</div>
+            <div class="audit-mock-head-title">Audit Report · 60 days</div>
             <div class="audit-mock-head-meta">Orthopedic Spine · Pacific Spine Group</div>
           </div>
           <div class="audit-mock-head-meta">48-hour turnaround</div>
@@ -1203,34 +1300,39 @@
         <div class="audit-row">
           <span class="cpt">22551</span>
           <div class="desc">Anterior cervical fusion <small>Additional level missed · C6–C7</small></div>
-          <div class="rvu">+ 6.04</div>
+          <div class="rvu" data-rvu="6.04">+ 6.04</div>
           <span class="delta high">high</span>
         </div>
         <div class="audit-row">
           <span class="cpt">22853</span>
           <div class="desc">Interbody biomechanical device <small>+59 modifier not applied</small></div>
-          <div class="rvu">+ 2.21</div>
+          <div class="rvu" data-rvu="2.21">+ 2.21</div>
           <span class="delta med">med</span>
         </div>
         <div class="audit-row">
           <span class="cpt">69990</span>
           <div class="desc">Operating microscope <small>Add-on code overlooked</small></div>
-          <div class="rvu">+ 3.99</div>
+          <div class="rvu" data-rvu="3.99">+ 3.99</div>
           <span class="delta med">med</span>
         </div>
         <div class="audit-row">
           <span class="cpt">63048</span>
           <div class="desc">Laminectomy, each additional <small>Multi-level decompression</small></div>
-          <div class="rvu">+ 4.12</div>
+          <div class="rvu" data-rvu="4.12">+ 4.12</div>
           <span class="delta low">low</span>
         </div>
 
         <div class="audit-mock-foot">
           <div>
-            <strong>$28,650</strong>
-            <span style="display:block;">Across 34 encounters</span>
+            <span class="total-wrap">
+              <strong data-money="112400">$112,400</strong>
+              <svg class="total-circle" viewBox="0 0 190 74" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M 12,37 C 10,16 50,7 95,8 C 142,9 180,17 178,37 C 176,58 138,67 93,66 C 50,65 10,57 13,40 C 15,31 26,25 38,22"/>
+              </svg>
+            </span>
+            <span style="display:block;">Across 132 encounters</span>
           </div>
-          <span style="color:var(--green); font-weight:600; font-size:13px;">+ 16.36 RVU recoverable</span>
+          <span style="color:var(--green); font-weight:600; font-size:13px;" data-rvu-foot>+ 64.2 RVU recoverable</span>
         </div>
       </div>
     </div>
@@ -1247,33 +1349,36 @@
       </div>
     </div>
 
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-num">01</div>
-        <div>
-          <h3>Undercoding is invisible</h3>
-          <p>Surgeons can't audit themselves. Missed levels and modifiers stay missed unless something flags them before the chart leaves the OR.</p>
+    <div class="why-flow">
+      <div class="why-line"><span class="why-line-fill"></span></div>
+      <div class="why-steps">
+        <div class="why-step">
+          <div class="why-node">01</div>
+          <div class="why-body">
+            <h3>Undercoding is invisible</h3>
+            <p>Surgeons can't audit themselves. Missed levels and modifiers stay missed unless something flags them before the chart leaves the OR.</p>
+          </div>
         </div>
-      </div>
-      <div class="why-card">
-        <div class="why-num">02</div>
-        <div>
-          <h3>Billing teams are downstream</h3>
-          <p>By the time billing sees the chart, the case details are reconstructed. The documentation that supports a code is often missing.</p>
+        <div class="why-step">
+          <div class="why-node">02</div>
+          <div class="why-body">
+            <h3>Billing teams are downstream</h3>
+            <p>By the time billing sees the chart, the case details are reconstructed. The documentation that supports a code is often missing.</p>
+          </div>
         </div>
-      </div>
-      <div class="why-card">
-        <div class="why-num">03</div>
-        <div>
-          <h3>Denials are expensive to fix</h3>
-          <p>Appeals take weeks, distract physicians, and recover a fraction of the original value. Preventing the denial costs less.</p>
+        <div class="why-step">
+          <div class="why-node">03</div>
+          <div class="why-body">
+            <h3>Denials are expensive to fix</h3>
+            <p>Appeals take weeks, distract physicians, and recover a fraction of the original value. Preventing the denial costs less.</p>
+          </div>
         </div>
-      </div>
-      <div class="why-card">
-        <div class="why-num">04</div>
-        <div>
-          <h3>AI without workflow context fails</h3>
-          <p>Generic coding LLMs don't know your specialty, payer mix, or documentation patterns. MedCode Pro is trained on procedural medicine.</p>
+        <div class="why-step">
+          <div class="why-node">04</div>
+          <div class="why-body">
+            <h3>AI without workflow context fails</h3>
+            <p>Generic coding LLMs don't know your specialty, payer mix, or documentation patterns. MedCode Pro is trained on procedural medicine.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -1334,15 +1439,15 @@
       </div>
       <div class="moat-stats">
         <div class="moat-stat">
-          <div class="moat-stat-num">2.4M+</div>
+          <div class="moat-stat-num" data-count="2.4" data-decimals="1" data-suffix="M+">2.4M+</div>
           <div class="moat-stat-label">Specialty-tagged coded encounters in training</div>
         </div>
         <div class="moat-stat">
-          <div class="moat-stat-num">99.2%</div>
+          <div class="moat-stat-num" data-count="99.2" data-decimals="1" data-suffix="%">99.2%</div>
           <div class="moat-stat-label">Coding accuracy benchmarked against external review</div>
         </div>
         <div class="moat-stat">
-          <div class="moat-stat-num">48h</div>
+          <div class="moat-stat-num" data-count="48" data-suffix="h">48h</div>
           <div class="moat-stat-label">From chart upload to coded audit report</div>
         </div>
         <div class="moat-stat">
@@ -1411,7 +1516,7 @@
 <section class="cta-strip" id="cta">
   <div class="container">
     <h2>Ready to see where revenue is being missed?</h2>
-    <p>Send us 25 anonymized charts. In 48 hours you'll have a chart-by-chart report, and the workflow to keep using it.</p>
+    <p>Send us your last 60 days of anonymized charts. In 48 hours you'll have a chart-by-chart report, and the workflow to keep using it.</p>
     <div class="actions">
       <button class="btn btn-primary btn-lg" type="button" data-demo-open>Request a Demo</button>
       <button class="btn btn-outline btn-lg" type="button" data-demo-open data-demo-kind="audit">Risk-Free Audit</button>
@@ -1735,5 +1840,162 @@
 </script>
 
 <script src="image-slot.js"></script>
+
+<!-- Motion layer: GSAP, mature-tier restraint. Reveals, count-ups, nothing else.
+     Degrades to the fully static page if GSAP fails to load or the visitor
+     prefers reduced motion. -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced || typeof gsap === 'undefined') return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero entrance — once, fast, done.
+  gsap.from('.hero-copy > *', { y: 18, opacity: 0, duration: 0.55, stagger: 0.08, ease: 'power2.out' });
+  gsap.from('.float-card', { y: 26, opacity: 0, duration: 0.6, delay: 0.4, ease: 'power2.out' });
+
+  // Hero card dollar figure counts itself in on load.
+  document.querySelectorAll('.float-card [data-money]').forEach(function (el) {
+    var target = parseFloat(el.getAttribute('data-money'));
+    var o = { v: 0 };
+    gsap.to(o, {
+      v: target, duration: 1.2, delay: 0.7, ease: 'power3.out',
+      onUpdate: function () { el.textContent = '$' + Math.round(o.v).toLocaleString('en-US'); }
+    });
+  });
+
+  // The audit report performs when it scrolls into view: findings land
+  // one by one with a green scan-flash, RVU deltas roll up, severity pills
+  // stamp in, then the total counts up and gets circled in green ink.
+  var mock = document.querySelector('.audit-mock');
+  if (mock) {
+    var rows = gsap.utils.toArray('.audit-mock .audit-row');
+    var circle = mock.querySelector('.total-circle path');
+    if (circle) {
+      var len = circle.getTotalLength();
+      gsap.set(circle, { strokeDasharray: len, strokeDashoffset: len });
+    }
+    var tl = gsap.timeline({
+      scrollTrigger: { trigger: mock, start: 'top 74%', once: true }
+    });
+    tl.from('.audit-mock-head', { y: 8, opacity: 0, duration: 0.3, ease: 'power2.out' }, 0)
+      .from(rows, { x: -24, opacity: 0, duration: 0.45, stagger: 0.16, ease: 'power2.out' }, 0.15)
+      .fromTo(rows,
+        { backgroundColor: 'rgba(232,243,236,0.95)' },
+        { backgroundColor: 'rgba(232,243,236,0)', duration: 0.9, stagger: 0.16, ease: 'power1.out' }, 0.32);
+    rows.forEach(function (row, i) {
+      var rvu = row.querySelector('[data-rvu]');
+      if (!rvu) return;
+      var t = parseFloat(rvu.getAttribute('data-rvu'));
+      var o = { v: 0 };
+      tl.to(o, {
+        v: t, duration: 0.5, ease: 'power3.out',
+        onUpdate: function () { rvu.textContent = '+ ' + o.v.toFixed(2); }
+      }, 0.28 + i * 0.16);
+    });
+    tl.from('.audit-mock .delta', { scale: 0.4, opacity: 0, duration: 0.35, stagger: 0.14, ease: 'back.out(1.8)' }, 0.45);
+    var money = mock.querySelector('[data-money]');
+    if (money) {
+      var mo = { v: 0 };
+      tl.to(mo, {
+        v: parseFloat(money.getAttribute('data-money')), duration: 1.0, ease: 'expo.out',
+        onUpdate: function () { money.textContent = '$' + Math.round(mo.v).toLocaleString('en-US'); }
+      }, 1.05);
+    }
+    var rvuFoot = mock.querySelector('[data-rvu-foot]');
+    if (rvuFoot) {
+      var ro = { v: 0 };
+      tl.to(ro, {
+        v: 64.2, duration: 0.9, ease: 'power3.out',
+        onUpdate: function () { rvuFoot.textContent = '+ ' + ro.v.toFixed(1) + ' RVU recoverable'; }
+      }, 1.1);
+    }
+    if (circle) {
+      tl.to(circle, { strokeDashoffset: 0, duration: 0.7, ease: 'power2.inOut' }, 1.7);
+    }
+  }
+
+  // Why-now: the leak line draws down the spine as you scroll;
+  // each step slides in from its side and lights green as the line passes.
+  var lineFill = document.querySelector('.why-line-fill');
+  if (lineFill) {
+    gsap.to(lineFill, {
+      scaleY: 1, ease: 'none',
+      scrollTrigger: { trigger: '.why-flow', start: 'top 70%', end: 'bottom 72%', scrub: 0.4 }
+    });
+  }
+  gsap.utils.toArray('.why-step').forEach(function (step, i) {
+    var fromX = (i % 2 === 0) ? -30 : 30;
+    gsap.from(step.querySelector('.why-body'), {
+      x: fromX, opacity: 0, duration: 0.55, ease: 'power2.out',
+      scrollTrigger: { trigger: step, start: 'top 78%', once: true }
+    });
+    gsap.from(step.querySelector('.why-node'), {
+      scale: 0.4, opacity: 0, duration: 0.45, ease: 'back.out(1.6)',
+      scrollTrigger: {
+        trigger: step, start: 'top 78%', once: true,
+        onEnter: function () { step.classList.add('is-lit'); }
+      }
+    });
+  });
+
+  // Workflow pipeline: the encounter chart travels the rail as you scroll —
+  // provider hands to biller hands to auditor, ending in a released claim.
+  var panel = document.querySelector('.wf-panel');
+  if (panel) {
+    panel.classList.add('js-anim');
+    var chip = panel.querySelector('.wf-chart-chip');
+    var trackFill = panel.querySelector('.wf-track-fill');
+    var doneBadge = panel.querySelector('.wf-done');
+    var track = panel.querySelector('.wf-track');
+    var wfCols = gsap.utils.toArray('.wf-col');
+    gsap.from(panel, {
+      y: 16, opacity: 0, duration: 0.5, ease: 'power2.out',
+      scrollTrigger: { trigger: panel, start: 'top 88%', once: true }
+    });
+    ScrollTrigger.create({
+      trigger: panel, start: 'top 72%', end: 'bottom 45%', scrub: 0.5,
+      onUpdate: function (self) {
+        var p = self.progress;
+        if (track && chip) {
+          var travel = Math.max(0, track.offsetWidth - chip.offsetWidth);
+          gsap.set(chip, { x: travel * p });
+          chip.style.opacity = p > 0.92 ? 0 : 1;
+        }
+        if (trackFill) gsap.set(trackFill, { scaleX: p });
+        var lit = Math.min(2, Math.floor(p * 3));
+        wfCols.forEach(function (c, i) { c.classList.toggle('is-active', i <= lit); });
+        if (doneBadge) doneBadge.classList.toggle('is-on', p > 0.92);
+      }
+    });
+  }
+
+  // Stat count-ups (data moat band).
+  document.querySelectorAll('[data-count]').forEach(function (el) {
+    var t = parseFloat(el.getAttribute('data-count'));
+    var dec = parseInt(el.getAttribute('data-decimals') || '0', 10);
+    var suf = el.getAttribute('data-suffix') || '';
+    var o = { v: 0 };
+    gsap.to(o, {
+      v: t, duration: 1.0, ease: 'power3.out',
+      scrollTrigger: { trigger: el, start: 'top 85%', once: true },
+      onUpdate: function () { el.textContent = o.v.toFixed(dec) + suf; }
+    });
+  });
+
+  // Uniform section reveals — small, fast, play once.
+  var reveals = ['.section-head', '.fcard', '.audit-copy',
+                 '.tech-card', '.moat-band', '.team-card', '.fv-head', '.fv-card',
+                 '.cta-strip .container'];
+  gsap.utils.toArray(reveals.join(',')).forEach(function (el) {
+    gsap.from(el, {
+      y: 16, opacity: 0, duration: 0.5, ease: 'power2.out',
+      scrollTrigger: { trigger: el, start: 'top 88%', once: true }
+    });
+  });
+})();
+</script>
 </body>
 </html>
