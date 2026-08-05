@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Secure Document Upload — MedCode Pro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff; --bg-soft: #f7f9fc; --ink: #0b1e3f; --body: #545d72;
+    --body-light: #8693a8; --line: #e8ebf0; --blue: #2563eb; --blue-dark: #1d4ed8;
+    --blue-tint: #e6efff; --green: #059669; --green-bg: #ecfdf5; --red: #dc2626; --red-bg: #fef2f2;
+    --amber-bg: #fffbeb; --amber-line: #fde68a; --amber-ink: #92400e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Barlow', 'Inter', system-ui, sans-serif; color: var(--body); background: var(--bg-soft); line-height: 1.6; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 32px 20px 80px; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 36px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand-mark { width: 30px; height: 30px; border-radius: 7px; background: var(--blue); display: flex; align-items: center; justify-content: center; }
+  .brand-word { font-weight: 800; font-size: 17px; color: var(--ink); }
+  .back { font-size: 14px; color: var(--blue); text-decoration: none; font-weight: 600; }
+  h1 { font-size: 30px; color: var(--ink); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .lede { font-size: 16px; margin-bottom: 28px; }
+  .card { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 26px 26px 24px; margin-bottom: 22px; }
+  .card h2 { font-size: 18px; color: var(--ink); font-weight: 700; margin-bottom: 12px; }
+  label { display: block; font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; }
+  input[type="text"] { flex: 1; min-width: 220px; font: inherit; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px; color: var(--ink); }
+  input[type="text"]:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-tint); }
+  button { font: inherit; font-weight: 700; background: var(--blue); color: #fff; border: 0; border-radius: 10px; padding: 12px 22px; cursor: pointer; }
+  button:hover { background: var(--blue-dark); }
+  button:disabled { opacity: .6; cursor: default; }
+  .hint { font-size: 13px; color: var(--body-light); margin-top: 8px; }
+  .ok { display: none; background: var(--green-bg); border: 1px solid #a7f3d0; color: #065f46; border-radius: 10px; padding: 12px 14px; margin-top: 14px; font-size: 14.5px; }
+  .err { display: none; background: var(--red-bg); border: 1px solid #fecaca; color: #991b1b; border-radius: 10px; padding: 12px 14px; margin-top: 14px; font-size: 14.5px; }
+  ol.steps { margin: 6px 0 0 20px; display: grid; gap: 12px; font-size: 15px; }
+  ol.steps li strong { color: var(--ink); }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12.5px; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; overflow-x: auto; white-space: pre; margin-top: 8px; }
+  .note { background: var(--amber-bg); border: 1px solid var(--amber-line); color: var(--amber-ink); border-radius: 10px; padding: 12px 14px; font-size: 14px; margin-top: 14px; }
+  footer { margin-top: 34px; font-size: 13.5px; color: var(--body-light); text-align: center; }
+  footer a { color: var(--blue); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-mark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 4v16M4 12h16" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg></span>
+      <span class="brand-word">MedCode Pro</span>
+    </a>
+    <a class="back" href="/">&larr; Back to medcodepro.ai</a>
+  </div>
+
+  <h1>Secure Document Upload</h1>
+  <p class="lede">Enter the access code from your MedCode Pro contact to open your practice's private upload page.</p>
+
+  <div class="card">
+    <h2>Your practice's upload page</h2>
+    <label for="code">Access code</label>
+    <div class="row">
+      <input id="code" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="e.g. harbor-cedar-12">
+      <button id="go" type="button">Open upload page</button>
+    </div>
+    <p class="hint">Codes aren't case-sensitive. Don't have one? Email <a href="mailto:support@medcodepro.ai">support@medcodepro.ai</a>.</p>
+    <div class="ok" id="ok">Code accepted — opening your secure upload page&hellip; If nothing opens, <a id="okLink" href="#" target="_blank" rel="noopener">click here</a>.</div>
+    <div class="err" id="err">That code didn't match. Check for typos, or email <a href="mailto:support@medcodepro.ai">support@medcodepro.ai</a> for a fresh one.</div>
+  </div>
+
+  <div class="card">
+    <h2>How to prepare your upload</h2>
+    <ol class="steps">
+      <li><strong>Gather the operative notes</strong> — one file per case; Word (.docx), PDF, or plain text. Scanned image-only PDFs can't be read; export those as text or Word first.</li>
+      <li><strong>Rename each file to your own anonymized case number</strong> (1001.docx, 1002.docx, &hellip;) and keep your number-to-patient key at the practice. We never need it — our findings come back referenced by your numbers.</li>
+      <li><strong>Include your claims report as a CSV</strong> (in Excel: Save As &rarr; CSV). One row per case, the file name in the first column. Column names are flexible; extras are ignored:
+        <div class="mono">filename, cpt_codes, icd10, submitted_amount, paid_amount, payer
+1001.docx, "27447;22853-59", M17.11, 4820.00, 3910.00, BCBS</div>
+      </li>
+      <li><strong>Enter your access code above</strong>, then drag the whole batch — hundreds of files at once is fine — into the upload page, enter your work email, and submit.</li>
+    </ol>
+    <div class="note"><strong>Privacy:</strong> uploads travel over an encrypted connection into our HIPAA-compliant intake (Business Associate Agreements in place). Documents are de-identified immediately on receipt, before any analysis. Please never send documents by email.</div>
+  </div>
+
+  <div class="card">
+    <h2>What happens next</h2>
+    <p style="font-size:15px;">We confirm receipt, de-identify and process the batch, and deliver findings referenced by your case numbers — what was under-coded, what was underpaid, and what it's worth. Your team reviews everything; nothing is submitted to any payer by us.</p>
+  </div>
+
+  <footer>MedCode Pro &middot; <a href="mailto:support@medcodepro.ai">support@medcodepro.ai</a> &middot; Never email documents.</footer>
+</div>
+
+<script>
+// Access-code gate. Each entry is a practice's Box File Request URL encrypted
+// with AES-256-GCM under a key derived (PBKDF2-SHA256, 310k iters) from that
+// practice's access code. The page source contains no URLs and no client names;
+// a wrong code decrypts nothing. Entries are generated by tools/add-practice.mjs.
+const PRACTICES = [
+  {"s":"dPJWhWS0YNceCBwxqjXBTw==","i":"gwYBp1dyftbhWpap","c":"6IIQ5v5v+9HnOMtUcR2fKo6DANI18g1y8b0TEv5R9Jc/dI6KyqCmUNCiKuzEUcLIVMNp8JCYgtldkmzY1IF3Qu6EPxP5Ow=="},
+];
+
+const norm = (code) => code.trim().toLowerCase().replace(/\s+/g, "");
+const un64 = (s) => Uint8Array.from(atob(s), (ch) => ch.charCodeAt(0));
+
+async function tryDecrypt(code, entry) {
+  try {
+    const material = await crypto.subtle.importKey("raw", new TextEncoder().encode(norm(code)), "PBKDF2", false, ["deriveKey"]);
+    const key = await crypto.subtle.deriveKey(
+      { name: "PBKDF2", salt: un64(entry.s), iterations: 310000, hash: "SHA-256" },
+      material, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+    const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: un64(entry.i) }, key, un64(entry.c));
+    const url = new TextDecoder().decode(pt);
+    return /^https:\/\/app\.box\.com\//.test(url) ? url : null;
+  } catch (_e) { return null; }
+}
+
+async function go() {
+  const btn = document.getElementById("go");
+  const ok = document.getElementById("ok");
+  const err = document.getElementById("err");
+  ok.style.display = err.style.display = "none";
+  const code = document.getElementById("code").value;
+  if (!norm(code)) return;
+  btn.disabled = true; btn.textContent = "Checking…";
+  let url = null;
+  for (const entry of PRACTICES) {
+    /* eslint-disable no-await-in-loop */
+    url = await tryDecrypt(code, entry);
+    if (url) break;
+  }
+  btn.disabled = false; btn.textContent = "Open upload page";
+  if (url) {
+    document.getElementById("okLink").href = url;
+    ok.style.display = "block";
+    window.open(url, "_blank", "noopener");
+  } else {
+    err.style.display = "block";
+  }
+}
+document.getElementById("go").addEventListener("click", go);
+document.getElementById("code").addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
+</script>
+</body>
+</html>
