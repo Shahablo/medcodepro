@@ -1,0 +1,11 @@
+{
+  "name": "medcodepro-website",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build:blog": "node scripts/build-blog.mjs",
+    "check:blog": "node scripts/check-blog.mjs",
+    "test": "node --test tests/*.test.mjs && node scripts/check-blog.mjs"
+  }
+}
