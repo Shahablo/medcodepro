@@ -75,4 +75,71 @@ export const articles = [{
     { id: 'call', title: 'Elevance Health, third-quarter 2026 earnings call', url: 'https://ir.elevancehealth.com/events-and-presentations/event-details/2026/Elevance-Health-2026-Q3-Earnings-Call/default.aspx' },
     { id: 'filing', title: 'Elevance Health, third-quarter 2026 Form 10-Q', url: 'https://www.sec.gov/Archives/edgar/data/1156039/000115603926000071/elv-20260930.htm' }
   ]
+}, {
+  slug: 'denied-claims-evidence-trail',
+  title: 'Denied Claims: Find the Real Problem First',
+  summary: 'A Georgia hospital payment lawsuit is a reminder to separate documentation, processing, authorization and contract questions before assigning denial work.',
+  category: 'Claims & denials',
+  published: '2026-10-28',
+  updated: '2026-10-28',
+  lede: {
+    text: '“Denied” looks like one status in a work queue. In practice, it can describe several different problems. One claim may need chart evidence, another a duplicate-submission reconciliation, and another an answer about contract terms. Sending all three to the same reviewer wastes time and can leave the real question untouched.',
+    cites: [], analysis: true
+  },
+  sections: [
+    {
+      heading: 'What the October filing shows—and what it does not',
+      paragraphs: [
+        {
+          text: 'Seven HCA-affiliated hospitals filed a complaint against Blue Cross Blue Shield Healthcare Plan of Georgia, doing business as Anthem Blue Cross and Blue Shield, on October 5, 2026. The stamped filing identifies the case as Bay Area Healthcare Group, Ltd. et al. v. Blue Cross Blue Shield Healthcare Plan of Georgia, Inc., No. 1:26-cv-05750.',
+          cites: ['complaint', 'docket']
+        },
+        {
+          text: 'The hospitals allege $501,213.64 in unpaid or underpaid claims involving eight members. Their complaint describes payer responses involving medical necessity or authorization, a duplicate claim or appeal, and allegedly missing information or documentation. In at least one example, the hospitals say they repeatedly supplied requested records. A payer’s “missing information” label is therefore not proof that the underlying chart was incomplete.',
+          cites: ['complaint']
+        },
+        {
+          text: 'These are allegations, not court findings. The lawsuit does not establish whether any particular claim should have been paid, which party will prevail, or a nationwide trend in denials. Its practical lesson is narrower: a denial label alone does not tell a practice which kind of evidence or specialist it needs.',
+          cites: [], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'Sort the question before trying to solve it',
+      paragraphs: [
+        {
+          text: 'A short first pass can separate the work into four lanes. They may overlap, but keeping their evidence distinct makes a human review more useful.',
+          cites: [], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Documentation and coding.', text: 'Find the note passage supporting what was actually performed and the proposed code. Flag missing or ambiguous detail for a qualified reviewer.' },
+        { lead: 'Claim processing.', text: 'For a duplicate or missing field, compare the original claim, correction, remittance and payer response before building a medical-necessity argument.' },
+        { lead: 'Authorization and policy.', text: 'Check the plan, service date, applicable rule and actual payer communication. Route the question to the team that handles utilization review.' },
+        { lead: 'Contract and payment.', text: 'If the issue is a negotiated rate or legal obligation, send it to contracting or counsel. Better chart documentation cannot interpret the agreement by itself.' }
+      ]
+    },
+    {
+      heading: 'Where a documentation review helps',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term workflow starts with de-identified historical cases. It surfaces review-required coding candidates and documentation questions with links back to source note passages, then leaves the decision to a qualified human. It does not finalize codes, submit claims or prior authorizations, adjudicate coverage, or promise to overturn a denial.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'That boundary matters. A practice can test whether its own chart-to-code explanation is coherent before deciding whether the remaining issue belongs with processing, policy or contracting. A clear evidence trail is useful even when the right next step is outside the coding lane.',
+          cites: [], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'See the review process on your own case mix',
+    text: 'Request a scoped MedCode Pro walkthrough of the retrospective, human-reviewed process. Discuss secure intake before sharing any case material; do not put patient records in the website contact form.'
+  },
+  sources: [
+    { id: 'complaint', title: 'Original stamped federal complaint, filed October 5, 2026 (55-page PDF)', url: 'https://beckers-cs-assets.s3.us-east-1.amazonaws.com/cs/lawsuits/bay-area-healthcare-group-v-anthem-bcbs-georgia-complaint-2026-10-05.pdf' },
+    { id: 'docket', title: 'Federal case docket mirror, last retrieved October 6, 2026', url: 'https://dockets.justia.com/docket/georgia/gandce/1%3A2026cv05750/365960' },
+    { id: 'beckers', title: 'Becker’s Healthcare, October 7, 2026: HCA hospitals’ payment lawsuit', url: 'https://www.beckershospitalreview.com/finance/hca-hospitals-escalate-payment-fight-with-insurers/' }
+  ]
 }];
