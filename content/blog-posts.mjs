@@ -142,4 +142,70 @@ export const articles = [{
     { id: 'docket', title: 'Federal case docket mirror, last retrieved October 6, 2026', url: 'https://dockets.justia.com/docket/georgia/gandce/1%3A2026cv05750/365960' },
     { id: 'beckers', title: 'Becker’s Healthcare, October 7, 2026: HCA hospitals’ payment lawsuit', url: 'https://www.beckershospitalreview.com/finance/hca-hospitals-escalate-payment-fight-with-insurers/' }
   ]
+}, {
+  slug: 'electronic-prior-authorization-evidence',
+  title: 'Prior Authorization Is Moving Online. The Evidence Still Has to Travel With It.',
+  summary: 'An October 21 employer statement adds momentum to electronic prior authorization, while a separate CMS rule sets narrower 2026 and 2027 requirements. Here is what specialty practices can check now.',
+  category: 'Prior authorization',
+  published: '2026-10-30',
+  updated: '2026-10-30',
+  lede: {
+    text: 'Anyone who has chased a prior authorization by phone knows the problem is bigger than the fax machine. A request can move faster and still leave the next person hunting for the note, the applicable rule, or the reason a payer asked for more information.',
+    cites: [], analysis: true
+  },
+  sections: [
+    {
+      heading: 'What changed on October 21',
+      paragraphs: [
+        {
+          text: 'On October 21, 2026, the Centers for Medicare & Medicaid Services and the Department of Labor announced that five employers had signed a statement supporting the expansion of electronic prior-authorization improvements to self-funded employer plans. The employers were Amazon, Axon, Google, Meta, and Oracle. The statement is support for broader adoption; it is not a report that those plans have already implemented a common workflow or measured a drop in delays.',
+          cites: ['cms-employers']
+        },
+        {
+          text: 'A separate CMS final rule already sets requirements for specified impacted payers, including Medicare Advantage, Medicaid and CHIP programs, and certain exchange plans. Beginning in 2026, those payers must provide a specific reason when denying prior authorization for covered medical items and services. Prior Authorization API requirements generally begin January 1, 2027. The rule excludes drug prior authorizations from these provisions. The employer statement and the final rule address different populations and should not be treated as one universal change.',
+          cites: ['cms-rule', 'cms-employers']
+        }
+      ]
+    },
+    {
+      heading: 'A reason is useful only when the evidence is findable',
+      paragraphs: [
+        {
+          text: 'A more specific payer response can help a team decide what to investigate. The question might concern missing clinical detail, a plan-specific coverage requirement, an incomplete submission, or a disagreement that needs a direct payer conversation. More electronic transactions will not resolve that question on their own.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'For one difficult historical case, try tracing the handoff without asking the clinician to reconstruct it from memory:',
+          cites: [], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Start with the source.', text: 'What was documented as performed, and what was available when the request or claim was prepared?' },
+        { lead: 'Preserve the rule.', text: 'Which coverage or coding source applied to that plan and date? Keep the version with the review.' },
+        { lead: 'Keep the payer response distinct.', text: 'Record what the payer actually said instead of translating every response into “missing documentation.”' },
+        { lead: 'Name the reviewer.', text: 'Who decided whether the next step belongs with clinical documentation, coding, utilization review, or a payer discussion?' }
+      ]
+    },
+    {
+      heading: 'Where MedCode Pro fits, and where it does not',
+      paragraphs: [
+        {
+          text: 'MedCode Pro currently focuses on retrospective review of de-identified historical cases. It surfaces coding and documentation questions with links to the underlying operative note and leaves decisions to a human reviewer. It does not submit prior authorizations, finalize codes, make payer-final coverage decisions, or guarantee approval or payment.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'The connection to the federal news is evidence discipline. As administrative steps become more electronic, a specialty practice still needs to explain the chain from source note to proposed code or service, applicable rule, and human decision. A small review of past cases can show where that chain is clear and where a handoff needs work.',
+          cites: [], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'See a source-linked review',
+    text: 'Request a scoped MedCode Pro walkthrough of the retrospective, human-reviewed process. Discuss a secure intake path before sharing case material; do not put patient records in the website contact form.'
+  },
+  sources: [
+    { id: 'cms-employers', title: 'CMS and Department of Labor, October 21, 2026: employer support for electronic prior authorization', url: 'https://www.cms.gov/newsroom/press-releases/leading-employers-back-expansion-electronic-prior-authorization-self-funded-health-plans' },
+    { id: 'cms-rule', title: 'CMS: Interoperability and Prior Authorization Final Rule, CMS-0057-F', url: 'https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-prior-authorization-final-rule-cms-0057-f' }
+  ]
 }];
