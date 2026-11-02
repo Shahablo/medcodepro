@@ -208,4 +208,70 @@ export const articles = [{
     { id: 'cms-employers', title: 'CMS and Department of Labor, October 21, 2026: employer support for electronic prior authorization', url: 'https://www.cms.gov/newsroom/press-releases/leading-employers-back-expansion-electronic-prior-authorization-self-funded-health-plans' },
     { id: 'cms-rule', title: 'CMS: Interoperability and Prior Authorization Final Rule, CMS-0057-F', url: 'https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-prior-authorization-final-rule-cms-0057-f' }
   ]
+}, {
+  slug: 'denial-survey-practice-baseline',
+  title: 'A Denial Survey Is a Prompt, Not Your Practice’s Baseline',
+  summary: 'Experian Health’s 2026 survey captures revenue-cycle concerns. A specialty practice still needs its own consistent claim data before deciding what to change.',
+  category: 'Claims & denials',
+  published: '2026-11-02',
+  updated: '2026-11-02',
+  lede: {
+    text: 'A headline about rising denials can make a team want to buy a fix immediately. Before changing the workflow, ask a smaller question: what does your own denial rate count?',
+    cites: [], analysis: true
+  },
+  sections: [
+    {
+      heading: 'What the new survey actually measures',
+      paragraphs: [
+        {
+          text: 'Experian Health said on October 28, 2026 that 75% of respondents to its State of Claims survey reported increasing claim denials, while 40% said their organization’s denial rate exceeded 10% of claims. The company says it surveyed 204 healthcare professionals responsible for financial, billing or claims-management decisions.',
+          cites: ['experian-release']
+        },
+        {
+          text: 'Those are responses from professionals, not an independently measured national claim-denial rate. The public release does not provide a claim-level denominator, a specialty breakdown, or enough sampling detail to tell one practice how its results compare. It is useful evidence of what respondents say they are experiencing; it cannot diagnose a specific practice’s claims.',
+          cites: ['experian-release'], analysis: true
+        },
+        {
+          text: 'Becker’s Healthcare highlighted technology changes respondents said they had made, including replacing claims systems and expanding portal reviews. That is a discovery signal about industry attention, not proof that any one tool caused denials to fall.',
+          cites: ['beckers'], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'Build a number your team can explain',
+      paragraphs: [
+        {
+          text: 'A practice can use the survey as a reason to check its own baseline, with definitions set before comparing months or buying software. Start with a bounded period of adjudicated claims and record:',
+          cites: [], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'The denominator.', text: 'Count eligible submitted claims consistently. Keep rejected submissions, initial denials and final unpaid claims as different states.' },
+        { lead: 'The mix.', text: 'Break out payer, service line and reason category. A change in case mix or payer mix can make a single headline rate misleading.' },
+        { lead: 'The work after denial.', text: 'Track which items were corrected, appealed, paid or still open, and how much staff review each path required.' },
+        { lead: 'The source of each conclusion.', text: 'Keep the remittance, claim version, relevant note and applicable rule together so a reviewer can check the classification.' }
+      ]
+    },
+    {
+      heading: 'Use a focused review before a broad promise',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term work is narrower than an end-to-end claims platform. In a retrospective review of de-identified historical cases, it links coding and documentation questions to source note passages and routes conclusions to a human reviewer. It does not calculate a practice-wide denial rate on its own, finalize codes, submit claims, resolve payer contracts, or guarantee recovered revenue.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'If a practice’s own baseline points to a documentation or coding handoff, a small, human-reviewed case sample can test whether the evidence trail is the problem. If the pattern is eligibility, authorization, processing or contract payment, that finding should send the team to the right workflow instead. The survey starts the question; the practice’s own records decide where to look.',
+          cites: [], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'Look at the cases behind your numbers',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked review. Discuss a secure intake path before sharing case material; do not put patient records in the website contact form.'
+  },
+  sources: [
+    { id: 'experian-release', title: 'Experian Health, October 28, 2026: State of Claims survey release', url: 'https://www.experianplc.com/newsroom/press-releases/2026/experian-health-s-annual-state-of-claims-survey-finds-denials-re' },
+    { id: 'beckers', title: 'Becker’s Healthcare: tactics providers reported using to reduce denials', url: 'https://www.beckershospitalreview.com/finance/revenue-cycle-management/the-tactics-providers-are-using-to-reduce-claim-denials/' }
+  ]
 }];
