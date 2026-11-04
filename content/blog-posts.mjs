@@ -274,4 +274,69 @@ export const articles = [{
     { id: 'experian-release', title: 'Experian Health, October 28, 2026: State of Claims survey release', url: 'https://www.experianplc.com/newsroom/press-releases/2026/experian-health-s-annual-state-of-claims-survey-finds-denials-re' },
     { id: 'beckers', title: 'Becker’s Healthcare: tactics providers reported using to reduce denials', url: 'https://www.beckershospitalreview.com/finance/revenue-cycle-management/the-tactics-providers-are-using-to-reduce-claim-denials/' }
   ]
+}, {
+  slug: 'ncci-ptp-2027-version-control',
+  title: 'A New NCCI Version Is Coming. Which Edit Applied to That Claim?',
+  summary: 'CMS has announced January 2027 PTP edits. For a historical claim review, the service date and practitioner-versus-hospital file matter more than a future file announcement.',
+  category: 'Coding & documentation',
+  published: '2026-11-04',
+  updated: '2026-11-04',
+  lede: {
+    text: 'An edit pair in a spreadsheet can look like a simple yes-or-no answer. It is not useful until someone can say which file, which setting and which date the answer came from.',
+    cites: [], analysis: true
+  },
+  sections: [
+    {
+      heading: 'What CMS has announced',
+      paragraphs: [
+        {
+          text: 'A September 17, 2026 CMS transmittal announces National Correct Coding Initiative procedure-to-procedure (NCCI PTP) version 33.0, effective January 1, 2027, with a January 4 implementation date for contractors. It says test files will be available through CMS’s Hybrid Cloud Data Center on or about November 2, and final files on or about November 17. Those are target availability dates in a contractor transmittal, not proof that a practice can download a final public file today.',
+          cites: ['transmittal']
+        },
+        {
+          text: 'As checked November 4, the CMS public PTP download page still displays 2026 fourth-quarter files, effective October 1, 2026. It lists separate hospital-outpatient and practitioner files. We did not verify access to the contractor test files and are not naming a new or deleted 2027 edit pair before CMS publishes the final files.',
+          cites: ['cms-ptp']
+        }
+      ]
+    },
+    {
+      heading: 'The question for an older claim',
+      paragraphs: [
+        {
+          text: 'CMS explains that a PTP edit has a Column One and Column Two code. When an edit pair is reported for the same beneficiary and service date, the Column Two code is generally denied unless a clinically appropriate associated modifier is reported. CMS also publishes quarterly additions, deletions and modifier-indicator changes. That makes the applicable quarter and setting part of the evidence, not a footnote.',
+          cites: ['cms-ptp']
+        },
+        {
+          text: 'For a retrospective review, start with the date of service and the claim setting. Then identify the practitioner or hospital-outpatient file that applied on that date, preserve the exact file version, and ask a qualified coder to examine the pair and modifier question against the documented work. A future version should not be projected backward onto a 2026 service just because it is the newest one in a download folder.',
+          cites: ['cms-ptp'], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Date and setting.', text: 'Record service date and whether the claim used the practitioner or hospital-outpatient edit set.' },
+        { lead: 'Version and source.', text: 'Keep the CMS file name, quarter and effective date beside the review.' },
+        { lead: 'Human decision.', text: 'Show the note passage and the reviewer’s reasoning about the pair and any modifier; do not treat an automated flag as a final coding answer.' }
+      ]
+    },
+    {
+      heading: 'Where MedCode Pro fits',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term workflow is retrospective and human-reviewed. With de-identified historical cases, it can surface coding and documentation questions and link a reviewer back to source-note evidence. The relevant NCCI version and setting still need to be verified for the service date. The product does not finalize codes, submit claims, decide payer coverage or guarantee payment.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'When CMS publishes the final 2027 files, the useful question will be which actual edit and modifier-indicator changes affect a practice’s case mix. Until then, the announcement is a prompt to tighten version control, not a claim that a specific 2027 pair has changed.',
+          cites: ['transmittal', 'cms-ptp'], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'Review the evidence behind a coding question',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked, human-reviewed process. Discuss secure intake before sharing case material; do not put patient records in the website contact form.'
+  },
+  sources: [
+    { id: 'transmittal', title: 'CMS Transmittal 13946 / Change Request 14611, September 17, 2026', url: 'https://www.cms.gov/files/document/r13946cp.pdf' },
+    { id: 'cms-ptp', title: 'CMS Medicare NCCI Procedure-to-Procedure Edits, public download page', url: 'https://www.cms.gov/medicare/coding-billing/national-correct-coding-initiative-ncci-edits/medicare-ncci-procedure-procedure-ptp-edits' }
+  ]
 }];
