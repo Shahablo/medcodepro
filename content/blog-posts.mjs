@@ -339,4 +339,69 @@ export const articles = [{
     { id: 'transmittal', title: 'CMS Transmittal 13946 / Change Request 14611, September 17, 2026', url: 'https://www.cms.gov/files/document/r13946cp.pdf' },
     { id: 'cms-ptp', title: 'CMS Medicare NCCI Procedure-to-Procedure Edits, public download page', url: 'https://www.cms.gov/medicare/coding-billing/national-correct-coding-initiative-ncci-edits/medicare-ncci-procedure-procedure-ptp-edits' }
   ]
+}, {
+  slug: '2027-same-day-em-final-rule',
+  title: 'The 2027 Same-Day E/M Rule Got Narrower. Keep the Review Precise.',
+  summary: 'CMS finalized a narrower same-day office visit payment policy than it proposed. A specialty practice should separate documented work, global period and payment before estimating its exposure.',
+  category: 'Coding & documentation',
+  published: '2026-11-06',
+  updated: '2026-11-06',
+  lede: {
+    text: 'A proposed rule can send a team into a spreadsheet exercise. The final rule can make that spreadsheet wrong before it is finished. CMS’s new same-day office visit policy is a useful example: the final scope and reduction are both narrower than the proposal.',
+    cites: ['cms-fact']
+  },
+  sections: [
+    {
+      heading: 'What changed between proposal and final rule',
+      paragraphs: [
+        {
+          text: 'CMS released its calendar year 2027 Physician Fee Schedule final-rule fact sheet on November 4, 2026. The final rule went on public display that day; CMS lists November 9 as its Federal Register publication date. The policy takes effect on or after January 1, 2027. It is a future Medicare payment change, not a recalculation of a 2026 claim.',
+          cites: ['cms-fact', 'cms-rule']
+        },
+        {
+          text: 'The proposal would have applied a same-day payment reduction to separately identifiable office/outpatient evaluation and management (E/M) visits furnished by the same physician or practice alongside procedures with 0-, 10- or 90-day global periods. It would have paid the most expensive service at 100% and the other relevant services at 50%. After comments, CMS finalized the policy for 0-day global procedures only. The most expensive service remains at 100%; the other separately billed surgical procedure or office/outpatient E/M service is paid at 80%, rather than the proposed 50%.',
+          cites: ['cms-fact']
+        },
+        {
+          text: 'A budget model built from the proposal would therefore overstate both the range of procedures and the size of this particular reduction. The final rule does not mean every same-day E/M visit is separately payable; the documentation and coding question still has to be reviewed on its own terms.',
+          cites: ['cms-fact'], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'Three questions before anyone estimates the impact',
+      paragraphs: [
+        {
+          text: 'For a forward-looking sample, separate the questions instead of turning every same-day visit into one payment category:',
+          cites: [], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'What work is documented?', text: 'Ask a qualified reviewer whether the office/outpatient E/M work is separately identifiable from the procedure. Preserve the supporting note passages and the reviewer’s conclusion.' },
+        { lead: 'Which procedure and period?', text: 'Check the actual procedure’s global period and service date. The finalized policy described here covers 0-day procedures, not the proposed 10- or 90-day groups.' },
+        { lead: 'What is the payment question?', text: 'Keep the final CMS methodology separate from coding support and from contract-specific or non-Medicare payment assumptions. Model an effect only with the relevant finalized rates and case mix.' }
+      ]
+    },
+    {
+      heading: 'Where a retrospective evidence review fits',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term work is retrospective, de-identified and human-reviewed. It can surface coding and documentation questions in historical cases and link them to source-note passages. A practice could use that kind of review to learn whether its E/M and procedure documentation is explainable before applying a future payment model.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'The product does not finalize codes, submit claims, determine Medicare payment, apply this 2027 rule to live claims or guarantee revenue. The final rule gives a team a more precise question to investigate; its own records and a qualified coding and payment review determine the answer.',
+          cites: [], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'See the evidence review, not a payment promise',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked, human-reviewed process. Discuss secure intake before sharing case material; do not put patient records in the website contact form.'
+  },
+  sources: [
+    { id: 'cms-fact', title: 'CMS, November 4, 2026: CY 2027 Medicare Physician Fee Schedule final-rule fact sheet', url: 'https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule' },
+    { id: 'cms-rule', title: 'CMS-1848-F final-rule record, display November 4 and scheduled publication November 9, 2026', url: 'https://www.cms.gov/medicare/payment/fee-schedules/physician/federal-regulation-notices/cms-1848-f' }
+  ]
 }];
