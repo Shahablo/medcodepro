@@ -404,4 +404,70 @@ export const articles = [{
     { id: 'cms-fact', title: 'CMS, November 4, 2026: CY 2027 Medicare Physician Fee Schedule final-rule fact sheet', url: 'https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule' },
     { id: 'cms-rule', title: 'CMS-1848-F final-rule record, display November 4 and scheduled publication November 9, 2026', url: 'https://www.cms.gov/medicare/payment/fee-schedules/physician/federal-regulation-notices/cms-1848-f' }
   ]
+}, {
+  slug: 'g2211-b1-2027-modifier-transition',
+  title: 'G2211 Becomes B1 in 2027. Do Not Treat It as a Simple Rename.',
+  summary: 'CMS is moving the Medicare visit-complexity add-on to a modifier on the E/M code. Review eligibility, evidence and payment assumptions separately before changing a specialty-practice workflow.',
+  category: 'Coding & documentation',
+  published: '2026-11-09',
+  updated: '2026-11-09',
+  lede: {
+    text: 'When a separate claim line becomes a modifier on another line, a find-and-replace rule looks tempting. The 2027 Medicare change to G2211 deserves a closer look: the code structure and the payment method both change.',
+    cites: ['cms-2027']
+  },
+  sections: [
+    {
+      heading: 'What CMS finalized',
+      paragraphs: [
+        {
+          text: 'In its November 4, 2026 calendar year 2027 Physician Fee Schedule final-rule summary, CMS says the separately paid office/outpatient E/M visit-complexity add-on, HCPCS G2211, will transition to modifier B1 on the associated E/M base code. B1 increases payment for that E/M code by 16% instead of the add-on’s flat payment. CMS says the policy applies on or after January 1, 2027; it does not change the coding of a 2026 service.',
+          cites: ['cms-2027', 'cms-rule']
+        },
+        {
+          text: 'The same final-rule summary describes a different, voluntary modifier, B2, with a 32% E/M payment increase for qualifying practitioners in a Medicare Shared Savings Program ACO or the LEAD Model. B2 has its own participation conditions. A practice should not treat B1 and B2 as interchangeable, or assume that ACO participation can be inferred from a patient’s assignment alone.',
+          cites: ['cms-2027']
+        }
+      ]
+    },
+    {
+      heading: 'The review question is still about the visit',
+      paragraphs: [
+        {
+          text: 'CMS’s current G2211 FAQ describes the add-on as reflecting complexity from a longitudinal practitioner-patient relationship. It says the code is inappropriate when the practitioner has not taken responsibility for ongoing care with consistency and continuity, or does not plan to do so. That existing guidance is useful context for examining historical claims; teams should verify the final 2027 billing instructions before converting it into a B1 edit rule.',
+          cites: ['cms-faq', 'cms-2027'], analysis: true
+        },
+        {
+          text: 'Start with a dated sample of Medicare office/outpatient E/M visits and their G2211 use. Have a qualified reviewer separate three questions: whether the historical service supported G2211 under the instructions in force on its date, how the 2027 modifier should be reported under final operational guidance, and how the change might affect payment for the practice’s actual E/M mix. A percentage applied to an E/M base payment is not the old flat add-on amount, so multiplying historical G2211 counts by a single assumed dollar difference would be a poor forecast.',
+          cites: ['cms-2027', 'cms-faq'], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Preserve the service date.', text: 'Keep 2026 G2211 reviews under the rules that applied to those claims; identify the January 2027 transition separately.' },
+        { lead: 'Check the relationship evidence.', text: 'Link the reviewer to the note and relevant care context. Do not mark every specialty E/M visit eligible by default.' },
+        { lead: 'Verify the new claim rule.', text: 'Confirm final modifier instructions, ACO participation where relevant, and payer-specific implementation before changing claim edits or forecasts.' }
+      ]
+    },
+    {
+      heading: 'Where a retrospective review fits',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term workflow is a retrospective, de-identified, source-linked coding and documentation risk review with a human reviewer. It can help a team locate historical G2211 patterns and examine the note evidence behind a question. That is a baseline for human follow-up, not an automated decision that B1 or B2 belongs on a future claim.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'The product does not finalize codes, submit claims, apply a live 2027 modifier, determine Medicare payment or guarantee recovered revenue. Treat this final rule as a reason to prepare a controlled transition, with the eventual claim workflow checked against CMS and the relevant payer’s operational instructions.',
+          cites: ['cms-2027'], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'Review historical evidence before changing the workflow',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked, human-reviewed process. Discuss secure intake before sharing case material; do not put patient records in the website contact form.'
+  },
+  sources: [
+    { id: 'cms-2027', title: 'CMS, November 4, 2026: CY 2027 Medicare Physician Fee Schedule final-rule fact sheet', url: 'https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule' },
+    { id: 'cms-rule', title: 'CMS-1848-F final-rule record', url: 'https://www.cms.gov/medicare/payment/fee-schedules/physician/federal-regulation-notices/cms-1848-f' },
+    { id: 'cms-faq', title: 'CMS: Frequently Asked Questions about E/M Visit Complexity Add-On HCPCS Code G2211', url: 'https://www.cms.gov/files/document/hcpcs-g2211-faq.pdf' }
+  ]
 }];
