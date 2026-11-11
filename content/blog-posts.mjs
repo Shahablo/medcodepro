@@ -470,4 +470,67 @@ export const articles = [{
     { id: 'cms-rule', title: 'CMS-1848-F final-rule record', url: 'https://www.cms.gov/medicare/payment/fee-schedules/physician/federal-regulation-notices/cms-1848-f' },
     { id: 'cms-faq', title: 'CMS: Frequently Asked Questions about E/M Visit Complexity Add-On HCPCS Code G2211', url: 'https://www.cms.gov/files/document/hcpcs-g2211-faq.pdf' }
   ]
+}, {
+  slug: '2027-outpatient-rule-facility-professional-claims',
+  title: 'The 2027 Outpatient Rule Changes the Facility Question. Keep the Surgeon’s Claim Separate.',
+  summary: 'CMS finalized new hospital outpatient and ASC policies for 2027. A specialty practice should check the exact procedure and setting before assuming its professional claim or payment changes.',
+  category: 'Coding & documentation',
+  published: '2026-11-11',
+  updated: '2026-11-11',
+  lede: {
+    text: 'A surgery moves from the hospital inpatient list, or an imaging service gets a different hospital outpatient payment method. It is easy to hear “site of care change” and assume every related claim changes with it. The 2027 Medicare outpatient rule calls for a more careful split: facility status, professional coding and clinical setting are different questions.',
+    cites: ['cms-fact'], analysis: true
+  },
+  sections: [
+    {
+      heading: 'What CMS finalized on November 4',
+      paragraphs: [
+        {
+          text: 'CMS issued its calendar year 2027 Hospital Outpatient Prospective Payment System and Ambulatory Surgical Center final rule on November 4, 2026. It updates the two facility payment systems for 2027. For imaging without contrast furnished in certain excepted off-campus hospital departments, CMS finalized use of a Physician Fee Schedule-equivalent rate for codes assigned to the affected imaging ambulatory payment classifications. The agency names certain bone density scans, x-rays, ultrasounds, CT scans and MRIs; rural Sole Community Hospitals are exempt from this particular policy.',
+          cites: ['cms-fact', 'cms-rule']
+        },
+        {
+          text: 'CMS also finalized removal of 637 services from the inpatient-only list for 2027 as part of a multiyear phaseout. That change concerns whether Medicare can pay for a service in the hospital outpatient setting when clinically appropriate. It is not a blanket instruction to move a patient to an ASC, a guarantee of coverage in every setting, or a change to the surgeon’s professional documentation requirements.',
+          cites: ['cms-fact', 'opps-addenda', 'asc-addenda'], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'Do the code-and-setting check before modeling dollars',
+      paragraphs: [
+        {
+          text: 'A specialty practice with hospital or ASC cases can make a small, controlled review list rather than applying the headline to all procedures. Start with the actual code and service setting, then check the final CMS addenda and the instructions in force for the date of service. The OPPS addenda identify payment by HCPCS code, status indicators and the remaining inpatient-only codes; the ASC addenda separately identify covered surgical procedures, payment indicators and excluded procedures. A service removed from one list should not be treated as automatically present on another.',
+          cites: ['opps-addenda', 'asc-addenda'], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Separate the claims.', text: 'Identify the hospital or ASC facility claim and the clinician’s professional claim before estimating any effect.' },
+        { lead: 'Preserve the date and setting.', text: 'Keep historical 2026 reviews under their applicable rules; use the final 2027 files for prospective planning, with later operational updates checked before implementation.' },
+        { lead: 'Resolve the patient-care decision elsewhere.', text: 'A payment-status change does not establish that a particular outpatient setting is clinically appropriate for a particular person.' }
+      ]
+    },
+    {
+      heading: 'Where a documentation review actually fits',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term process is retrospective first: de-identified historical cases, source-linked coding and documentation questions, and a qualified human reviewer. It can help a specialty team examine whether the professional note supports what was coded and where the evidence is thin. It does not determine an ASC’s covered-procedure status, set a facility payment, choose a site of care, finalize codes, submit claims or guarantee recovered revenue.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'That division of labor is the practical point. Let facility billing and clinical teams confirm the applicable setting and payment files. Use a separate evidence review to understand the professional documentation in the practice’s own historical cases. Only then is a case-mix forecast worth building.',
+          cites: [], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'Review the professional evidence, with a person in the loop',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked, human-reviewed process. Discuss secure intake before sharing case material; do not put patient records in the website contact form.'
+  },
+  sources: [
+    { id: 'cms-fact', title: 'CMS, November 4, 2026: CY 2027 OPPS and ASC final-rule fact sheet', url: 'https://www.cms.gov/newsroom/fact-sheets/calendar-year-2027-hospital-outpatient-prospective-payment-system-opps-ambulatory-surgical-center-0' },
+    { id: 'cms-rule', title: 'CMS-1850-FC final-rule record', url: 'https://www.cms.gov/medicare/payment/prospective-payment-systems/ambulatory-surgical-center-asc/asc-regulations-and-notices/cms-1850-fc' },
+    { id: 'opps-addenda', title: 'CMS 2027 final OPPS addenda table of contents', url: 'https://www.cms.gov/files/document/2027-fr-opps-addenda-table-contents.pdf' },
+    { id: 'asc-addenda', title: 'CMS 2027 final ASC addenda table of contents', url: 'https://www.cms.gov/files/document/2027-fr-asc-addenda-table-contents.pdf-0' }
+  ]
 }];
