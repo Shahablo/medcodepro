@@ -533,4 +533,69 @@ export const articles = [{
     { id: 'opps-addenda', title: 'CMS 2027 final OPPS addenda table of contents', url: 'https://www.cms.gov/files/document/2027-fr-opps-addenda-table-contents.pdf' },
     { id: 'asc-addenda', title: 'CMS 2027 final ASC addenda table of contents', url: 'https://www.cms.gov/files/document/2027-fr-asc-addenda-table-contents.pdf-0' }
   ]
+}, {
+  slug: '2027-shared-medical-appointments-individual-record',
+  title: 'Medicare Will Pay for Shared Medical Appointments in 2027. Each Patient Still Needs Their Own Record.',
+  summary: 'The new group-visit codes create a payment path, but the final rule keeps individual care, consent and documentation at the center.',
+  category: 'Coding & documentation',
+  published: '2026-11-16',
+  updated: '2026-11-16',
+  lede: {
+    text: 'A group visit can have one agenda and ten very different clinical stories. Medicare’s new shared medical appointment codes make that distinction operational: the session is shared, but the care and record still belong to each person.',
+    cites: ['final-rule'], analysis: true
+  },
+  sections: [
+    {
+      heading: 'The final rule creates a specific payment path',
+      paragraphs: [
+        {
+          text: 'In its November 4, 2026 Physician Fee Schedule final rule, published November 9, CMS established separate coding and payment for shared medical appointments beginning in calendar year 2027. The finalized G0686 descriptor covers a voluntary medical session for 2 to 10 patients with common conditions, led and billed by a physician or other qualified health care professional. It includes group education and peer support along with individualized clinical assessment and care, and is billed once per patient for the first 60 minutes.',
+          cites: ['cms-summary', 'final-rule']
+        },
+        {
+          text: 'CMS also finalized G0687 for each additional 30 minutes, up to two units when medically necessary, and a limit of no more than one shared medical appointment per week per beneficiary. These are 2027 rules, not instructions to recode a 2026 visit. A new payment route does not establish that any particular practice, patient or session is eligible.',
+          cites: ['final-rule'], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'A group note cannot do all the work',
+      paragraphs: [
+        {
+          text: 'The rule requires each session to be documented in each participating beneficiary’s medical record. CMS also says participation must be voluntary, with consent to the appointment and confidentiality terms. A roster or shared slide deck may show who attended and what was taught, but it cannot by itself explain the assessment and care an individual received. CMS calls attendance verification potentially useful for an audit, rather than the substitute for each person’s record.',
+          cites: ['final-rule'], analysis: true
+        },
+        {
+          text: 'For a specialty practice considering this model, the first workflow test is a small, privacy-safe mock chart review: can a reviewer distinguish the common session from each participant’s clinical work, the consent record and the time being billed? The final rule also says minutes counted toward the shared appointment cannot be counted again for another separately billed service. Have coding, clinical and privacy staff validate the workflow against the final rule and later payer instructions before using it.',
+          cites: ['final-rule'], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Separate common and individual work.', text: 'Keep a session record, but document the assessment and care in each person’s own chart.' },
+        { lead: 'Record choice and confidentiality.', text: 'Verify consent to participate and to the group’s confidentiality terms before treating the visit as routine.' },
+        { lead: 'Guard the time boundary.', text: 'Review the first 60 minutes, any medically necessary add-on time and overlap with other billed services.' }
+      ]
+    },
+    {
+      heading: 'Where MedCode Pro fits today',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term workflow is retrospective first: source-linked coding and documentation risk questions from de-identified historical cases, with a qualified human reviewer. That process can help a practice see whether its existing group-visit records show individualized care and where the note evidence is thin. It cannot certify a future G0686 or G0687 claim, manage consent, decide medical necessity, submit a claim or guarantee payment.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'The useful preparation is to learn from a small historical sample before building a 2027 billing workflow. Keep the final CMS rule beside the team’s review notes, and let the responsible clinicians, coders and privacy staff make the actual implementation decisions.',
+          cites: ['final-rule'], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'Review the individual evidence before changing the workflow',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked, human-reviewed process. Discuss secure intake before sharing case material; do not put patient records in the website contact form.'
+  },
+  sources: [
+    { id: 'cms-summary', title: 'CMS, November 4, 2026: CY 2027 Physician Fee Schedule final-rule fact sheet', url: 'https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule' },
+    { id: 'final-rule', title: 'Federal Register, November 9, 2026: CY 2027 Physician Fee Schedule final rule, shared medical appointments', url: 'https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22743.htm' }
+  ]
 }];
