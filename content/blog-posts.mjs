@@ -598,4 +598,71 @@ export const articles = [{
     { id: 'cms-summary', title: 'CMS, November 4, 2026: CY 2027 Physician Fee Schedule final-rule fact sheet', url: 'https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule' },
     { id: 'final-rule', title: 'Federal Register, November 9, 2026: CY 2027 Physician Fee Schedule final rule, shared medical appointments', url: 'https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22743.htm' }
   ]
+}, {
+  slug: '2027-orthopedic-medicare-impact-practice-mix',
+  title: 'Orthopedics Shows a 6% Drop in Medicare’s 2027 Specialty Table. Your Practice Needs Its Own Math.',
+  summary: 'CMS’s orthopedic average combines many services and settings. A spine or pain practice needs its own code mix before treating that number as a forecast.',
+  category: 'Coding & documentation',
+  published: '2026-11-18',
+  updated: '2026-11-18',
+  lede: {
+    text: 'A 6% drop is a useful headline and a poor budget line. CMS’s 2027 specialty-impact table describes an average across orthopedic surgery, not the financial result for a particular spine practice.',
+    cites: ['cms-impact', 'cms-rule'], analysis: true
+  },
+  sections: [
+    {
+      heading: 'Read the table before repeating the number',
+      paragraphs: [
+        {
+          text: 'CMS issued the calendar year 2027 Physician Fee Schedule final rule on November 4, 2026; it was published November 9. In the updated specialty-impact file posted with that rule, the estimated combined change in allowed charges from work, practice-expense and malpractice relative value units is minus 6% for orthopedic surgery overall. The file shows minus 4% for nonfacility services and minus 7% for facility-setting professional services. Its neurosurgery and interventional pain-management rows each show minus 2% overall.',
+          cites: ['cms-rule', 'cms-impact']
+        },
+        {
+          text: 'Those facility and nonfacility rows concern Physician Fee Schedule professional services; they are not an estimate of a hospital or surgery center’s facility payment. The table’s columns describe relative-value changes. The conversion factor and geographic adjustments are separate parts of the payment calculation, so the minus 6% row should not be presented as a complete 2027 rate change.',
+          cites: ['cms-impact', 'cms-payment'], analysis: true
+        },
+        {
+          text: 'CMS built the specialty estimates using 2025 Medicare utilization to compare 2026 and 2027 rates. The final rule says an individual practitioner’s result depends on the services furnished, and changes in service volume or mix will make actual Medicare revenue differ from the table. A spine-heavy orthopedic group is not necessarily the same as the aggregate orthopedic row; neither the row nor this article predicts a practice’s denials or total revenue.',
+          cites: ['cms-rule'], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'Build a practice-specific question, not a headline forecast',
+      paragraphs: [
+        {
+          text: 'The useful next step is a bounded review of the practice’s own historical Medicare service mix. Let the billing team identify high-volume and high-dollar professional codes, service dates and places of service. Compare the applicable final 2027 code-level values and local payment inputs with the 2026 baseline; keep any separately paid facility claim, commercial contract and changing case volume outside that first comparison. Have a qualified reimbursement specialist validate the model before using it for a budget.',
+          cites: ['cms-rule', 'cms-payment'], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Name the denominator.', text: 'Use the practice’s actual Medicare professional services, not every patient or every dollar of practice revenue.' },
+        { lead: 'Keep setting and code together.', text: 'A facility-setting professional service and a nonfacility service can have different practice-expense values. Check the date and locality before comparing.' },
+        { lead: 'Separate payment from evidence.', text: 'A lower allowed amount, a coding question and a denial are different events. Do not assign one explanation to all three.' }
+      ]
+    },
+    {
+      heading: 'Where MedCode Pro fits',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term work is retrospective first. With de-identified historical cases, it surfaces source-linked coding and documentation risk questions for a qualified human reviewer. That can help a specialty practice examine whether the professional note supports a proposed code and where its evidence is uncertain. It does not calculate a 2027 fee schedule, finalize codes, submit claims, make payer-final decisions or guarantee recovered revenue.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'Put the CMS payment files and the practice’s own billing analysis beside the documentation review. Then the team can distinguish a rate change from a chart-to-code problem instead of treating a specialty average as the answer to both.',
+          cites: ['cms-impact', 'cms-payment'], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'Review the documentation behind your own case mix',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked, human-reviewed process. Discuss secure intake before sharing case material; do not send patient records through the website contact form.'
+  },
+  sources: [
+    { id: 'cms-impact', title: 'CMS, CY 2027 PFS final-rule estimated impact on total allowed charges by specialty, updated November 5, 2026 (ZIP with accessible text table)', url: 'https://www.cms.gov/files/zip/cy-2027-pfs-final-rule-estimated-impact-total-allowed-charges-specialty-updated-11-05-2026.zip' },
+    { id: 'cms-rule', title: 'Federal Register, November 9, 2026: CY 2027 Physician Fee Schedule final rule, impact analysis', url: 'https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22743.htm' },
+    { id: 'cms-payment', title: 'CMS Physician Fee Schedule documentation and payment formula', url: 'https://www.cms.gov/medicare/physician-fee-schedule/search/documentation' },
+    { id: 'beckers', title: 'Becker’s Healthcare, November 18, 2026: final 2027 specialty estimates (discovery signal)', url: 'https://www.beckershospitalreview.com/compensation-issues/medicares-final-2027-pay-cuts-by-specialty/' }
+  ]
 }];
