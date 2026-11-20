@@ -665,4 +665,66 @@ export const articles = [{
     { id: 'cms-payment', title: 'CMS Physician Fee Schedule documentation and payment formula', url: 'https://www.cms.gov/medicare/physician-fee-schedule/search/documentation' },
     { id: 'beckers', title: 'Becker’s Healthcare, November 18, 2026: final 2027 specialty estimates (discovery signal)', url: 'https://www.beckershospitalreview.com/compensation-issues/medicares-final-2027-pay-cuts-by-specialty/' }
   ]
+}, {
+  slug: 'spine-policy-code-list-december-2026-plan-date',
+  title: 'Three Spine Codes Leave a December Policy List. Check the Plan Before Changing a Claim.',
+  summary: 'Surest and UMR bulletins remove three CPT codes from a spine policy’s reference list on December 1. That is a version-control question, not a denial forecast.',
+  category: 'Coding & documentation',
+  published: '2026-11-20',
+  updated: '2026-11-20',
+  lede: {
+    text: 'A code is slated to disappear from a payer policy list. It is tempting to turn that into a rule for every spine claim. The November Surest and UMR bulletins make a narrower point: three codes are leaving their spinal-fusion applicable-code lists on December 1. Before anyone changes an edit, the plan and service date need a closer look.',
+    cites: ['surest-bulletin', 'umr-bulletin'], analysis: true
+  },
+  sections: [
+    {
+      heading: 'The change is specific',
+      paragraphs: [
+        {
+          text: 'The November 1, 2026 medical-policy bulletins for Surest and UMR each list Spinal Fusion and Decompression as updated effective December 1, 2026. In the Applicable Codes entry, each says CPT 22850, 22855 and 63286 are removed. These are notices for named plan lines and a future policy date, not evidence that UnitedHealthcare has applied one new rule to every product or already denied any claim.',
+          cites: ['surest-bulletin', 'umr-bulletin'], analysis: true
+        },
+        {
+          text: 'The September 1 Surest version still lists the three codes. That older document also says its code list is for reference, may be incomplete, and does not itself decide coverage or guarantee payment. The meaningful comparison is therefore a dated policy-list change. It does not say the CPT codes were deleted, that they should never be billed, or that every service described by them is now noncovered.',
+          cites: ['surest-prior', 'surest-bulletin'], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'What the billing team should pin down',
+      paragraphs: [
+        {
+          text: 'Start with the member’s actual plan line and the service date. Save the policy version that applies, not just a screenshot of the latest search result. Then have a qualified coder compare the proposed code with the operative note and the full code descriptor. If coverage or authorization is at issue, read the member-specific benefit terms and the payer’s actual response. A code-list edit, a documentation gap and a claim denial are different facts.',
+          cites: ['surest-bulletin', 'umr-bulletin', 'surest-prior'], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Plan and date.', text: 'Record whether the case is Surest, UMR or another product, and which policy version applied on the service date.' },
+        { lead: 'Code and note.', text: 'Ask a human reviewer what procedure the note actually supports before changing a code or an edit.' },
+        { lead: 'Payer outcome.', text: 'If there is a response, preserve its exact reason and the relevant claim or authorization history instead of assuming the policy-list change caused it.' }
+      ]
+    },
+    {
+      heading: 'Where MedCode Pro fits',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term workflow is retrospective first. On de-identified historical spine cases, it can surface coding and documentation risk questions and link a reviewer back to source-note evidence. The reviewer can keep the applicable payer policy version beside that review. A qualified human still decides what the record supports. The product does not determine a member’s benefit, finalize codes, submit claims or prior authorizations, make payer-final decisions, or promise recovered revenue.',
+          cites: [], analysis: true
+        },
+        {
+          text: 'The useful test is modest: in a de-identified historical spine sample, see whether the team can separate a chart-to-code question from a policy-version check. Once the December 1 change takes effect, evaluate any actually affected cases using their plan and service dates. Neither exercise forecasts denials or payment.',
+          cites: ['surest-bulletin', 'umr-bulletin'], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'Review the evidence behind the code',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked, human-reviewed process. Arrange secure intake before sharing case material; do not send patient records through the website contact form.'
+  },
+  sources: [
+    { id: 'surest-bulletin', title: 'UnitedHealthcare, November 1, 2026: Surest Medical Policy Update Bulletin, spinal fusion and decompression', url: 'https://www.uhcprovider.com/content/dam/provider/docs/public/policies/mpub-archives/surest/surest-medical-policy-update-bulletin-november-2026-full.pdf' },
+    { id: 'umr-bulletin', title: 'UnitedHealthcare, November 1, 2026: UMR Medical Policy Update Bulletin, spinal fusion and decompression', url: 'https://www.uhcprovider.com/content/dam/provider/docs/public/policies/mpub-archives/umr/umr-medical-policy-update-bulletin-november-2026-full.pdf' },
+    { id: 'surest-prior', title: 'UnitedHealthcare, September 1, 2026: Surest Spinal Fusion and Decompression policy, SRST2026T0639J', url: 'https://www.uhcprovider.com/content/dam/provider/docs/public/policies/surest/spinal-fusion-decompression-sur.pdf' }
+  ]
 }];
