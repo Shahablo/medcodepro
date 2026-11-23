@@ -727,4 +727,65 @@ export const articles = [{
     { id: 'umr-bulletin', title: 'UnitedHealthcare, November 1, 2026: UMR Medical Policy Update Bulletin, spinal fusion and decompression', url: 'https://www.uhcprovider.com/content/dam/provider/docs/public/policies/mpub-archives/umr/umr-medical-policy-update-bulletin-november-2026-full.pdf' },
     { id: 'surest-prior', title: 'UnitedHealthcare, September 1, 2026: Surest Spinal Fusion and Decompression policy, SRST2026T0639J', url: 'https://www.uhcprovider.com/content/dam/provider/docs/public/policies/surest/spinal-fusion-decompression-sur.pdf' }
   ]
+}, {
+  slug: '2027-spine-osteotomy-work-rvus-operative-note',
+  title: 'CMS Finalized 2027 Spine Osteotomy Values. The Operative Note Still Has to Tell the Story.',
+  summary: 'Four spine osteotomy codes receive finalized Medicare work values for 2027. A code-level review starts with the documented procedure, not a specialty-wide payment estimate.',
+  category: 'Coding & documentation',
+  published: '2026-11-23',
+  updated: '2026-11-23',
+  lede: {
+    text: 'A specialty average cannot tell a spine group what happened to a particular procedure code. The 2027 Medicare Physician Fee Schedule final rule gives a more useful example: four posterior spine osteotomy codes with revised guidance and finalized work values. The first question for a practice is whether its operative notes clearly describe the work it is asking a human coder to evaluate.',
+    cites: ['final-rule'], analysis: true
+  },
+  sections: [
+    {
+      heading: 'What CMS actually finalized',
+      paragraphs: [
+        {
+          text: 'CMS displayed the 2027 Physician Fee Schedule final rule on November 4, 2026, and it was published November 9. For CPT 22210, 22212, 22214 and add-on 22216, CMS finalized work relative value units of 23.12, 21.72, 19.53 and 3.00, respectively, as proposed. The policy takes effect January 1, 2027. These are work RVUs, not dollar payment rates or a forecast for any one practice.',
+          cites: ['final-rule'], analysis: true
+        },
+        {
+          text: 'The rule describes revised CPT guidance for this code family, including the extent of ligament and bony resection involved in realigning the spinal column. CMS did not simply accept the specialty panel’s higher recommended work values for the first three codes. It weighed surveyed intraservice time and assumptions about postoperative visits; commenters disputed parts of that reasoning. The final values settle the 2027 Medicare valuation decision, not whether a particular operation met a code’s requirements.',
+          cites: ['final-rule'], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'Put the code, date and operative evidence together',
+      paragraphs: [
+        {
+          text: 'For a spine group, the practical review is narrower than applying a headline percentage to every case. Identify historical cases involving the osteotomy family, keep the service date and code version attached, and have a qualified coder compare the full operative note with the applicable code descriptors and guidelines. The note should support what was actually performed, at which level and with what separately reportable work; the reviewer must resolve that question rather than infer it from a planned procedure or a payment table.',
+          cites: ['final-rule'], analysis: true
+        },
+        {
+          text: 'A work RVU change also does not by itself establish a claim denial or a final allowed amount. A Medicare professional payment comparison needs the relevant 2026 and 2027 code-level inputs, conversion factor, locality, service setting and actual practice mix. Commercial contracts and any facility payment are separate. Keep those calculations with the reimbursement team rather than treating the finalized work values as a revenue prediction.',
+          cites: ['final-rule', 'pfs-formula'], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Version the rule.', text: 'Keep the 2027 final-rule code family and the code set applicable on the service date.' },
+        { lead: 'Review the note.', text: 'Ask which operative details support the proposed code and which details remain uncertain.' },
+        { lead: 'Separate the outcomes.', text: 'Documented work, coding, Medicare valuation and an actual payer response are different findings.' }
+      ]
+    },
+    {
+      heading: 'Where MedCode Pro fits',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term workflow is retrospective first. On de-identified historical spine operative notes, it can surface source-linked coding and documentation risk questions for a qualified human reviewer. This code family is a concrete way to test whether the evidence chain points to the actual operative details and flags uncertainty for review. The product does not finalize codes, calculate 2027 Medicare payment, submit claims or prior authorizations, decide a payer’s response, or guarantee recovered revenue.',
+          cites: [], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'Review the evidence behind the spine code',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked, human-reviewed process. Arrange secure intake before sharing case material; do not send patient records through the website contact form.'
+  },
+  sources: [
+    { id: 'final-rule', title: 'Federal Register, November 9, 2026: CY 2027 Medicare Physician Fee Schedule final rule, spine osteotomy valuation', url: 'https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22743.htm' },
+    { id: 'pfs-formula', title: 'CMS Physician Fee Schedule payment formula documentation', url: 'https://www.cms.gov/medicare/physician-fee-schedule/search/documentation' }
+  ]
 }];
