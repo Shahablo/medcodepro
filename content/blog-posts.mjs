@@ -788,4 +788,79 @@ export const articles = [{
     { id: 'final-rule', title: 'Federal Register, November 9, 2026: CY 2027 Medicare Physician Fee Schedule final rule, spine osteotomy valuation', url: 'https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22743.htm' },
     { id: 'pfs-formula', title: 'CMS Physician Fee Schedule payment formula documentation', url: 'https://www.cms.gov/medicare/physician-fee-schedule/search/documentation' }
   ]
+}, {
+  slug: '2027-99024-postoperative-reporting-pause',
+  title: 'Medicare Is Pausing 99024 Reporting in 2027. Postoperative Documentation Still Matters.',
+  summary: 'CMS finalized a narrow pause in no-pay postoperative-visit data collection. Spine and orthopedic groups should separate that reporting step from the care record and global-package payment.',
+  category: 'Coding & documentation',
+  published: '2026-11-25',
+  updated: '2026-11-25',
+  lede: {
+    text: 'A 99024 claim can be easy to mistake for the postoperative visit itself. In the 2027 Medicare Physician Fee Schedule final rule, CMS paused a data-collection requirement associated with that no-pay code. The rule was displayed November 4, 2026, published November 9, and takes effect January 1, 2027. It does not make postoperative care disappear from a 10- or 90-day global package.',
+    cites: ['final-rule', 'rule-page'], analysis: true
+  },
+  sections: [
+    {
+      heading: 'Which reporting step is paused?',
+      paragraphs: [
+        {
+          text: 'Since 2017, Medicare has collected postoperative-visit data for selected high-volume or high-cost procedures with 10- or 90-day global periods. The reporting population is limited to practices with at least 10 practitioners in Florida, Kentucky, Louisiana, Nevada, New Jersey, North Dakota, Ohio, Oregon and Rhode Island. CPT 99024 is a no-pay code for reporting a related follow-up visit; it is not separate payment for that visit. CMS finalized a pause of this collection for calendar year 2027.',
+          cites: ['global-data', 'final-rule']
+        },
+        {
+          text: 'A group outside that population should not read the pause as a change to a reporting duty it never had. A group inside it should keep the applicable 2026 instructions distinct from the 2027 policy and confirm its operational change against current CMS and Medicare Administrative Contractor guidance.',
+          cites: ['global-data', 'final-rule'], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'The payment question remains open',
+      paragraphs: [
+        {
+          text: 'CMS says collected data have shown fewer postoperative visits than assumed in global-package valuation and that the reporting burden warrants a pause. Commenters argued that a missing 99024 claim does not prove there was no postoperative work: non-visit tasks and visit intensity are not fully captured by a visit count. CMS finalized the pause while leaving better data methods and possible future revaluation for later consideration.',
+          cites: ['final-rule']
+        },
+        {
+          text: 'The rule discusses a public-use calculation of possible work-RVU effects. It is an illustration for potential future rulemaking, not an enacted across-the-board 2027 payment cut for global surgery. Neither side of the data debate measures the outcome for a particular spine or orthopedic practice.',
+          cites: ['final-rule'], analysis: true
+        }
+      ]
+    },
+    {
+      heading: 'Keep the reporting claim and clinical record distinct',
+      paragraphs: [
+        {
+          text: 'Before changing a workflow, have the billing lead identify whether the group was in the 99024 reporting population, which procedures and dates were involved, and which instructions apply. Keep the documentation of actual postoperative care separate from the no-pay reporting claim. Transfers of postoperative care have their own rules and should not be inferred from this pause.',
+          cites: ['global-data', 'final-rule'], analysis: true
+        },
+        {
+          text: 'A paused data-collection code does not erase follow-up documentation, turn every global package into a zero-day service, or make every postoperative visit separately billable. For a historical sample, a human reviewer should be able to see the surgery date, applicable global-period context, actual follow-up evidence and practitioner role without treating a missing 99024 as the entire record.',
+          cites: ['final-rule'], analysis: true
+        }
+      ],
+      list: [
+        { lead: 'Identify the population.', text: 'Check practice size, state, procedure and service date against the applicable CMS instructions.' },
+        { lead: 'Preserve the care record.', text: 'Keep the clinical evidence independent of whether a no-pay data-collection claim was required.' },
+        { lead: 'Version the conclusion.', text: 'Record the policy year and source before a qualified human changes an edit or billing workflow.' }
+      ]
+    },
+    {
+      heading: 'Where MedCode Pro fits',
+      paragraphs: [
+        {
+          text: 'MedCode Pro’s near-term role is retrospective, source-linked, human-reviewed coding and documentation risk review using de-identified historical cases. It can surface questions about whether the available note evidence and applicable rule version support a proposed conclusion. It does not finalize codes, submit claims or prior authorizations, decide Medicare payment, or promise recovered revenue.',
+          cites: [], analysis: true
+        }
+      ]
+    }
+  ],
+  productFit: {
+    heading: 'Review the evidence behind the record',
+    text: 'Request a scoped MedCode Pro walkthrough of its retrospective, source-linked, human-reviewed process. Arrange secure intake before sharing case material; do not send patient records through the website contact form.'
+  },
+  sources: [
+    { id: 'final-rule', title: 'Federal Register, November 9, 2026: CY 2027 Medicare Physician Fee Schedule final rule, Global Surgical Packages', url: 'https://www.govinfo.gov/content/pkg/FR-2026-11-09/html/2026-22743.htm' },
+    { id: 'rule-page', title: 'CMS, CY 2027 Physician Fee Schedule final-rule notice, displayed November 4, 2026', url: 'https://www.cms.gov/medicare/payment/fee-schedules/physician/federal-regulation-notices/cms-1848-f' },
+    { id: 'global-data', title: 'CMS, Global Surgery Data Collection: practitioner population and 99024 reporting', url: 'https://www.cms.gov/medicare/payment/fee-schedules/physician/global-surgery-data-collection' }
+  ]
 }];
